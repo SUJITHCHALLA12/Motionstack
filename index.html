@@ -2307,6 +2307,364 @@
 
     @media(max-width:600px){.drop20 .preview{min-height:310px}.origami-grid20{grid-template-columns:repeat(2,1fr)}.arc-nav20{transform:scale(.86)}.lever-panel20{gap:22px}.flip-grid20{gap:9px}.deck-cap20{display:none}.deck-page20{left:50%}}
 
+    /* 21 October daily drop previews */
+    .drop21{border-color:color-mix(in srgb,#ff5f9e 38%,var(--line))}
+    .drop21 .preview{isolation:isolate}
+    .drop21 .drop-date{background:color-mix(in srgb,#ff5f9e 16%,var(--surface))}
+    .drop21-stage{position:relative;width:min(500px,100%);min-height:290px;overflow:hidden;border-radius:13px}
+    .neonveil-mini{background:linear-gradient(150deg,#160a2e,#57124a 55%,#ff5f9e)!important}
+
+    .veil21{background:radial-gradient(120% 130% at 50% 0%,#1c0b2e 0%,#0d0518 60%,#070310 100%);color:#fdf2ff;display:grid;place-items:center}
+    .veil-layer21{position:absolute;top:-12%;bottom:-12%;width:46%;border-radius:50%;filter:blur(26px);opacity:.55;pointer-events:none}
+    .veil-layer21.a{left:-8%;background:linear-gradient(180deg,rgba(255,95,158,.5),rgba(138,124,255,.12));animation:veil-drift21 11s ease-in-out infinite alternate}
+    .veil-layer21.b{left:30%;background:linear-gradient(180deg,rgba(87,230,255,.38),rgba(255,95,158,.1));animation:veil-drift21 14s ease-in-out -4s infinite alternate-reverse}
+    .veil-layer21.c{right:-8%;background:linear-gradient(180deg,rgba(255,176,46,.32),rgba(138,124,255,.1));animation:veil-drift21 12s ease-in-out -7s infinite alternate}
+    @keyframes veil-drift21{from{transform:translateX(-4%) skewX(-7deg)}to{transform:translateX(7%) skewX(6deg)}}
+    .veil-card21{position:relative;width:min(276px,86%);padding:24px;border-radius:15px;border:1px solid rgba(255,160,215,.34);background:rgba(24,10,38,.62);backdrop-filter:blur(9px);box-shadow:0 26px 60px rgba(0,0,0,.55),0 0 34px rgba(255,95,158,.16)}
+    .veil-card21 b{display:block;font:800 19px "Manrope",sans-serif;opacity:0;animation:veil-in21 .6s ease forwards}
+    .veil-card21 small{display:block;margin:3px 0 6px;color:#e9b8da;font-size:11px;opacity:0;animation:veil-in21 .6s ease .08s forwards}
+    @keyframes veil-in21{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    .veil-field21{position:relative;margin-top:10px;opacity:0;animation:veil-in21 .6s cubic-bezier(.2,.9,.3,1) forwards;animation-delay:calc(var(--i)*.14s + .15s)}
+    .veil-field21::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:3px;border-radius:99px;background:#3a2440;transition:all .3s}
+    .veil-field21:focus-within::before{background:#ff5f9e;box-shadow:0 0 12px 2px rgba(255,95,158,.65)}
+    .veil-field21 input{width:100%;height:40px;padding:0 12px 0 14px;border:1px solid rgba(255,160,215,.3);border-radius:8px;background:rgba(0,0,0,.32);color:#fff;outline:none;font-size:13px;transition:border-color .25s,box-shadow .25s}
+    .veil-field21 input:focus{border-color:#ff5f9e;box-shadow:0 0 0 3px rgba(255,95,158,.2)}
+    .veil-go21{position:relative;overflow:hidden;width:100%;height:42px;margin-top:15px;border:0;border-radius:9px;background:linear-gradient(120deg,#ff5f9e,#8a7cff);color:#fff;font:800 13.5px "Manrope",sans-serif;cursor:pointer;opacity:0;animation:veil-in-op21 .6s ease .5s forwards;will-change:transform}
+    @keyframes veil-in-op21{from{opacity:0}to{opacity:1}}
+    .veil-ripple21{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);pointer-events:none;animation:veil-ripple21 .6s ease-out forwards}
+    @keyframes veil-ripple21{to{transform:scale(2.6);opacity:0}}
+
+    .arcflow21{background:linear-gradient(150deg,#170d24,#0a0614);color:#f6efff;display:grid;place-items:center;padding:22px}
+    .arc-panel21{width:min(330px,94%)}
+    .arc-svg21{display:block;margin:0 auto 2px;overflow:visible}
+    .arc-track21{fill:none;stroke:rgba(255,255,255,.13);stroke-width:5;stroke-linecap:round}
+    .arc-prog21{fill:none;stroke:url(#arcgrad21);stroke-width:5;stroke-linecap:round;stroke-dasharray:201;stroke-dashoffset:201;transition:stroke-dashoffset .7s cubic-bezier(.2,.9,.3,1)}
+    .arc-node21{fill:#241637;stroke:rgba(255,255,255,.25);stroke-width:2;transition:all .4s}
+    .arc-node21.on{fill:#ff5f9e;stroke:#ffd3e8;filter:drop-shadow(0 0 6px rgba(255,95,158,.8))}
+    .arc-node21.done{fill:#8a7cff;stroke:#cfc6ff}
+    .arc-view21{position:relative;min-height:132px;margin-top:6px}
+    .arc-step21{position:absolute;inset:0;opacity:0;transform:translateX(44px);pointer-events:none;transition:opacity .45s ease,transform .45s cubic-bezier(.2,.9,.3,1)}
+    .arc-step21.active{opacity:1;transform:none;pointer-events:auto}
+    .arc-step21.exit{opacity:0;transform:translateX(-44px)}
+    .arc-step21 h5{margin:0 0 4px;font:800 15.5px "Manrope",sans-serif}
+    .arc-step21 p{margin:0 0 8px;color:#b9a8d6;font-size:11.5px}
+    .arc-field21{display:block;width:100%;height:38px;margin-top:8px;padding:0 12px;border:1px solid rgba(255,255,255,.18);border-radius:8px;background:rgba(255,255,255,.05);color:#fff;font-size:12.5px;outline:none}
+    .arc-field21:focus{border-color:#ff5f9e}
+    .arc-otp21{display:flex;gap:9px;margin-top:6px}
+    .arc-otp21 input{width:44px;height:48px;text-align:center;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:#fff;font:800 17px "Manrope",sans-serif;outline:none;transition:border-color .25s}
+    .arc-otp21 input:focus{border-color:#ff5f9e;animation:otp-bounce21 .45s cubic-bezier(.3,1.6,.5,1)}
+    @keyframes otp-bounce21{0%{transform:scale(.88)}55%{transform:scale(1.1)}100%{transform:scale(1)}}
+    .arc-nav21{display:flex;justify-content:space-between;gap:10px;margin-top:12px}
+    .arc-btn21{padding:9px 18px;border-radius:8px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#efe6ff;font:800 12px "Manrope",sans-serif;cursor:pointer}
+    .arc-btn21.next{background:#ff5f9e;border-color:#ff5f9e;color:#fff}
+    .arc-btn21:disabled{opacity:.35;cursor:default}
+    .arc-done21{display:grid;justify-items:center;padding-top:2px}
+    .arc-check21{position:relative;width:62px;height:62px}
+    .arc-check21::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(255,95,158,.55);animation:arc-pulse21 1.6s ease-out infinite}
+    @keyframes arc-pulse21{from{transform:scale(.72);opacity:1}to{transform:scale(1.45);opacity:0}}
+    .arc-check21 svg{width:62px;height:62px}
+    .arc-check21 circle{fill:none;stroke:#ff5f9e;stroke-width:3;stroke-dasharray:166;stroke-dashoffset:166}
+    .arc-check21 path{fill:none;stroke:#ff8fbe;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:48;stroke-dashoffset:48}
+    .arc-step21.active .arc-check21 circle{animation:draw21 .7s ease forwards}
+    .arc-step21.active .arc-check21 path{animation:draw21 .5s ease .55s forwards}
+    @keyframes draw21{to{stroke-dashoffset:0}}
+    .arc-done21 b{margin-top:8px;font:800 14px "Manrope",sans-serif}
+    .arc-done21 span{color:#b9a8d6;font-size:11px}
+
+    .flipcov-stage21{background:linear-gradient(150deg,#150a20,#0a0612);display:grid;place-items:center;padding:24px}
+    .flipcov-wrap21{display:flex;flex-direction:column;gap:16px;align-items:center}
+    .flipcov-cap21{color:#a98fc4;font-size:11px;letter-spacing:.22em;font-weight:800}
+    .flipcov21{perspective:700px;border:0;background:none;cursor:pointer;padding:0;font:inherit;transition:transform .16s ease}
+    .flipcov21:active{transform:scale(.95)}
+    .flipcov-inner21{position:relative;display:block;width:218px;height:48px;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.3,1.4,.4,1)}
+    .flipcov21:hover .flipcov-inner21,.flipcov21:focus-visible .flipcov-inner21{transform:rotateX(180deg)}
+    .flipcov-face21{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:11px;backface-visibility:hidden;-webkit-backface-visibility:hidden;font:800 13.5px "Manrope",sans-serif;overflow:hidden}
+    .flipcov-face21.front{background:linear-gradient(120deg,#ff5f9e,#e0447c);color:#fff;box-shadow:0 12px 26px rgba(255,95,158,.32)}
+    .flipcov-face21.back{background:#1d1030;color:#ffd3e8;border:1px solid rgba(255,95,158,.5);transform:rotateX(180deg)}
+    .flipcov21.alt .flipcov-face21.front{background:linear-gradient(120deg,#8a7cff,#6a4df0);box-shadow:0 12px 26px rgba(138,124,255,.3)}
+    .flipcov21.alt .flipcov-face21.back{border-color:rgba(138,124,255,.55);color:#ddd6ff}
+    .flipcov-face21.front::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.45) 50%,transparent 65%);transform:translateX(-130%)}
+    .flipcov21:hover .flipcov-face21.front::after{animation:flip-shine21 .8s ease}
+    @keyframes flip-shine21{to{transform:translateX(130%)}}
+
+    .gearshift21{background:linear-gradient(160deg,#171019,#0b0710);color:#fdf4ff;display:grid;place-items:center;padding:24px}
+    .gshift-list21{display:grid;gap:20px;width:min(300px,92%)}
+    .gshift-row21{display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .gshift-copy21 b{display:block;font:800 14px "Manrope",sans-serif}
+    .gshift-state21{position:relative;display:block;height:15px;margin-top:2px;font:800 10.5px "Manrope",sans-serif;letter-spacing:.12em}
+    .gshift-state21 em{position:absolute;left:0;top:0;font-style:normal;transition:opacity .3s,transform .3s}
+    .gshift-state21 .on-t{color:#ff8fbe;opacity:0;transform:translateY(5px)}
+    .gshift-state21 .off-t{color:#8d7ba6}
+    .gshift-row21.on .gshift-state21 .on-t{opacity:1;transform:none}
+    .gshift-row21.on .gshift-state21 .off-t{opacity:0;transform:translateY(-5px)}
+    .gshift21{position:relative;flex:none;width:76px;height:42px;border-radius:99px;border:1px solid rgba(255,255,255,.16);background:#241631;cursor:pointer;transition:background .35s,border-color .35s;padding:0}
+    .gshift-row21.on .gshift21{background:linear-gradient(120deg,#57124a,#8a2468);border-color:rgba(255,95,158,.6)}
+    .gshift-knob21{position:absolute;top:3px;left:3px;width:34px;height:34px;border-radius:50%;background:linear-gradient(145deg,#3a2352,#241637);display:grid;place-items:center;box-shadow:0 4px 10px rgba(0,0,0,.45);transition:left .38s cubic-bezier(.34,1.65,.5,1)}
+    .gshift-row21.on .gshift-knob21{left:37px}
+    .gshift-knob21 svg{width:26px;height:26px;transition:transform .38s cubic-bezier(.34,1.65,.5,1)}
+    .gshift-knob21 path{fill:#c9a8e8}
+    .gshift-row21.on .gshift-knob21 svg{transform:rotate(160deg)}
+    .gshift-row21.on .gshift-knob21 path{fill:#ffb9d9}
+
+    .cube-stage21{background:radial-gradient(100% 120% at 50% 20%,#1d0f31,#0a0614);display:grid;place-items:center;color:#f3eaff}
+    .cube-wrap21{display:grid;justify-items:center;gap:22px}
+    .cube-scene21{width:86px;height:86px;perspective:520px}
+    .cube21{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:cube-flip21 4.2s cubic-bezier(.5,.05,.3,1) infinite}
+    @keyframes cube-flip21{0%{transform:rotateX(-24deg) rotateY(0deg)}20%{transform:rotateX(-24deg) rotateY(90deg)}45%{transform:rotateX(-114deg) rotateY(90deg)}68%{transform:rotateX(-114deg) rotateY(180deg)}82%{transform:rotateX(-204deg) rotateY(180deg) scale(1.12)}90%{transform:rotateX(-204deg) rotateY(180deg) scale(.95)}100%{transform:rotateX(-384deg) rotateY(360deg) scale(1)}}
+    .cube-face21{position:absolute;inset:0;border-radius:9px;border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;font:800 15px "Manrope",sans-serif;color:rgba(255,255,255,.92);animation:cube-hue21 8.4s linear infinite;animation-delay:var(--dl,0s)}
+    @keyframes cube-hue21{to{filter:hue-rotate(360deg)}}
+    .cube-face21.f1{transform:rotateY(0deg) translateZ(43px);background:linear-gradient(140deg,#ff5f9e,#d63d7d)}
+    .cube-face21.f2{transform:rotateY(90deg) translateZ(43px);background:linear-gradient(140deg,#8a7cff,#6a4df0)}
+    .cube-face21.f3{transform:rotateY(180deg) translateZ(43px);background:linear-gradient(140deg,#57e6ff,#2a9fd8)}
+    .cube-face21.f4{transform:rotateY(270deg) translateZ(43px);background:linear-gradient(140deg,#ffb02e,#ff7847)}
+    .cube-face21.f5{transform:rotateX(90deg) translateZ(43px);background:linear-gradient(140deg,#63e6a4,#2fbf8f)}
+    .cube-face21.f6{transform:rotateX(-90deg) translateZ(43px);background:linear-gradient(140deg,#f471d8,#b04fe0)}
+    .cube-cap21{font:800 11px "Manrope",sans-serif;letter-spacing:.34em;color:#bda9dd;animation:cube-cap21 1.8s ease-in-out infinite}
+    @keyframes cube-cap21{0%,100%{opacity:.45}50%{opacity:1}}
+
+    .pulse-stage21{background:linear-gradient(150deg,#140b22,#0a0613);display:grid;place-items:center;padding:24px;color:#f6efff}
+    .pulse-panel21{width:min(300px,92%);display:grid;gap:18px}
+    .pulse-field21{position:relative}
+    .pulse-field21 input{width:100%;height:42px;padding:14px 2px 4px;border:0;border-bottom:2px solid rgba(255,255,255,.16);background:transparent;color:#fff;font-size:14px;outline:none}
+    .pulse-field21 label{position:absolute;left:2px;top:13px;font-size:13px;color:#a68fc9;pointer-events:none;transition:all .3s cubic-bezier(.2,.9,.3,1)}
+    .pulse-field21 input:focus~label,.pulse-field21 input:not(:placeholder-shown)~label{top:-7px;font-size:10.5px;color:#ff8fbe;letter-spacing:.06em}
+    .pulse-line21{position:absolute;left:0;bottom:0;height:2px;width:100%;background:linear-gradient(90deg,#ff5f9e,#8a7cff);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.9,.3,1)}
+    .pulse-field21:focus-within .pulse-line21{transform:scaleX(1)}
+    .pulse-field21::after{content:"";position:absolute;left:-3px;bottom:-4px;width:12px;height:12px;border-radius:50%;border:2px solid rgba(255,95,158,.75);opacity:0;pointer-events:none}
+    .pulse-field21:focus-within::after{animation:pulse-ring21 1.5s ease-out infinite}
+    @keyframes pulse-ring21{0%{transform:scale(.4);opacity:.9}100%{transform:scale(3.4);opacity:0}}
+    .pulse-note21{color:#8d7ba6;font-size:11px;margin:0;line-height:1.5}
+
+    .zoom21{background:linear-gradient(150deg,#150a21,#0a0613);display:grid;place-items:center;padding:22px;color:#f6efff}
+    .zoom-card21{width:min(250px,88%);padding:18px;border-radius:13px;background:#1d1030;border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+    .zoom-thumb21{height:74px;border-radius:9px;background:linear-gradient(130deg,#ff5f9e,#8a7cff 60%,#57e6ff);margin-bottom:12px}
+    .zoom-card21 b{display:block;font:800 14.5px "Manrope",sans-serif}
+    .zoom-card21>span{display:block;color:#b9a8d6;font-size:11.5px;margin:3px 0 12px}
+    .zoom-open21,.zoom-close21{padding:9px 16px;border:0;border-radius:8px;background:linear-gradient(120deg,#ff5f9e,#8a7cff);color:#fff;font:800 12px "Manrope",sans-serif;cursor:pointer;transition:transform .15s ease}
+    .zoom-open21:active,.zoom-close21:active{transform:scale(.95)}
+    .zoom-shade21{position:absolute;inset:0;background:rgba(5,2,10,.55);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:opacity .4s}
+    .zoom21.open .zoom-shade21{opacity:1;pointer-events:auto}
+    .zoom-modal21{position:absolute;left:50%;top:50%;width:min(300px,88%);padding:22px;border-radius:15px;background:#201334;border:1px solid rgba(255,95,158,.45);box-shadow:0 30px 70px rgba(0,0,0,.6);opacity:0;pointer-events:none;transform:translate(-50%,-50%) perspective(800px) rotateX(9deg) scale(.3);transform-origin:var(--ox,50%) var(--oy,50%);transition:transform .5s cubic-bezier(.2,1.1,.3,1),opacity .35s}
+    .zoom21.open .zoom-modal21{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) perspective(800px) rotateX(0deg) scale(1)}
+    .zoom-modal21 b{font:800 15.5px "Manrope",sans-serif;display:block}
+    .zoom-modal21 p{color:#c4b2e4;font-size:12px;line-height:1.55;margin:7px 0 11px}
+    .zoom-specs21{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+    .zoom-specs21 span{padding:4px 9px;border-radius:99px;background:rgba(255,95,158,.14);border:1px solid rgba(255,95,158,.35);font-size:10.5px;color:#ffd3e8}
+
+    .pill-stage21{background:linear-gradient(150deg,#140b21,#0a0613);color:#f6efff}
+    .pill-cap21{position:absolute;top:16px;left:0;right:0;text-align:center;color:#8d7ba6;font-size:11px;letter-spacing:.16em;font-weight:800}
+    .pill-stack21{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);width:min(320px,90%);display:grid;gap:9px;justify-items:center}
+    .pill-toast21{position:relative;display:flex;align-items:center;gap:9px;max-width:100%;padding:10px 16px 13px;border-radius:99px;background:rgba(32,19,52,.94);border:1px solid rgba(255,95,158,.4);box-shadow:0 14px 34px rgba(0,0,0,.45);font:700 12px "Manrope",sans-serif;cursor:pointer;overflow:hidden;animation:pill-in21 .5s cubic-bezier(.3,1.4,.4,1)}
+    @keyframes pill-in21{from{opacity:0;transform:translateY(22px) scale(.9)}to{opacity:1;transform:none}}
+    .pill-toast21.squeeze{animation:pill-squeeze21 .35s ease}
+    @keyframes pill-squeeze21{35%{transform:scale(.94)}}
+    .pill-toast21.leaving{transition:all .35s ease;opacity:0;transform:scale(.7) translateY(8px)}
+    .pill-dot21{width:8px;height:8px;border-radius:50%;background:#63e6a4;flex:none;box-shadow:0 0 8px #63e6a4}
+    .pill-bar21{position:absolute;left:16px;right:16px;bottom:5px;height:2.5px;border-radius:99px;background:linear-gradient(90deg,#ff5f9e,#8a7cff);transform-origin:left;animation:pill-count21 4.4s linear forwards}
+    @keyframes pill-count21{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+
+    .deck-stage21{background:linear-gradient(160deg,#160b24,#0a0613);display:grid;place-items:center;color:#fff}
+    .deck-col21{display:grid;justify-items:center}
+    .swipe-wrap21{position:relative;width:212px;height:236px}
+    .swipe-card21{position:absolute;inset:0;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;gap:3px;box-shadow:0 20px 44px rgba(0,0,0,.45);cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none;transition:transform .45s cubic-bezier(.25,1.3,.4,1),opacity .3s;will-change:transform}
+    .swipe-card21.dragging{transition:none;cursor:grabbing}
+    .swipe-card21[data-pos="1"]{transform:translateY(13px) scale(.94);opacity:.75}
+    .swipe-card21[data-pos="2"]{transform:translateY(26px) scale(.88);opacity:.5}
+    .swipe-card21.c1{background:linear-gradient(150deg,#ff5f9e,#8a7cff)}
+    .swipe-card21.c2{background:linear-gradient(150deg,#57e6ff,#3a7bd5)}
+    .swipe-card21.c3{background:linear-gradient(150deg,#ffb02e,#ff7847)}
+    .swipe-card21 b{font:800 16px "Manrope",sans-serif}
+    .swipe-card21>span{font-size:11.5px;color:rgba(255,255,255,.88)}
+    .swipe-tag21{position:absolute;top:14px;left:14px;padding:4px 9px;border-radius:99px;background:rgba(0,0,0,.32);font:800 9px "Manrope",sans-serif;letter-spacing:.14em}
+    .swipe-hint21{margin-top:18px;color:#a98fc4;font-size:11px;letter-spacing:.16em;font-weight:800}
+
+    .wave-stage21{background:linear-gradient(150deg,#130a20,#0a0613);display:grid;place-items:center;padding:24px;color:#fff}
+    .wave-box21{text-align:center}
+    .wave-kicker21{color:#ff8fbe;font:800 10.5px "Manrope",sans-serif;letter-spacing:.3em;margin-bottom:12px}
+    .wave-text21{font:800 clamp(24px,6vw,34px)/1.15 "Manrope",sans-serif;letter-spacing:.02em}
+    .wave-text21 .wl21{display:inline-block;background:linear-gradient(100deg,#ff5f9e,#8a7cff,#57e6ff,#ff5f9e);background-size:280% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:wave-bob21 2.2s ease-in-out infinite,wave-grad21 5s linear infinite;animation-delay:calc(var(--i)*.06s),calc(var(--i)*-.18s)}
+    @keyframes wave-bob21{0%,100%{transform:translateY(0)}25%{transform:translateY(-8px)}75%{transform:translateY(6px)}}
+    @keyframes wave-grad21{to{background-position:280% 0}}
+    .wave-sub21{margin:14px 0 0;color:#b9a8d6;font-size:12px}
+    .wave-eq21{display:flex;gap:4px;justify-content:center;margin-top:16px;height:22px;align-items:flex-end}
+    .wave-eq21 i{width:4px;border-radius:2px;background:linear-gradient(180deg,#57e6ff,#8a7cff);height:24%;animation:wave-eq21 1.1s ease-in-out infinite;animation-delay:calc(var(--i)*.09s)}
+    @keyframes wave-eq21{0%,100%{height:22%}50%{height:100%}}
+
+    .tab-stage21{background:radial-gradient(110% 130% at 50% 0%,#1c1032,#0a0614);display:grid;place-items:center;padding:24px;color:#fff}
+    .tab-phone21{width:min(320px,94%);padding:18px 16px 14px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09)}
+    .tab-screen21{height:104px;border-radius:11px;background:linear-gradient(140deg,rgba(255,95,158,.25),rgba(87,230,255,.16));display:grid;place-items:center;margin-bottom:14px}
+    .tab-screen21 b{font:800 14px "Manrope",sans-serif}
+    .tabbar21{position:relative;display:flex;padding:6px;border-radius:99px;background:rgba(20,12,34,.66);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px)}
+    .tab-ind21{position:absolute;top:6px;bottom:6px;left:6px;width:60px;border-radius:99px;background:linear-gradient(120deg,rgba(255,95,158,.85),rgba(138,124,255,.85));box-shadow:0 0 18px rgba(255,95,158,.55);transition:left .5s cubic-bezier(.34,1.45,.5,1),width .5s cubic-bezier(.34,1.45,.5,1)}
+    .tab-btn21{position:relative;z-index:1;flex:1;display:grid;justify-items:center;gap:2px;padding:7px 0 5px;border:0;background:none;color:#b9a8d6;cursor:pointer;font:700 10px "Manrope",sans-serif;transition:color .3s}
+    .tab-btn21 svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .tab-btn21.active{color:#fff}
+    .tab-btn21 .tab-ic21{display:block}
+    .tab-btn21.pop .tab-ic21{animation:tab-pop21 .5s cubic-bezier(.3,1.8,.5,1)}
+    @keyframes tab-pop21{0%{transform:scale(.6) translateY(3px)}60%{transform:scale(1.25) translateY(-2px)}100%{transform:scale(1)}}
+
+    .holo21{background:radial-gradient(120% 140% at 50% 108%,#12233d 0%,#070d1c 55%,#04060d 100%);color:#dff6ff;--px:0;--py:0}
+    .holo-beam21{position:absolute;left:50%;bottom:34px;width:340px;height:250px;transform:translateX(-50%);background:linear-gradient(0deg,rgba(87,230,255,.34),rgba(87,230,255,.05) 75%);clip-path:polygon(46% 100%,54% 100%,88% 0,12% 0);opacity:.8;animation:holo-flick21 3.4s steps(60) infinite;filter:blur(1px) hue-rotate(calc(var(--px)*24deg))}
+    @keyframes holo-flick21{0%,100%{opacity:.8}8%{opacity:.55}10%{opacity:.85}46%{opacity:.7}48%{opacity:.9}72%{opacity:.6}74%{opacity:.85}}
+    .holo-copy21{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;text-align:center;padding:20px;transform:translate(calc(var(--px)*9px),calc(var(--py)*6px));transition:transform .3s ease-out}
+    .holo-kicker21{font:800 10.5px "Manrope",sans-serif;letter-spacing:.4em;color:#7ce7f4;margin-bottom:10px}
+    .holo-copy21 h4{margin:0;font:800 clamp(30px,5.4vw,44px)/1.05 "Manrope",sans-serif;text-shadow:0 0 22px rgba(87,230,255,.65),0 0 3px rgba(124,231,244,.9)}
+    .holo-copy21 h4 .hl21{display:inline-block;opacity:0;animation:holo-in21 .8s cubic-bezier(.2,.9,.3,1) forwards;animation-delay:calc(var(--i)*.07s + .15s)}
+    @keyframes holo-in21{0%{opacity:0;transform:translateY(30px) skewX(-8deg);filter:blur(7px)}55%{opacity:1;transform:translateY(-3px) skewX(3deg);filter:blur(0)}70%{transform:translateY(1px) skewX(-2deg)}100%{opacity:1;transform:none;filter:blur(0)}}
+    .holo-sub21{margin:12px 0 0;color:#a8cfe0;font-size:12.5px;max-width:340px;opacity:0;animation:holo-in21 .8s ease 1s forwards}
+    .holo-cta21{margin-top:16px;padding:10px 20px;border-radius:99px;border:1px solid rgba(124,231,244,.6);background:rgba(87,230,255,.1);color:#aeeefb;font:800 12px "Manrope",sans-serif;cursor:pointer;opacity:0;animation:holo-in21 .8s ease 1.25s forwards;transition:background .3s,box-shadow .3s}
+    .holo-cta21:hover{background:rgba(87,230,255,.22);box-shadow:0 0 20px rgba(87,230,255,.4)}
+    .holo-scan21{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(124,231,244,.05) 0 1px,transparent 1px 4px);pointer-events:none}
+    .holo-scanbar21{position:absolute;left:0;right:0;height:44px;top:-50px;background:linear-gradient(180deg,transparent,rgba(124,231,244,.14),transparent);animation:holo-scanmove21 3.8s linear infinite;pointer-events:none}
+    @keyframes holo-scanmove21{to{transform:translateY(430px)}}
+    .holo-p21{position:absolute;bottom:40px;width:4px;height:4px;border-radius:50%;background:#7ce7f4;box-shadow:0 0 8px #57e6ff;opacity:0;animation:holo-rise21 var(--t,5s) linear infinite;animation-delay:var(--dl,0s)}
+    @keyframes holo-rise21{0%{transform:translate(0,0);opacity:0}12%{opacity:.95}100%{transform:translate(var(--sw,10px),-190px);opacity:0}}
+    .holo-base21{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:120px;height:16px;border-radius:50%;background:radial-gradient(50% 50% at 50% 50%,rgba(124,231,244,.85),rgba(87,230,255,.15) 70%,transparent);animation:holo-base21 2.6s ease-in-out infinite}
+    @keyframes holo-base21{0%,100%{transform:translateX(-50%) scaleX(1)}50%{transform:translateX(-50%) scaleX(1.15)}}
+
+    .aurora21{background:linear-gradient(170deg,#150c24,#0a0613);color:#e9e2f7;display:flex;flex-direction:column;padding:0 22px 18px}
+    .aurora-line21{flex:none;height:3px;margin:0 -22px;border-radius:99px;background:linear-gradient(90deg,#57e6ff,#8a7cff,#ff5f9e,#ffb02e,#57e6ff);background-size:220% 100%;animation:aurora-flow21 6s linear infinite;box-shadow:0 0 16px rgba(138,124,255,.55)}
+    @keyframes aurora-flow21{to{background-position:220% 0}}
+    .aurora-cols21{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;padding:20px 0 14px}
+    .aurora-col21 b{display:block;font:800 12.5px "Manrope",sans-serif;margin-bottom:9px;color:#fff}
+    .aurora-text21{display:block;margin:5px 0;color:#b3a4d4;font-size:11.5px}
+    .aurora-link21{display:block;width:max-content;max-width:100%;margin:5px 0;color:#b3a4d4;font-size:11.5px;cursor:pointer;position:relative;transition:transform .3s,color .3s}
+    .aurora-link21::after{content:"";position:absolute;left:0;bottom:-2px;height:1.5px;width:100%;background:#ff5f9e;transform:scaleX(0);transform-origin:left;transition:transform .35s}
+    .aurora-link21:hover{transform:translateY(-2px);color:#fff}
+    .aurora-link21:hover::after{transform:scaleX(1)}
+    .aurora-base21{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.09);padding-top:13px}
+    .aurora-base21 small{color:#8d7ba6;font-size:10.5px}
+    .aurora-top21{position:relative;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,95,158,.55);background:rgba(255,95,158,.12);color:#ffb9d9;cursor:pointer;display:grid;place-items:center;transition:transform .3s,box-shadow .3s}
+    .aurora-top21 svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+    .aurora-top21:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(255,95,158,.45)}
+    .aurora-top21::after{content:"";position:absolute;inset:-1px;border-radius:50%;border:1px solid rgba(255,95,158,.5);animation:aurora-ring21 2s ease-out infinite}
+    @keyframes aurora-ring21{from{transform:scale(1);opacity:.8}to{transform:scale(1.55);opacity:0}}
+
+    .trail-stage21{background:linear-gradient(150deg,#130a20,#0a0613);display:grid;place-items:center;padding:22px;color:#fff}
+    .trail-list21{display:grid;gap:11px;width:min(330px,94%)}
+    .trail-item21{position:relative;height:40px}
+    .trail-ghost21{position:absolute;inset:0;border-radius:10px;background:linear-gradient(90deg,var(--c,#ff5f9e),transparent 75%);opacity:0;animation:trail-ghost21 6s ease-out infinite;animation-delay:calc(var(--i)*.32s)}
+    .trail-ghost21.g2{animation-delay:calc(var(--i)*.32s + .13s)}
+    @keyframes trail-ghost21{0%{opacity:.45;transform:translateX(-64px) scaleX(.92)}16%{opacity:0;transform:translateX(-6px)}100%{opacity:0;transform:translateX(-6px)}}
+    .trail-bar21{position:absolute;inset:0;border-radius:10px;display:flex;align-items:center;gap:9px;padding:0 13px;font:700 12px "Manrope",sans-serif;background:#201334;border:1px solid rgba(255,255,255,.11);opacity:0;animation:trail-in21 6s cubic-bezier(.2,.9,.3,1) infinite;animation-delay:calc(var(--i)*.32s)}
+    @keyframes trail-in21{0%{opacity:0;transform:translateX(-46px);filter:blur(7px)}14%,82%{opacity:1;transform:translateX(0);filter:blur(0)}96%,100%{opacity:0;transform:translateX(14px);filter:blur(3px)}}
+    .trail-dot21{width:8px;height:8px;border-radius:50%;background:var(--c,#ff5f9e);box-shadow:0 0 9px var(--c,#ff5f9e);flex:none}
+    .trail-cap21{text-align:center;color:#8d7ba6;font-size:10.5px;letter-spacing:.18em;font-weight:800;margin-top:2px}
+
+    .circuit21{background:#080b16}
+    .circuit-grid21{position:absolute;inset:0;background-image:linear-gradient(rgba(87,230,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(87,230,255,.05) 1px,transparent 1px);background-size:26px 26px;animation:circuit-drift21 9s linear infinite}
+    @keyframes circuit-drift21{to{background-position:26px 26px}}
+    .circuit-svg21{position:absolute;inset:0;width:100%;height:100%}
+    .circuit-trace21{fill:none;stroke:rgba(96,180,220,.4);stroke-width:1.6}
+    .circuit-node21{fill:#0b1220;stroke:#57e6ff;stroke-width:1.6;animation:circuit-blink21 2.8s ease-in-out infinite;animation-delay:calc(var(--i)*.35s)}
+    @keyframes circuit-blink21{0%,100%{fill:#0b1220}50%{fill:#57e6ff}}
+    .circuit-pulse21{fill:#aeeefb;filter:drop-shadow(0 0 6px #57e6ff)}
+    .circuit-vig21{position:absolute;inset:0;background:radial-gradient(90% 90% at 50% 45%,transparent 55%,rgba(2,4,10,.75));pointer-events:none}
+    .circuit-chip21{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);padding:6px 13px;border-radius:99px;background:rgba(8,14,26,.8);border:1px solid rgba(87,230,255,.4);color:#aeeefb;font:800 10px "Manrope",sans-serif;letter-spacing:.22em}
+
+    .stepc-stage21{background:linear-gradient(150deg,#120a20,#0a0613);display:grid;place-items:center;padding:22px;color:#fff}
+    .stepc-grid21{display:grid;gap:11px;width:min(330px,94%)}
+    .stepc-card21{display:flex;align-items:center;gap:14px;padding:13px 15px;border-radius:13px;background:#1c1130;border:1px solid rgba(255,255,255,.1)}
+    .stepc-main21{flex:1;min-width:0}
+    .stepc-main21 small{display:block;color:#a98fc4;font-size:10.5px;letter-spacing:.08em;font-weight:800}
+    .stepc-num21{font:800 22px "Manrope",sans-serif}
+    .stepc-bars21{display:flex;align-items:flex-end;gap:3px;height:30px}
+    .stepc-bars21 i{width:5px;border-radius:2px;background:linear-gradient(180deg,#ff5f9e,#8a7cff);height:14%;transition:height .7s cubic-bezier(.2,.9,.3,1);transition-delay:calc(var(--i)*.06s)}
+    .stepc-card21.counted .stepc-bars21 i{height:var(--h)}
+    .stepc-trend21{flex:none;display:flex;align-items:center;gap:4px;padding:4px 8px;border-radius:99px;background:rgba(99,230,164,.14);color:#63e6a4;font:800 10.5px "Manrope",sans-serif;opacity:0;transform:scale(.5)}
+    .stepc-card21.counted .stepc-trend21{animation:trend-pop21 .5s cubic-bezier(.3,1.7,.5,1) .35s forwards}
+    @keyframes trend-pop21{to{opacity:1;transform:scale(1)}}
+
+    .promo-stage21{background:linear-gradient(150deg,#140b22,#0a0613);display:grid;place-items:end center;padding:22px;color:#fff}
+    .promo-wrap21{width:min(350px,96%)}
+    .promo-cart21{display:flex;justify-content:flex-end;margin-bottom:70px}
+    .promo-cartchip21{padding:5px 12px;border-radius:99px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);font-size:11px;color:#d9ccf2}
+    .promo-cartchip21 b{color:#ff8fbe}
+    .promo-grid21{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .promo-item21{position:relative;border-radius:13px;background:#1d1130;border:1px solid rgba(255,255,255,.1);padding:12px;cursor:pointer;text-align:left}
+    .promo-media21{height:64px;border-radius:9px;margin-bottom:9px}
+    .promo-media21.m1{background:linear-gradient(130deg,#ff5f9e,#ffb02e)}
+    .promo-media21.m2{background:linear-gradient(130deg,#57e6ff,#8a7cff)}
+    .promo-item21 b{display:block;font:800 12.5px "Manrope",sans-serif}
+    .promo-price21{color:#b9a8d6;font-size:11.5px}
+    .promo-pop21{position:absolute;left:50%;bottom:calc(100% + 10px);transform:translate(-50%,8px) scale(.85);width:172px;padding:12px;border-radius:12px;background:#26153f;border:1px solid rgba(255,95,158,.5);box-shadow:0 20px 44px rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:all .38s cubic-bezier(.34,1.56,.64,1);z-index:3}
+    .promo-item21:hover .promo-pop21,.promo-item21:focus-within .promo-pop21{opacity:1;pointer-events:auto;transform:translate(-50%,0) scale(1)}
+    .promo-badge21{display:inline-block;padding:3px 8px;border-radius:99px;background:#ff5f9e;color:#fff;font:800 10px "Manrope",sans-serif;animation:promo-bounce21 1.6s ease-in-out infinite}
+    @keyframes promo-bounce21{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    .promo-pop21 p{display:flex;gap:8px;align-items:baseline;margin:8px 0 0}
+    .promo-old21{position:relative;color:#a98fc4;font-size:12px}
+    .promo-old21::after{content:"";position:absolute;left:-2px;right:-2px;top:50%;height:2px;background:#ff5f9e;transform:scaleX(0);transform-origin:left;transition:transform .5s ease .1s}
+    .promo-item21:hover .promo-old21::after,.promo-item21:focus-within .promo-old21::after{transform:scaleX(1)}
+    .promo-new21{font:800 16px "Manrope",sans-serif;color:#fff}
+    .promo-add21{margin-top:9px;width:100%;padding:8px;border:0;border-radius:8px;background:linear-gradient(120deg,#ff5f9e,#8a7cff);color:#fff;font:800 11.5px "Manrope",sans-serif;cursor:pointer}
+    .promo-add21.micro{animation:promo-micro21 .35s ease}
+    @keyframes promo-micro21{30%{transform:scale(.9)}60%{transform:scale(1.06)}}
+
+    .mile-stage21{background:linear-gradient(150deg,#130a21,#0a0613);display:grid;place-items:center;padding:22px;color:#fff}
+    .mile-grid21{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(360px,96%)}
+    .mile-card21{position:relative;padding:16px 8px 13px;border-radius:13px;background:#1d1130;border:1px solid rgba(255,255,255,.1);text-align:center;opacity:0;transform:translateY(16px);transition:all .55s cubic-bezier(.2,.9,.3,1);transition-delay:calc(var(--i)*.13s)}
+    .mile-stage21.in .mile-card21{opacity:1;transform:none}
+    .mile-num21{font:800 21px "Manrope",sans-serif;background:linear-gradient(90deg,#ff8fbe,#c9b8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .mile-card21 small{display:block;margin-top:3px;color:#a98fc4;font-size:10px;letter-spacing:.05em;font-weight:800}
+    .mile-spark21{position:absolute;left:50%;top:38%;width:5px;height:5px;border-radius:50%;background:var(--c,#ffd166);pointer-events:none;opacity:0}
+    .mile-card21.burst .mile-spark21{animation:mile-spark21 .7s ease-out forwards}
+    @keyframes mile-spark21{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.4)}}
+
+    .tier-stage21{background:linear-gradient(150deg,#140b22,#0a0613);display:grid;place-items:center;padding:22px;color:#fff}
+    .tier-grid21{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;width:min(470px,96%);align-items:start}
+    .tier-card21{border-radius:14px;background:#1c1130;border:1px solid rgba(255,255,255,.11);padding:15px 14px;cursor:pointer;transition:border-color .3s}
+    .tier-card21.pop{border-color:rgba(255,95,158,.65);animation:tier-glow21 2.4s ease-in-out infinite}
+    @keyframes tier-glow21{0%,100%{box-shadow:0 0 0 rgba(255,95,158,0)}50%{box-shadow:0 0 26px rgba(255,95,158,.4)}}
+    .tier-tag21{display:inline-block;padding:2.5px 8px;border-radius:99px;background:#ff5f9e;color:#fff;font:800 8.5px "Manrope",sans-serif;letter-spacing:.08em;margin-bottom:7px}
+    .tier-card21 b{display:block;font:800 13.5px "Manrope",sans-serif}
+    .tier-price21{font:800 20px "Manrope",sans-serif;margin:5px 0 2px}
+    .tier-price21 small{font-size:10.5px;color:#a98fc4}
+    .tier-sub21{color:#a98fc4;font-size:10.5px;display:block}
+    .tier-feats21{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.2,.9,.3,1)}
+    .tier-card21.expanded .tier-feats21{max-height:180px}
+    .tier-feats21 span{display:block;margin-top:8px;color:#d9ccf2;font-size:11px;opacity:0;transform:translateX(-8px);transition:all .4s}
+    .tier-card21.expanded .tier-feats21 span{opacity:1;transform:none;transition-delay:calc(var(--i)*.07s + .1s)}
+    .tier-cta21{margin-top:11px;font:800 10.5px "Manrope",sans-serif;color:#ff8fbe;letter-spacing:.06em}
+    .tier-cta21 .less{display:none}
+    .tier-card21.expanded .tier-cta21 .less{display:inline}
+    .tier-card21.expanded .tier-cta21 .more{display:none}
+
+    .volt21{background:#0a0614;color:#eef1ff}
+    .volt-frame21{min-height:290px;display:flex;flex-direction:column;background:linear-gradient(160deg,#0d0a1c,#07040f)}
+    .volt-bar21{display:flex;align-items:center;gap:6px;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .volt-bar21 i{width:9px;height:9px;border-radius:50%;background:#3a2c5c}
+    .volt-bar21 i:nth-child(1){background:#ff5f9e}
+    .volt-bar21 i:nth-child(2){background:#ffb02e}
+    .volt-bar21 i:nth-child(3){background:#63e6a4}
+    .volt-url21{margin-left:8px;flex:1;max-width:210px;padding:4px 11px;border-radius:99px;background:rgba(255,255,255,.06);color:#9d8fc7;font-size:10px}
+    .volt-nav21{display:flex;align-items:center;gap:14px;padding:11px 16px 4px}
+    .volt-logo21{font:800 14px "Manrope",sans-serif;letter-spacing:.14em}
+    .volt-logo21 em{font-style:normal;color:#ffb02e}
+    .volt-links21{margin-left:auto;display:flex;gap:12px;color:#b3a8d9;font-size:10.5px}
+    .volt-navcta21{padding:6px 12px;border-radius:99px;background:#ffb02e;color:#231303;font:800 10.5px "Manrope",sans-serif}
+    .volt-hero21{padding:6px 16px 0}
+    .volt-hero21 h5{margin:0;font:800 20px/1.15 "Manrope",sans-serif;max-width:320px}
+    .volt-grad21{background:linear-gradient(90deg,#ffb02e,#ff5f9e,#8a7cff,#ffb02e);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:volt-grad21 5s linear infinite}
+    @keyframes volt-grad21{to{background-position:250% 0}}
+    .volt-hero21 p{margin:6px 0 0;color:#a99bd2;font-size:11px;max-width:340px}
+    .volt-svc21{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;padding:12px 16px 0}
+    .volt-card21{padding:10px;border-radius:10px;background:#171029;border:1px solid rgba(255,255,255,.09);transition:transform .35s cubic-bezier(.2,.9,.3,1),border-color .3s}
+    .volt-card21:hover{transform:perspective(500px) rotateX(-6deg) rotateY(7deg) translateY(-3px);border-color:rgba(255,176,46,.55)}
+    .volt-ic21{display:block;width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,var(--c1),var(--c2))}
+    .volt-card21 b{display:block;font:800 11px "Manrope",sans-serif;margin-top:6px}
+    .volt-card21 span{color:#9d8fc7;font-size:9.5px}
+    .volt-work21{display:flex;gap:9px;padding:11px 16px 0}
+    .volt-work21 i{flex:1;height:30px;border-radius:8px;background:linear-gradient(120deg,var(--c1),var(--c2));opacity:.85}
+    .volt-quote21{position:relative;margin:12px 16px 14px;padding:11px 13px;border-radius:10px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);min-height:56px}
+    .volt-q21{position:absolute;inset:11px 13px;margin:0;opacity:0;transform:translateX(16px);transition:all .55s ease;font-size:11px;color:#ddd4f5;line-height:1.5}
+    .volt-q21.active{opacity:1;transform:none}
+    .volt-q21 span{display:block;margin-top:3px;color:#9d8fc7;font-size:10px}
+    .volt-dots21{position:absolute;right:12px;bottom:9px;display:flex;gap:5px}
+    .volt-dots21 i{width:6px;height:6px;border-radius:50%;background:#3a2c5c;transition:background .3s}
+    .volt-dots21 i.on{background:#ffb02e}
+
+    @media(max-width:600px){.drop21 .preview{min-height:310px}.tier-grid21{grid-template-columns:1fr}.mile-grid21{gap:7px}.volt-links21{display:none}.aurora-cols21{grid-template-columns:1fr 1fr}.promo-cart21{margin-bottom:56px}}
+
 
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; gap: 44px; padding: 58px 0 72px; }
@@ -2350,7 +2708,7 @@
 </head>
 <body>
   <header class="shell utility">
-    <div class="drop-label">Daily drop · 262 products · 20 Oct 2026</div>
+    <div class="drop-label">Daily drop · 282 products · 21 Oct 2026</div>
     <div class="utility-right">
       <nav aria-label="Page navigation">
         <a href="#components">Catalog</a>
@@ -2562,7 +2920,7 @@
 
         <article class="product wide" data-category="bundles">
           <div class="preview">
-            <div class="bundle-preview" aria-label="Sixteen animated login screen styles">
+            <div class="bundle-preview" aria-label="Seventeen animated login screen styles">
               <div class="mini-login"><b>Orbit</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login"><b>Minimal</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login"><b>Midnight</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
@@ -2579,13 +2937,14 @@
               <div class="mini-login bloom-mini"><b>Aurora Bloom</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login twilight-mini"><b>Twilight Ember</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login crystal-mini"><b>Crystal Shard</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
+              <div class="mini-login neonveil-mini"><b>Neon Veil</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
             </div>
           </div>
           <div class="product-info">
             <div class="meta"><span class="tag new">Login bundle</span><span class="tag">Authentication</span><span class="tag motion-level">Motion Lv 2</span></div>
             <h3>Auth Motion Bundle</h3>
-            <p>A sixteen-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember and Crystal Shard.</p>
-            <div class="details"><span>16 screen concepts</span><span>Now includes Crystal Shard Login</span><span>Animated preview</span></div>
+            <p>A seventeen-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard and Neon Veil.</p>
+            <div class="details"><span>17 screen concepts</span><span>Now includes Neon Veil Login</span><span>Animated preview</span></div>
             <div class="price-row"><span class="price">₹449</span><span class="price-note">Level 2 bundle</span></div>
             <div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy bundle · link pending</button></div>
           </div>
@@ -3486,6 +3845,46 @@
         <article class="product drop20" data-category="social"><div class="preview"><div class="drop20-stage stars-stage20" aria-label="Star Burst ratings animated preview"><div class="stars-panel20"><div class="stars-row20"><span class="star20" style="--i:0">★</span><span class="star20" style="--i:1">★</span><span class="star20" style="--i:2">★</span><span class="star20" style="--i:3">★</span><span class="star20" style="--i:4">★</span></div><div class="stars-score20"><span class="stars-num20" data-count="4.8">0.0</span> <small>/ 5 · 2,314 reviews</small></div><div class="stars-bars20"><div class="stars-bar20"><span>5★</span><span class="stars-track20"><span class="stars-fill20" style="--i:0;--w:78%"></span></span><span>78%</span></div><div class="stars-bar20"><span>4★</span><span class="stars-track20"><span class="stars-fill20" style="--i:1;--w:15%"></span></span><span>15%</span></div><div class="stars-bar20"><span>3★</span><span class="stars-track20"><span class="stars-fill20" style="--i:2;--w:4%"></span></span><span>4%</span></div><div class="stars-bar20"><span>2★</span><span class="stars-track20"><span class="stars-fill20" style="--i:3;--w:2%"></span></span><span>2%</span></div><div class="stars-bar20"><span>1★</span><span class="stars-track20"><span class="stars-fill20" style="--i:4;--w:1%"></span></span><span>1%</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">20 Oct drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Star Burst Ratings</h3><p>An animated star-rating kit: stars burst and pop in sequence on reveal, the rating value counts up, and distribution bars grow with stagger.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <article class="product wide drop20" data-category="pricing"><div class="preview"><div class="drop20-stage curr20" aria-label="Currency Flip pricing preview"><div class="curr-panel20"><div class="curr-toggle20"><span>Monthly</span><button class="curr-switch20" type="button" role="switch" aria-checked="false" aria-label="Toggle annual billing"></button><span>Annual</span><span class="curr-save20">SAVE 20%</span></div><div class="curr-cards20"><div class="curr-card20"><b>Starter</b><span class="curr-price20" data-month="₹499" data-year="₹399">₹499</span><small>per month</small></div><div class="curr-card20 hot"><span class="curr-tag20">POPULAR</span><b>Pro</b><span class="curr-price20" data-month="₹999" data-year="₹799">₹999</span><small>per month</small></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">20 Oct drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Currency Flip Pricing</h3><p>Pricing cards with a 3D flip toggle between monthly and annual: the cards rotate on the Y axis, prices crossfade with a shimmer, and the save badge pops in.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop21" data-category="login-screens"><div class="preview"><div class="drop21-stage veil21" aria-label="Neon Veil login animated preview"><span class="veil-layer21 a"></span><span class="veil-layer21 b"></span><span class="veil-layer21 c"></span><div class="veil-card21"><b>Welcome to the veil</b><small>Sign in — the light show is free</small><div class="veil-field21" style="--i:0"><input type="email" placeholder="Email address" aria-label="Email address"></div><div class="veil-field21" style="--i:1"><input type="password" placeholder="Password" aria-label="Password"></div><button class="veil-go21" type="button">Sign in</button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Animated login screens</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Neon Veil Login</h3><p>A neon-noir login screen: a translucent glass form floats over drifting curtains of colored light, inputs light up with glowing focus rails, and the submit button pulls toward your cursor with a magnetic hover and ripple confirmation.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 3 login screen</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop21" data-category="auth"><div class="preview"><div class="drop21-stage arcflow21" aria-label="Reset Arc password flow animated preview"><div class="arc-panel21"><svg class="arc-svg21" viewBox="0 0 300 92" width="240" height="74" aria-hidden="true"><defs><linearGradient id="arcgrad21" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff5f9e"/><stop offset="1" stop-color="#8a7cff"/></linearGradient></defs><path class="arc-track21" d="M86 80 A64 64 0 0 1 214 80"/><path class="arc-prog21" d="M86 80 A64 64 0 0 1 214 80"/><circle class="arc-node21 on" cx="86" cy="80" r="7"/><circle class="arc-node21" cx="150" cy="16" r="7"/><circle class="arc-node21" cx="214" cy="80" r="7"/></svg><div class="arc-view21"><div class="arc-step21 active"><h5>Request a reset link</h5><p>We will email you a secure link.</p><input class="arc-field21" type="email" placeholder="Email address" aria-label="Email address"></div><div class="arc-step21"><h5>Verify the code</h5><p>Enter the 4-digit code we sent you.</p><div class="arc-otp21"><input maxlength="1" inputmode="numeric" aria-label="Code digit 1"><input maxlength="1" inputmode="numeric" aria-label="Code digit 2"><input maxlength="1" inputmode="numeric" aria-label="Code digit 3"><input maxlength="1" inputmode="numeric" aria-label="Code digit 4"></div></div><div class="arc-step21"><div class="arc-done21"><div class="arc-check21"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="26"/><path d="M17 29.5 24.5 37 39 21"/></svg></div><b>Password updated</b><span>Your account is secure again.</span></div></div></div><div class="arc-nav21"><button class="arc-btn21 back" type="button" disabled>Back</button><button class="arc-btn21 next" type="button">Send link</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Auth flows</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Reset Arc Flow</h3><p>A three-step password-reset flow — request a link, verify a code, set a new password — tracked by a curved progress arc that fills as you advance, with bouncing OTP boxes and a success pulse at the end.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹49</span><span class="price-note">Level 2 auth flow</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="buttons"><div class="preview"><div class="drop21-stage flipcov-stage21" aria-label="Flip Cover buttons preview — hover a button"><div class="flipcov-wrap21"><span class="flipcov-cap21">HOVER TO FLIP</span><button class="flipcov21" type="button" aria-label="Add to cart button, flips to show the price"><span class="flipcov-inner21"><span class="flipcov-face21 front">Add to cart</span><span class="flipcov-face21 back">₹1,299 · Buy now</span></span></button><button class="flipcov21 alt" type="button" aria-label="Subscribe button, flips to show member count"><span class="flipcov-inner21"><span class="flipcov-face21 front">Subscribe</span><span class="flipcov-face21 back">Join 12,400 members</span></span></button><button class="flipcov21" type="button" aria-label="Download button, flips to show version details"><span class="flipcov-inner21"><span class="flipcov-face21 front">Download</span><span class="flipcov-face21 back">v2.4 · 18 MB · Free</span></span></button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Buttons &amp; CTAs</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Flip Cover Buttons</h3><p>Buttons that flip like cards: hover turns the label over in 3D to reveal a second state, with a shine sweep across the face and a springy settle on click.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="toggles"><div class="preview"><div class="drop21-stage gearshift21" aria-label="Gear Shift toggles preview — click a toggle"><div class="gshift-list21"><div class="gshift-row21 on"><div class="gshift-copy21"><b>Turbo mode</b><span class="gshift-state21"><em class="off-t">OFF</em><em class="on-t">ON</em></span></div><button class="gshift21" type="button" role="switch" aria-checked="true" aria-label="Turbo mode toggle"><span class="gshift-knob21"><svg viewBox="0 0 40 40" aria-hidden="true"><path class="gear-path21"/></svg></span></button></div><div class="gshift-row21"><div class="gshift-copy21"><b>Eco drive</b><span class="gshift-state21"><em class="off-t">OFF</em><em class="on-t">ON</em></span></div><button class="gshift21" type="button" role="switch" aria-checked="false" aria-label="Eco drive toggle"><span class="gshift-knob21"><svg viewBox="0 0 40 40" aria-hidden="true"><path class="gear-path21"/></svg></span></button></div><div class="gshift-row21 on"><div class="gshift-copy21"><b>Night shift</b><span class="gshift-state21"><em class="off-t">OFF</em><em class="on-t">ON</em></span></div><button class="gshift21" type="button" role="switch" aria-checked="true" aria-label="Night shift toggle"><span class="gshift-knob21"><svg viewBox="0 0 40 40" aria-hidden="true"><path class="gear-path21"/></svg></span></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Toggles &amp; switches</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Gear Shift Toggles</h3><p>Toggle switches built like tiny gear selectors: the knob is a gear that rotates as it snaps between states, landing with a spring bounce while the on/off labels crossfade.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="loaders"><div class="preview"><div class="drop21-stage cube-stage21" aria-label="Cube Flip loader animated preview"><div class="cube-wrap21"><div class="cube-scene21"><div class="cube21"><div class="cube-face21 f1" style="--dl:0s">M</div><div class="cube-face21 f2" style="--dl:-1.4s">O</div><div class="cube-face21 f3" style="--dl:-2.8s">T</div><div class="cube-face21 f4" style="--dl:-4.2s">I</div><div class="cube-face21 f5" style="--dl:-5.6s">O</div><div class="cube-face21 f6" style="--dl:-7s">N</div></div></div><span class="cube-cap21">LOADING</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Loaders &amp; spinners</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Cube Flip Loader</h3><p>A 3D cube that flips endlessly through loading states, each face cycling its color as it turns, and landing with an elastic bounce when the load resolves.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="inputs"><div class="preview"><div class="drop21-stage pulse-stage21" aria-label="Focus Pulse inputs preview — click a field"><div class="pulse-panel21"><div class="pulse-field21"><input type="text" placeholder=" " aria-label="Display name"><label>Display name</label><span class="pulse-line21"></span></div><div class="pulse-field21"><input type="email" placeholder=" " aria-label="Email address"><label>Email address</label><span class="pulse-line21"></span></div><div class="pulse-field21"><input type="password" placeholder=" " aria-label="Password"><label>Password</label><span class="pulse-line21"></span></div><p class="pulse-note21">Focus a field — a pulse ring blooms from the caret while the underline fills.</p></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Form inputs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Focus Pulse Inputs</h3><p>Text inputs that breathe on focus: a soft pulse ring expands outward from the caret point, the underline fills with gradient, and the label floats up with a micro-motion.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="modals"><div class="preview"><div class="drop21-stage zoom21" aria-label="Zoom Card modal preview"><div class="zoom-card21"><div class="zoom-thumb21"></div><b>Neon Desk Setup</b><span>₹12,499 · Free shipping</span><button class="zoom-open21" type="button">View details</button></div><div class="zoom-shade21"></div><div class="zoom-modal21" role="dialog" aria-label="Neon Desk Setup details dialog"><b>Neon Desk Setup</b><p>This dialog zoomed straight out of the card that opened it — same spot, no jump cut. Closing sends it zooming back into place.</p><div class="zoom-specs21"><span>RGB backlight</span><span>Aluminium frame</span><span>2-year warranty</span></div><button class="zoom-close21" type="button">Close</button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Modals &amp; dialogs</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Zoom Card Modal</h3><p>A modal that zooms out of the exact card that triggered it — growing from the card's position into a full dialog with 3D perspective, then zooming back on close.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="feedback"><div class="preview"><div class="drop21-stage pill-stage21" aria-label="Pill Notify toasts animated preview"><span class="pill-cap21">LIVE TOASTS · CLICK TO DISMISS</span><div class="pill-stack21"><div class="pill-toast21" role="button" tabindex="0"><span class="pill-dot21"></span><span>Deploy finished — production is live</span><span class="pill-bar21"></span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Toasts &amp; notifications</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Pill Notify Toasts</h3><p>Pill-shaped toasts that slide up from the bottom, squeeze the stack as each new one lands, count down on a progress line, and shrink away when their time runs out.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="cards"><div class="preview"><div class="drop21-stage deck-stage21" aria-label="Swipe Deck cards preview — drag the top card"><div class="deck-col21"><div class="swipe-wrap21"><div class="swipe-card21 c1" data-pos="0"><span class="swipe-tag21">DRAG ME</span><b>Aurora Lamp</b><span>₹2,199 · Ambient glow series</span></div><div class="swipe-card21 c2" data-pos="1"><b>Orbit Chair</b><span>₹8,499 · Ergonomic shell</span></div><div class="swipe-card21 c3" data-pos="2"><b>Pulse Speaker</b><span>₹4,299 · 360° sound</span></div></div><span class="swipe-hint21">DRAG · RELEASE · REPEAT</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Cards</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Swipe Deck Cards</h3><p>A Tinder-style card deck with real drag physics: cards tilt and rotate as you pull them, snap back with spring, or fly off with momentum to reveal the next card beneath.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="titles"><div class="preview"><div class="drop21-stage wave-stage21" aria-label="Waveform Type headers animated preview"><div class="wave-box21"><div class="wave-kicker21">SECTION HEADERS</div><div class="wave-text21">FEEL THE WAVE</div><p class="wave-sub21">Every letter rides the sine — headers that hum.</p><div class="wave-eq21"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Title cards &amp; section headers</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Waveform Type Headers</h3><p>Section headers that ride a sine wave: every letter bobs like an audio waveform while a gradient sweeps across the glyphs, over a live equalizer strip.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="navbars"><div class="preview"><div class="drop21-stage tab-stage21" aria-label="Glass Tab Bar nav preview"><div class="tab-phone21"><div class="tab-screen21"><b class="tab-name21">Home</b></div><div class="tabbar21"><span class="tab-ind21"></span><button class="tab-btn21 active" type="button" data-name="Home"><span class="tab-ic21"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5"/><path d="M6.5 10v9h11v-9"/></svg></span>Home</button><button class="tab-btn21" type="button" data-name="Search"><span class="tab-ic21"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>Search</button><button class="tab-btn21" type="button" data-name="Alerts"><span class="tab-ic21"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 3h-15Z"/><path d="M10 21a2.2 2.2 0 0 0 4 0"/></svg></span>Alerts</button><button class="tab-btn21" type="button" data-name="Profile"><span class="tab-ic21"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c1.2-3.4 3.8-5 7-5s5.8 1.6 7 5"/></svg></span>Profile</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Navbars &amp; menus</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Glass Tab Bar Nav</h3><p>A frosted-glass tab bar with an elastic indicator that stretches between tabs, spring-popping icons, and a soft glow blooming under the active tab.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop21" data-category="heroes"><div class="preview"><div class="drop21-stage holo21" aria-label="Hologram Beam hero animated preview"><span class="holo-beam21"></span><i class="holo-p21" style="left:calc(50% - 80px);--t:4.6s;--dl:-1s;--sw:14px"></i><i class="holo-p21" style="left:calc(50% - 40px);--t:5.4s;--dl:-3s;--sw:-10px"></i><i class="holo-p21" style="left:calc(50% - 12px);--t:4.2s;--dl:-2s;--sw:8px"></i><i class="holo-p21" style="left:calc(50% + 22px);--t:5.8s;--dl:-.5s;--sw:-14px"></i><i class="holo-p21" style="left:calc(50% + 55px);--t:4.9s;--dl:-2.6s;--sw:10px"></i><i class="holo-p21" style="left:calc(50% + 88px);--t:5.2s;--dl:-4s;--sw:-8px"></i><i class="holo-p21" style="left:calc(50% - 58px);--t:6.1s;--dl:-5s;--sw:16px"></i><i class="holo-p21" style="left:calc(50% + 6px);--t:4.4s;--dl:-1.7s;--sw:-12px"></i><div class="holo-copy21"><div class="holo-kicker21">PROJECTED LIVE · SECTOR 7</div><h4><span class="hl21" style="--i:0">THE</span> <span class="hl21" style="--i:1">FUTURE,</span><br><span class="hl21" style="--i:2">BEAMED</span> <span class="hl21" style="--i:3">IN.</span></h4><p class="holo-sub21">A hero that assembles out of light — scanlines, rising particles and a beam that leans with your cursor.</p><button class="holo-cta21" type="button">Enter the projection</button></div><div class="holo-scan21"></div><span class="holo-scanbar21"></span><span class="holo-base21"></span></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Hero sections</span><span class="tag motion-level">Motion Lv 4 · Cinematic kit</span></div><h3>Hologram Beam Hero</h3><p>A cinematic hero projected from a base emitter: the headline assembles out of a flickering hologram beam with scanlines and rising particles, and the whole projection leans with your cursor.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹119</span><span class="price-note">Level 4 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="footers"><div class="preview"><div class="drop21-stage aurora21" aria-label="Aurora Line footer animated preview"><div class="aurora-line21"></div><div class="aurora-cols21"><div class="aurora-col21"><b>Motionstack</b><span class="aurora-text21">Animated components</span><span class="aurora-text21">for product teams</span><span class="aurora-text21">that ship fast.</span></div><div class="aurora-col21"><b>Explore</b><span class="aurora-link21">Components</span><span class="aurora-link21">Bundles</span><span class="aurora-link21">Templates</span></div><div class="aurora-col21"><b>Company</b><span class="aurora-link21">About</span><span class="aurora-link21">Journal</span><span class="aurora-link21">Support</span></div></div><div class="aurora-base21"><small>© 2026 Motionstack</small><button class="aurora-top21" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Footers</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Aurora Line Footer</h3><p>A footer crowned by a continuously flowing aurora gradient line: link columns lift with drawn underlines on hover, and the back-to-top button rises with a glowing pulse ring.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="effects"><div class="preview"><div class="drop21-stage trail-stage21" aria-label="Fade Trail scroll pack animated preview"><div class="trail-list21"><div class="trail-item21" style="--i:0;--c:#ff5f9e"><span class="trail-ghost21"></span><span class="trail-ghost21 g2"></span><div class="trail-bar21"><span class="trail-dot21"></span>Ghost trail reveal</div></div><div class="trail-item21" style="--i:1;--c:#8a7cff"><span class="trail-ghost21"></span><span class="trail-ghost21 g2"></span><div class="trail-bar21"><span class="trail-dot21"></span>Blur-to-sharp focus</div></div><div class="trail-item21" style="--i:2;--c:#57e6ff"><span class="trail-ghost21"></span><span class="trail-ghost21 g2"></span><div class="trail-bar21"><span class="trail-dot21"></span>Staggered rise-in</div></div><div class="trail-item21" style="--i:3;--c:#63e6a4"><span class="trail-ghost21"></span><span class="trail-ghost21 g2"></span><div class="trail-bar21"><span class="trail-dot21"></span>Slide-mask entrance</div></div><div class="trail-item21" style="--i:4;--c:#ffb02e"><span class="trail-ghost21"></span><span class="trail-ghost21 g2"></span><div class="trail-bar21"><span class="trail-dot21"></span>Scale settle</div></div><div class="trail-item21" style="--i:5;--c:#f471d8"><span class="trail-ghost21"></span><span class="trail-ghost21 g2"></span><div class="trail-bar21"><span class="trail-dot21"></span>Fade cascade</div></div><span class="trail-cap21">SIX SCROLL EFFECTS · GHOSTS INCLUDED</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Scroll-animation packs</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Fade Trail Scroll Pack</h3><p>Six scroll-driven effects in one pack: elements slide in leaving fading ghost trails, sharpen from blur to focus, and stagger into place as they enter view.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="backgrounds"><div class="preview"><div class="drop21-stage circuit21" aria-label="Circuit Pulse background animated preview"><div class="circuit-grid21"></div><svg class="circuit-svg21" viewBox="0 0 500 290" preserveAspectRatio="none" aria-hidden="true"><path class="circuit-trace21" d="M20 60 H180 V140 H320"/><path class="circuit-trace21" d="M40 250 H200 V180 H420"/><path class="circuit-trace21" d="M480 40 V120 H360 V210"/><path class="circuit-trace21" d="M120 20 V100 H260 V160 H460"/><circle class="circuit-node21" style="--i:0" cx="20" cy="60" r="4.5"/><circle class="circuit-node21" style="--i:1" cx="180" cy="140" r="4.5"/><circle class="circuit-node21" style="--i:2" cx="320" cy="140" r="4.5"/><circle class="circuit-node21" style="--i:3" cx="40" cy="250" r="4.5"/><circle class="circuit-node21" style="--i:4" cx="200" cy="180" r="4.5"/><circle class="circuit-node21" style="--i:5" cx="420" cy="180" r="4.5"/><circle class="circuit-node21" style="--i:6" cx="480" cy="40" r="4.5"/><circle class="circuit-node21" style="--i:7" cx="360" cy="210" r="4.5"/><circle class="circuit-node21" style="--i:8" cx="120" cy="20" r="4.5"/><circle class="circuit-node21" style="--i:9" cx="460" cy="160" r="4.5"/><circle class="circuit-pulse21" r="3.5"><animateMotion dur="3.2s" repeatCount="indefinite" path="M20 60 H180 V140 H320"/></circle><circle class="circuit-pulse21" r="3.5"><animateMotion dur="4.1s" repeatCount="indefinite" path="M40 250 H200 V180 H420"/></circle><circle class="circuit-pulse21" r="3.5"><animateMotion dur="3.7s" repeatCount="indefinite" path="M480 40 V120 H360 V210"/></circle></svg><div class="circuit-vig21"></div><span class="circuit-chip21">LIVE TRACES</span></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Background effects</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Circuit Pulse Background</h3><p>An animated circuit-board backdrop: light pulses travel along the traces, nodes blink in sequence, and the whole grid drifts slowly under a soft vignette.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="dashboard"><div class="preview"><div class="drop21-stage stepc-stage21" aria-label="Step Count widgets animated preview"><div class="stepc-grid21"><div class="stepc-card21"><div class="stepc-main21"><small>STEPS TODAY</small><span class="stepc-num21" data-count="12847">0</span></div><div class="stepc-bars21"><i style="--i:0;--h:38%"></i><i style="--i:1;--h:55%"></i><i style="--i:2;--h:42%"></i><i style="--i:3;--h:70%"></i><i style="--i:4;--h:58%"></i><i style="--i:5;--h:86%"></i><i style="--i:6;--h:100%"></i></div><span class="stepc-trend21"><svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 10 2M4.5 2H10v5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>12.4%</span></div><div class="stepc-card21"><div class="stepc-main21"><small>ACTIVE MINUTES</small><span class="stepc-num21" data-count="86">0</span></div><div class="stepc-bars21"><i style="--i:0;--h:30%"></i><i style="--i:1;--h:44%"></i><i style="--i:2;--h:66%"></i><i style="--i:3;--h:52%"></i><i style="--i:4;--h:78%"></i><i style="--i:5;--h:64%"></i><i style="--i:6;--h:90%"></i></div><span class="stepc-trend21"><svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 10 2M4.5 2H10v5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8.1%</span></div><div class="stepc-card21"><div class="stepc-main21"><small>FLOORS CLIMBED</small><span class="stepc-num21" data-count="23">0</span></div><div class="stepc-bars21"><i style="--i:0;--h:45%"></i><i style="--i:1;--h:35%"></i><i style="--i:2;--h:60%"></i><i style="--i:3;--h:48%"></i><i style="--i:4;--h:72%"></i><i style="--i:5;--h:58%"></i><i style="--i:6;--h:84%"></i></div><span class="stepc-trend21"><svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 10 2M4.5 2H10v5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>4.6%</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Dashboard widgets</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Step Count Widgets</h3><p>Dashboard stat widgets that count up with easing, draw a mini step-bar sparkline bar by bar, and pop their trend arrows in as the numbers land.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="ecommerce"><div class="preview"><div class="drop21-stage promo-stage21" aria-label="Promo Popover kit preview — hover a product"><div class="promo-wrap21"><div class="promo-cart21"><span class="promo-cartchip21">Cart · <b class="promo-count21">0</b></span></div><div class="promo-grid21"><div class="promo-item21" tabindex="0"><div class="promo-pop21"><span class="promo-badge21">−25% TODAY</span><p><span class="promo-old21">₹2,499</span><span class="promo-new21">₹1,874</span></p><button class="promo-add21" type="button">Add to cart</button></div><div class="promo-media21 m1"></div><b>Everyday Sneakers</b><span class="promo-price21">From ₹1,874</span></div><div class="promo-item21" tabindex="0"><div class="promo-pop21"><span class="promo-badge21">−40% TODAY</span><p><span class="promo-old21">₹5,999</span><span class="promo-new21">₹3,599</span></p><button class="promo-add21" type="button">Add to cart</button></div><div class="promo-media21 m2"></div><b>Orbit Backpack</b><span class="promo-price21">From ₹3,599</span></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">E-commerce kits</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Promo Popover Kit</h3><p>Hover a product and a springy popover pops out: a bouncing discount badge, a strike-through that draws itself across the old price, and a grabby add-to-cart button.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop21" data-category="social"><div class="preview"><div class="drop21-stage mile-stage21" aria-label="Milestone Stats kit animated preview"><div class="mile-grid21"><div class="mile-card21" style="--i:0"><span class="mile-num21" data-count="25" data-suffix="K+">0</span><small>HAPPY CUSTOMERS</small></div><div class="mile-card21" style="--i:1"><span class="mile-num21" data-count="180" data-suffix="K+">0</span><small>ORDERS SHIPPED</small></div><div class="mile-card21" style="--i:2"><span class="mile-num21" data-count="4.9" data-dec="1">0</span><small>AVERAGE RATING</small></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Milestone Stats Kit</h3><p>Milestone counters that count up as they scroll into view — customers, orders, rating — and fire a burst of sparks the moment each number lands.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop21" data-category="pricing"><div class="preview"><div class="drop21-stage tier-stage21" aria-label="Expandable Tier pricing preview — click a card"><div class="tier-grid21"><div class="tier-card21" tabindex="0" role="button" aria-expanded="false"><b>Starter</b><div class="tier-price21">₹999<small>/mo</small></div><span class="tier-sub21">For side projects</span><div class="tier-feats21"><span style="--i:0">✓ 5 projects</span><span style="--i:1">✓ Core components</span><span style="--i:2">✓ Community support</span><span style="--i:3">✓ Monthly updates</span></div><div class="tier-cta21"><span class="more">SEE FEATURES +</span><span class="less">SHOW LESS −</span></div></div><div class="tier-card21 pop expanded" tabindex="0" role="button" aria-expanded="true"><span class="tier-tag21">POPULAR</span><b>Pro</b><div class="tier-price21">₹1,999<small>/mo</small></div><span class="tier-sub21">For growing teams</span><div class="tier-feats21"><span style="--i:0">✓ Unlimited projects</span><span style="--i:1">✓ Full component library</span><span style="--i:2">✓ Priority support</span><span style="--i:3">✓ Weekly updates</span><span style="--i:4">✓ Team seats included</span></div><div class="tier-cta21"><span class="more">SEE FEATURES +</span><span class="less">SHOW LESS −</span></div></div><div class="tier-card21" tabindex="0" role="button" aria-expanded="false"><b>Studio</b><div class="tier-price21">₹3,999<small>/mo</small></div><span class="tier-sub21">For agencies</span><div class="tier-feats21"><span style="--i:0">✓ Everything in Pro</span><span style="--i:1">✓ Client workspaces</span><span style="--i:2">✓ White-label exports</span><span style="--i:3">✓ Dedicated support</span></div><div class="tier-cta21"><span class="more">SEE FEATURES +</span><span class="less">SHOW LESS −</span></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Expandable Tier Pricing</h3><p>Pricing cards that expand on click to reveal the full feature list in a staggered reveal, with the popular tier wrapped in a pulsing glow border.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop21" data-category="templates"><div class="preview"><div class="drop21-stage volt21" aria-label="Volt Agency template preview"><div class="volt-frame21"><div class="volt-bar21"><i></i><i></i><i></i><span class="volt-url21">volt.agency</span></div><div class="volt-nav21"><span class="volt-logo21">VOLT<em>.</em></span><div class="volt-links21"><span>Work</span><span>Studio</span><span>Journal</span></div><span class="volt-navcta21">Start a project</span></div><div class="volt-hero21"><h5>We build <span class="volt-grad21">electric brands</span> for loud markets.</h5><p>Strategy, identity and websites — shipped in weeks, not quarters.</p></div><div class="volt-svc21"><div class="volt-card21"><span class="volt-ic21" style="--c1:#ffb02e;--c2:#ff5f9e"></span><b>Brand identity</b><span>Logos &amp; systems</span></div><div class="volt-card21"><span class="volt-ic21" style="--c1:#57e6ff;--c2:#8a7cff"></span><b>Web design</b><span>Sites that convert</span></div><div class="volt-card21"><span class="volt-ic21" style="--c1:#63e6a4;--c2:#57e6ff"></span><b>Motion &amp; 3D</b><span>Launches that pop</span></div></div><div class="volt-work21"><i style="--c1:#8a7cff;--c2:#ff5f9e"></i><i style="--c1:#ffb02e;--c2:#ff7847"></i><i style="--c1:#57e6ff;--c2:#63e6a4"></i></div><div class="volt-quote21"><p class="volt-q21 active">“Volt rebuilt our site and demos doubled in a month.”<span>— Mira, CEO at Loopwork</span></p><p class="volt-q21">“The rare agency that ships motion as well as it mocks it.”<span>— Dev, Founder at Kast</span></p><p class="volt-q21">“Fast, loud, and somehow still tasteful.”<span>— Ana, CMO at Brightline</span></p><div class="volt-dots21"><i class="on"></i><i></i><i></i></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">21 Oct drop</span><span class="tag">Website templates</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Volt Agency Template</h3><p>A complete pre-ready agency landing website template: electric gradient headline animation, hover-tilt service cards, a scroll-reveal portfolio strip, an auto-advancing testimonial slider, and a bold contact CTA.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹399</span><span class="price-note">Level 2 website template</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy template · link pending</button></div></div></article>
 
         <div class="catalog-empty" id="catalog-empty" role="status" aria-live="polite" hidden>
           <h3>No components here yet</h3>
@@ -5140,6 +5539,295 @@
             window.setTimeout(function () { price.textContent = annual ? price.dataset.year : price.dataset.month; price.classList.remove('swap'); }, 300);
           });
         });
+      });
+
+      /* 21 October daily drop interactions */
+      document.querySelectorAll('.gear-path21').forEach(function (path) {
+        var cx = 20, cy = 20, r = 13.5, teeth = 8, inner = r * .78, d = '', T = Math.PI * 2 / teeth;
+        function pt(rad, a) { return (cx + rad * Math.cos(a)).toFixed(1) + ' ' + (cy + rad * Math.sin(a)).toFixed(1); }
+        for (var gi = 0; gi < teeth; gi++) {
+          var ga = gi * T;
+          d += (gi === 0 ? 'M' : 'L') + pt(r, ga) + ' L' + pt(r, ga + T * .3) + ' L' + pt(inner, ga + T * .42) + ' L' + pt(inner, ga + T * .62) + ' L' + pt(r, ga + T * .74) + ' ';
+        }
+        d += 'Z M' + (cx - r * .32) + ' ' + cy + ' a' + (r * .32) + ' ' + (r * .32) + ' 0 1 0 ' + (r * .64) + ' 0 a' + (r * .32) + ' ' + (r * .32) + ' 0 1 0 ' + (-r * .64) + ' 0 Z';
+        path.setAttribute('d', d);
+        path.setAttribute('fill-rule', 'evenodd');
+      });
+      document.querySelectorAll('.gshift21').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var row = btn.closest('.gshift-row21');
+          var on = row.classList.toggle('on');
+          btn.setAttribute('aria-checked', String(on));
+        });
+      });
+      document.querySelectorAll('.veil21').forEach(function (stage) {
+        var btn = stage.querySelector('.veil-go21');
+        if (!btn) return;
+        if (!reduceMotion && window.matchMedia('(pointer:fine)').matches) {
+          stage.addEventListener('pointermove', function (e) {
+            var r = btn.getBoundingClientRect();
+            var x = (e.clientX - (r.left + r.width / 2)) * .16, y = (e.clientY - (r.top + r.height / 2)) * .22;
+            x = Math.max(-14, Math.min(14, x)); y = Math.max(-8, Math.min(8, y));
+            btn.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+          });
+          stage.addEventListener('pointerleave', function () { btn.style.transform = ''; });
+        }
+        btn.addEventListener('click', function (e) {
+          var r = btn.getBoundingClientRect();
+          var rip = document.createElement('span');
+          rip.className = 'veil-ripple21';
+          var size = Math.max(r.width, r.height);
+          rip.style.width = rip.style.height = size + 'px';
+          rip.style.left = (e.clientX - r.left - size / 2) + 'px';
+          rip.style.top = (e.clientY - r.top - size / 2) + 'px';
+          btn.appendChild(rip);
+          window.setTimeout(function () { rip.remove(); }, 650);
+        });
+      });
+      document.querySelectorAll('.arc-panel21').forEach(function (panel) {
+        var steps = Array.prototype.slice.call(panel.querySelectorAll('.arc-step21'));
+        var nodes = Array.prototype.slice.call(panel.querySelectorAll('.arc-node21'));
+        var prog = panel.querySelector('.arc-prog21');
+        var back = panel.querySelector('.arc-btn21.back'), next = panel.querySelector('.arc-btn21.next');
+        var labels = ['Send link', 'Verify code', 'Start again'];
+        var cur = 0;
+        function show(n) {
+          steps.forEach(function (s, i) { s.classList.toggle('active', i === n); s.classList.toggle('exit', i < n); });
+          nodes.forEach(function (nd, i) { nd.classList.toggle('on', i === n); nd.classList.toggle('done', i < n); });
+          var frac = 0.06 + 0.94 * (n / (steps.length - 1));
+          prog.style.strokeDashoffset = String(Math.round(201 * (1 - frac)));
+          back.disabled = n === 0;
+          next.textContent = labels[n];
+          cur = n;
+        }
+        next.addEventListener('click', function () { show(cur >= steps.length - 1 ? 0 : cur + 1); });
+        back.addEventListener('click', function () { if (cur > 0) show(cur - 1); });
+        var boxes = Array.prototype.slice.call(panel.querySelectorAll('.arc-otp21 input'));
+        boxes.forEach(function (box, idx) {
+          box.addEventListener('input', function () {
+            box.value = box.value.replace(/\D/g, '').slice(0, 1);
+            if (box.value && idx < boxes.length - 1) boxes[idx + 1].focus();
+          });
+          box.addEventListener('keydown', function (e) {
+            if (e.key === 'Backspace' && !box.value && idx > 0) boxes[idx - 1].focus();
+          });
+        });
+        show(0);
+      });
+      document.querySelectorAll('.zoom21').forEach(function (stage) {
+        var open = stage.querySelector('.zoom-open21'), close = stage.querySelector('.zoom-close21');
+        var shade = stage.querySelector('.zoom-shade21'), modal = stage.querySelector('.zoom-modal21'), card = stage.querySelector('.zoom-card21');
+        open.addEventListener('click', function () {
+          var sr = stage.getBoundingClientRect(), cr = card.getBoundingClientRect();
+          modal.style.setProperty('--ox', ((cr.left + cr.width / 2 - sr.left) / sr.width * 100) + '%');
+          modal.style.setProperty('--oy', ((cr.top + cr.height / 2 - sr.top) / sr.height * 100) + '%');
+          stage.classList.add('open');
+        });
+        close.addEventListener('click', function () { stage.classList.remove('open'); });
+        shade.addEventListener('click', function () { stage.classList.remove('open'); });
+      });
+      document.querySelectorAll('.pill-stage21').forEach(function (stage) {
+        var stack = stage.querySelector('.pill-stack21');
+        var msgs = ['New comment from Amara', 'Payment received · ₹1,874', 'Backup completed successfully', 'Mira mentioned you in Design', 'Weekly report is ready'];
+        var mi = 0;
+        function dismiss(toast) {
+          if (toast.classList.contains('leaving')) return;
+          toast.classList.add('leaving');
+          window.setTimeout(function () { toast.remove(); }, 360);
+        }
+        function arm(toast) {
+          toast.addEventListener('click', function () { dismiss(toast); });
+          window.setTimeout(function () { dismiss(toast); }, 4400);
+        }
+        stack.querySelectorAll('.pill-toast21').forEach(arm);
+        if (!reduceMotion) {
+          window.setInterval(function () {
+            if (!document.body.contains(stage)) return;
+            var toast = document.createElement('div');
+            toast.className = 'pill-toast21';
+            toast.setAttribute('role', 'button');
+            toast.tabIndex = 0;
+            var dot = document.createElement('span'); dot.className = 'pill-dot21';
+            var txt = document.createElement('span'); txt.textContent = msgs[mi % msgs.length]; mi += 1;
+            var bar = document.createElement('span'); bar.className = 'pill-bar21';
+            toast.appendChild(dot); toast.appendChild(txt); toast.appendChild(bar);
+            stack.querySelectorAll('.pill-toast21').forEach(function (t) { t.classList.remove('squeeze'); void t.offsetWidth; t.classList.add('squeeze'); });
+            stack.appendChild(toast);
+            arm(toast);
+            while (stack.children.length > 3) dismiss(stack.children[0]);
+          }, 3000);
+        }
+      });
+      document.querySelectorAll('.deck-stage21').forEach(function (stage) {
+        var wrap = stage.querySelector('.swipe-wrap21');
+        var order = Array.prototype.slice.call(wrap.querySelectorAll('.swipe-card21'));
+        function render() {
+          order.forEach(function (el, i) {
+            el.dataset.pos = i;
+            el.style.zIndex = String(10 - i);
+            el.style.transform = '';
+            el.style.opacity = '';
+          });
+        }
+        render();
+        var drag = null;
+        order.forEach(function (card) {
+          card.addEventListener('pointerdown', function (e) {
+            if (card !== order[0]) return;
+            drag = { x: e.clientX, dx: 0, card: card };
+            card.classList.add('dragging');
+            try { card.setPointerCapture(e.pointerId); } catch (err) {}
+          });
+          card.addEventListener('pointermove', function (e) {
+            if (!drag || drag.card !== card) return;
+            drag.dx = e.clientX - drag.x;
+            card.style.transform = 'translate(' + drag.dx + 'px,' + (Math.abs(drag.dx) * .06) + 'px) rotate(' + (drag.dx / 13) + 'deg)';
+          });
+          function release() {
+            if (!drag || drag.card !== card) return;
+            var dx = drag.dx;
+            drag = null;
+            card.classList.remove('dragging');
+            if (Math.abs(dx) > 82) {
+              card.style.transform = 'translate(' + (dx > 0 ? 340 : -340) + 'px,30px) rotate(' + (dx > 0 ? 22 : -22) + 'deg)';
+              card.style.opacity = '0';
+              window.setTimeout(function () { order.push(order.shift()); render(); }, 330);
+            } else {
+              card.style.transform = '';
+            }
+          }
+          card.addEventListener('pointerup', release);
+          card.addEventListener('pointercancel', release);
+        });
+      });
+      document.querySelectorAll('.wave-text21').forEach(function (el) {
+        var text = el.textContent;
+        el.textContent = '';
+        text.split('').forEach(function (ch, i) {
+          var s = document.createElement('span');
+          s.className = 'wl21';
+          s.style.setProperty('--i', i);
+          s.textContent = ch === ' ' ? ' ' : ch;
+          el.appendChild(s);
+        });
+      });
+      document.querySelectorAll('.tabbar21').forEach(function (bar) {
+        var ind = bar.querySelector('.tab-ind21');
+        var btns = Array.prototype.slice.call(bar.querySelectorAll('.tab-btn21'));
+        var phone = bar.closest('.tab-phone21');
+        var name = phone ? phone.querySelector('.tab-name21') : null;
+        function select(btn, pop) {
+          btns.forEach(function (b) { b.classList.toggle('active', b === btn); });
+          ind.style.left = btn.offsetLeft + 'px';
+          ind.style.width = btn.offsetWidth + 'px';
+          if (name) name.textContent = btn.dataset.name;
+          if (pop) { btn.classList.remove('pop'); void btn.offsetWidth; btn.classList.add('pop'); }
+        }
+        btns.forEach(function (btn) { btn.addEventListener('click', function () { select(btn, true); }); });
+        select(bar.querySelector('.tab-btn21.active') || btns[0], false);
+      });
+      document.querySelectorAll('.holo21').forEach(function (stage) {
+        if (reduceMotion || !window.matchMedia('(pointer:fine)').matches) return;
+        stage.addEventListener('pointermove', function (e) {
+          var r = stage.getBoundingClientRect();
+          stage.style.setProperty('--px', ((e.clientX - r.left) / r.width - .5).toFixed(3));
+          stage.style.setProperty('--py', ((e.clientY - r.top) / r.height - .5).toFixed(3));
+        });
+        stage.addEventListener('pointerleave', function () {
+          stage.style.setProperty('--px', 0);
+          stage.style.setProperty('--py', 0);
+        });
+      });
+      function countUp21(el, done) {
+        var target = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec || '0', 10), suffix = el.dataset.suffix || '';
+        var dur = 1500, t0 = null;
+        function frame(ts) {
+          if (!t0) t0 = ts;
+          var p = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+          var val = target * e;
+          el.textContent = (dec ? val.toFixed(dec) : Math.round(val).toLocaleString('en-IN')) + (p === 1 ? suffix : '');
+          if (p < 1) window.requestAnimationFrame(frame); else if (done) done();
+        }
+        window.requestAnimationFrame(frame);
+      }
+      document.querySelectorAll('.stepc-card21').forEach(function (card) {
+        var num = card.querySelector('.stepc-num21');
+        function start() { card.classList.add('counted'); countUp21(num); }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { start(); io.disconnect(); } });
+          }, { threshold: .4 });
+          io.observe(card);
+        } else { start(); }
+      });
+      document.querySelectorAll('.mile-stage21').forEach(function (stage) {
+        function start() {
+          stage.classList.add('in');
+          stage.querySelectorAll('.mile-card21').forEach(function (card, ci) {
+            var num = card.querySelector('.mile-num21');
+            window.setTimeout(function () {
+              countUp21(num, function () {
+                var colors = ['#ffd166', '#ff5f9e', '#57e6ff', '#63e6a4'];
+                for (var k = 0; k < 8; k++) {
+                  var sp = document.createElement('span');
+                  sp.className = 'mile-spark21';
+                  var ang = (Math.PI * 2 * k) / 8, dist = 34 + (k % 3) * 9;
+                  sp.style.setProperty('--dx', (Math.cos(ang) * dist).toFixed(1) + 'px');
+                  sp.style.setProperty('--dy', (Math.sin(ang) * dist).toFixed(1) + 'px');
+                  sp.style.setProperty('--c', colors[(k + ci) % colors.length]);
+                  card.appendChild(sp);
+                }
+                card.classList.add('burst');
+              });
+            }, ci * 140);
+          });
+        }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { start(); io.disconnect(); } });
+          }, { threshold: .35 });
+          io.observe(stage);
+        } else { start(); }
+      });
+      document.querySelectorAll('.promo-stage21').forEach(function (stage) {
+        var count = stage.querySelector('.promo-count21');
+        var n = 0;
+        stage.querySelectorAll('.promo-add21').forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            n += 1;
+            if (count) count.textContent = n;
+            var old = btn.textContent;
+            btn.textContent = 'Added ✓';
+            btn.classList.remove('micro'); void btn.offsetWidth; btn.classList.add('micro');
+            window.setTimeout(function () { btn.textContent = old; }, 1200);
+          });
+        });
+      });
+      document.querySelectorAll('.tier-card21').forEach(function (card) {
+        function toggle() {
+          var grid = card.closest('.tier-grid21');
+          var was = card.classList.contains('expanded');
+          grid.querySelectorAll('.tier-card21').forEach(function (c) { c.classList.remove('expanded'); c.setAttribute('aria-expanded', 'false'); });
+          if (!was) { card.classList.add('expanded'); card.setAttribute('aria-expanded', 'true'); }
+        }
+        card.addEventListener('click', toggle);
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+        });
+      });
+      document.querySelectorAll('.volt-quote21').forEach(function (box) {
+        var quotes = Array.prototype.slice.call(box.querySelectorAll('.volt-q21'));
+        var dots = Array.prototype.slice.call(box.querySelectorAll('.volt-dots21 i'));
+        var cur = 0;
+        function show(n) {
+          quotes.forEach(function (q, i) { q.classList.toggle('active', i === n); });
+          dots.forEach(function (d, i) { d.classList.toggle('on', i === n); });
+          cur = n;
+        }
+        if (!reduceMotion && quotes.length > 1) {
+          window.setInterval(function () { show((cur + 1) % quotes.length); }, 3200);
+        }
       });
 
       var filterButtons = Array.prototype.slice.call(document.querySelectorAll('.filter'));
