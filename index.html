@@ -5055,6 +5055,269 @@
 
     @media(max-width:600px){.drop29 .preview{min-height:310px}.vdl29{grid-template-columns:.82fr 1.18fr}.vdl-side29{padding:12px 10px 12px 2px}.vdl-card29{padding:17px 13px}.asw-grid29{gap:6px}.asw-num29{font-size:15px}.gtp-grid29{gap:6px}.gtp-card29{padding:12px 9px}.gtp-amt29{font-size:17px}.dmn-link29{padding:7px 7px;font-size:10.5px}.gsk-grid29{gap:8px}.dgf-body29{gap:9px}.esh-title29{font-size:26px}.nth-title29{font-size:25px}}
 
+    /* 30 October daily drop previews */
+    .drop30{border-color:color-mix(in srgb,#ff7847 38%,var(--line))}
+    .drop30 .preview{isolation:isolate}
+    .drop30 .drop-date{background:color-mix(in srgb,#ff7847 16%,var(--surface))}
+    .drop30-stage{position:relative;width:min(500px,100%);min-height:290px;overflow:hidden;border-radius:13px;background:#180f16;color:#fdf1e7}
+    .saffrondusk-mini{background:linear-gradient(140deg,#ffb35c,#e56b8c 55%,#5b2a52)!important;color:#fff4e0!important;border-color:#e8a0b4!important}
+
+    .sdl30{display:grid;grid-template-columns:.9fr 1.1fr;padding:0}
+    .sdl-scene30{position:relative;overflow:hidden;background:linear-gradient(160deg,#ff9a3c,#c94f6d 48%,#43224d 100%);background-size:190% 190%;animation:sdl-drift30 9s ease-in-out infinite alternate}
+    @keyframes sdl-drift30{to{background-position:92% 82%}}
+    .sdl-ember30{position:absolute;border-radius:50%;background:#ffd9a0;box-shadow:0 0 10px 2px rgba(255,180,90,.75);animation:sdl-rise30 var(--d,7s) ease-in-out infinite}
+    @keyframes sdl-rise30{0%{transform:translateY(14px);opacity:0}25%{opacity:1}75%{opacity:.85}100%{transform:translateY(-48px);opacity:0}}
+    .sdl-brand30{position:absolute;left:20px;bottom:18px;font:800 14px "Manrope",sans-serif;letter-spacing:.22em;color:#fff7ea}
+    .sdl-side30{display:grid;place-items:center;padding:22px 20px 22px 4px}
+    .sdl-card30{width:min(280px,100%);padding:24px;border-radius:15px;background:rgba(30,16,28,.88);border:1px solid rgba(255,190,130,.25);box-shadow:0 24px 50px rgba(0,0,0,.4)}
+    .sdl-card30 b{display:block;font:800 20px "Manrope",sans-serif}
+    .sdl-card30 small{display:block;margin:4px 0 16px;color:#d9b8a6}
+    .sdl-el30{animation:sdl-in30 6.5s cubic-bezier(.2,.8,.2,1) infinite;animation-delay:calc(var(--i)*.16s)}
+    @keyframes sdl-in30{0%,6%{opacity:0;transform:translateY(16px)}18%,86%{opacity:1;transform:none}97%,100%{opacity:0;transform:translateY(-8px)}}
+    .sdl-field30{margin-bottom:11px}
+    .sdl-field30 input{width:100%;height:42px;padding:0 12px;border-radius:9px;border:1px solid rgba(255,200,150,.3);background:rgba(255,255,255,.06);color:#fff;outline:none}
+    .sdl-field30 input:focus{border-color:#ffb35c;box-shadow:0 0 0 3px rgba(255,170,80,.18)}
+    .sdl-go30{width:100%;height:43px;border:0;border-radius:9px;background:linear-gradient(120deg,#ffb35c,#ff7847);color:#33160a;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(255,130,60,.45);transition:transform .2s ease,box-shadow .2s ease}
+    .sdl-go30:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,130,60,.62)}
+
+    .ekf30{display:grid;place-items:center;padding:26px}
+    .ekf-card30{width:min(300px,100%);text-align:center}
+    .ekf-card30 b{font:800 17px "Manrope",sans-serif}
+    .ekf-card30>p{margin:6px 0 0;color:#cdb4c6;font-size:12px}
+    .ekf-key30{position:relative;width:76px;height:76px;margin:0 auto 14px;display:grid;place-items:center}
+    .ekf-key30::before,.ekf-key30::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(255,184,92,.6);animation:ekf-pulse30 2.2s ease-out infinite}
+    .ekf-key30::after{animation-delay:1.1s}
+    @keyframes ekf-pulse30{from{transform:scale(.6);opacity:1}to{transform:scale(1.28);opacity:0}}
+    .ekf-ring30{position:relative;width:44px;height:44px;border-radius:50%;border:4px solid #ffb85c;margin-right:14px}
+    .ekf-ring30::after{content:"";position:absolute;right:-19px;top:50%;margin-top:-3px;width:17px;height:6px;border-radius:3px;background:#ffb85c;box-shadow:0 9px 0 -1px #ffb85c}
+    .ekf-rail30{display:flex;align-items:center;margin:18px 2px 20px}
+    .ekf-step30{width:26px;height:26px;flex:none;display:grid;place-items:center;border-radius:50%;background:#3a2438;border:1px solid rgba(255,184,92,.4);font-size:11px;font-weight:800;color:#e9c9a8;transition:background .4s,color .4s}
+    .ekf-step30.on{background:linear-gradient(140deg,#ffb85c,#ff7847);color:#2a1408}
+    .ekf-bar30{flex:1;height:3px;background:#3a2438;overflow:hidden}
+    .ekf-bar30 i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffb85c,#ff7847);transition:width .6s ease}
+    .ekf30.done .ekf-bar30 i{width:100%}
+    .ekf-btn30{position:relative;overflow:hidden;height:42px;padding:0 24px;border:0;border-radius:9px;background:linear-gradient(120deg,#ffb85c,#ff7847);color:#2a1408;font-weight:800;cursor:pointer;transition:transform .15s ease}
+    .ekf-btn30:active{transform:scale(.95)}
+    .ekf-rip30{position:absolute;width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.55);transform:translate(-50%,-50%) scale(0);animation:ekf-rip30 .65s ease-out forwards;pointer-events:none}
+    @keyframes ekf-rip30{to{transform:translate(-50%,-50%) scale(10);opacity:0}}
+    .ekf-msg30{margin-top:13px;min-height:18px;font-size:12.5px;color:#cdb4c6;transition:color .3s}
+    .ekf30.done .ekf-msg30{color:#ffd9a0;font-weight:700}
+
+    .epb30{display:grid;place-items:center;padding:26px}
+    .epb-board30{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+    .epb-btn30{position:relative;overflow:hidden;height:48px;padding:0 24px;border-radius:11px;border:1px solid rgba(255,150,80,.45);background:#2a1610;color:#ffd9b0;font-weight:800;cursor:pointer;transition:transform .15s ease,color .3s ease}
+    .epb-btn30::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,#ff9a3c,#ff5e62);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+    .epb-btn30 span{position:relative;z-index:1}
+    .epb-btn30:hover::before{transform:scaleX(1)}
+    .epb-btn30:hover{color:#fff}
+    .epb-btn30:active{transform:scale(.93)}
+    .epb-btn30.pulse{animation:epb-pulse30 2s ease-in-out infinite}
+    @keyframes epb-pulse30{0%,100%{box-shadow:0 0 0 0 rgba(255,130,60,.45)}50%{box-shadow:0 0 26px 7px rgba(255,130,60,.42)}}
+    .epb-btn30.solid{background:linear-gradient(120deg,#ff9a3c,#ff5e62);color:#fff;border:0}
+    .epb-btn30.ghost{background:transparent}
+
+    .vst30{display:grid;place-items:center;padding:24px}
+    .vst-list30{width:min(300px,100%);display:grid;gap:12px}
+    .vst-row30{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 15px;border-radius:12px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08)}
+    .vst-row30 b{font-size:13px}
+    .vst-state30{display:block;margin-top:2px;font-size:10px;color:#c9a8bd;font-weight:800;letter-spacing:.12em}
+    .vst-tog30{position:relative;width:58px;height:32px;flex:none;border:0;border-radius:999px;cursor:pointer;background:repeating-linear-gradient(135deg,#3a2438 0 6px,#452a42 6px 12px);box-shadow:inset 0 2px 6px rgba(0,0,0,.5);transition:background .3s,box-shadow .3s}
+    .vst-tog30::after{content:"";position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:linear-gradient(150deg,#fff,#e8d8e2);box-shadow:0 3px 7px rgba(0,0,0,.4);transition:transform .38s cubic-bezier(.3,1.45,.4,1)}
+    .vst-tog30.on{background:repeating-linear-gradient(135deg,#8a2f4b 0 6px,#a83a5c 6px 12px);box-shadow:inset 0 2px 6px rgba(0,0,0,.4),0 0 16px rgba(255,110,150,.45)}
+    .vst-tog30.on::after{transform:translateX(26px)}
+
+    .gsl30{display:grid;place-items:center;padding:26px}
+    .gsl-core30{position:relative;width:176px;height:176px;animation:gsl-breathe30 6s ease-in-out infinite alternate}
+    @keyframes gsl-breathe30{to{transform:scale(.86) rotate(14deg)}}
+    .gsl-star30{position:absolute;left:50%;top:50%;width:28px;height:28px;margin:-14px 0 0 -14px;background:linear-gradient(140deg,#fff0c0,#ffb35c);clip-path:polygon(50% 0,63% 37%,100% 50%,63% 63%,50% 100%,37% 63%,0 50%,37% 37%);filter:drop-shadow(0 0 9px rgba(255,190,100,.85));animation:gsl-spin30 7s linear infinite}
+    .gsl-orbit30{position:absolute;border:1px solid rgba(255,200,150,.15);border-radius:50%;animation:gsl-spin30 var(--t,9s) linear infinite}
+    .gsl-orbit30.rev{animation-direction:reverse}
+    .gsl-orbit30 i{position:absolute;left:50%;top:-4px;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--c,#ffb35c);box-shadow:0 0 10px var(--c,#ffb35c)}
+    .gsl-orbit30 i.b2{top:auto;bottom:-4px}
+    @keyframes gsl-spin30{to{transform:rotate(360deg)}}
+    .gsl-spark30{position:absolute;width:5px;height:5px;border-radius:50%;background:#ffe9b0;animation:gsl-twinkle30 2.4s ease-in-out infinite}
+    @keyframes gsl-twinkle30{50%{opacity:.12;transform:scale(.5)}}
+    .gsl-label30{margin-top:20px;font-size:11px;font-weight:800;letter-spacing:.22em;color:#cdb4c6}
+
+    .mfi30{display:grid;place-items:center;padding:26px}
+    .mfi-form30{width:min(300px,100%);padding:24px 24px 6px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09)}
+    .mfi-form30 b{display:block;margin-bottom:18px;font:800 16px "Manrope",sans-serif}
+    .mfi-field30{position:relative;margin-bottom:22px}
+    .mfi-field30::before{content:"";position:absolute;inset:-8px -12px;border-radius:14px;background:radial-gradient(closest-side,rgba(255,180,110,.22),transparent);opacity:0;transition:opacity .3s ease;pointer-events:none}
+    .mfi-field30:focus-within::before{opacity:1}
+    .mfi-field30 input{position:relative;width:100%;height:46px;padding:16px 2px 4px;border:0;border-bottom:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;outline:none}
+    .mfi-field30 label{position:absolute;left:2px;top:14px;font-size:13px;color:#cdb4c6;pointer-events:none;transition:.22s ease}
+    .mfi-field30::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,#ffb35c,#ff7ab0);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+    .mfi-field30:focus-within::after{transform:scaleX(1)}
+    .mfi-field30:focus-within label,.mfi-field30 input:not(:placeholder-shown)+label{top:0;font-size:10px;color:#ffb35c}
+
+    .dpm30{display:grid;place-items:center;padding:24px}
+    .dpm-open30{height:44px;padding:0 20px;border:0;border-radius:9px;background:linear-gradient(120deg,#ffb35c,#ff7847);color:#2a1408;font-weight:800;cursor:pointer;transition:transform .18s ease}
+    .dpm-open30:hover{transform:translateY(-2px)}
+    .dpm-back30{position:absolute;inset:0;display:flex;justify-content:flex-end;background:rgba(8,4,10,.55);opacity:0;pointer-events:none;transition:opacity .35s ease}
+    .dpm-back30.open{opacity:1;pointer-events:auto}
+    .dpm-panel30{width:min(252px,84%);height:100%;padding:22px;background:#241226;border-left:1px solid rgba(255,180,110,.3);box-shadow:-24px 0 50px rgba(0,0,0,.4);transform:translateX(70px);opacity:0;transition:transform .48s cubic-bezier(.2,.85,.25,1),opacity .35s ease}
+    .dpm-back30.open .dpm-panel30{transform:none;opacity:1}
+    .dpm-panel30>*{opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}
+    .dpm-back30.open .dpm-panel30>*{opacity:1;transform:none}
+    .dpm-back30.open .dpm-panel30>*:nth-child(2){transition-delay:.08s}
+    .dpm-back30.open .dpm-panel30>*:nth-child(3){transition-delay:.16s}
+    .dpm-back30.open .dpm-panel30>*:nth-child(4){transition-delay:.24s}
+    .dpm-panel30 b{font:800 17px "Manrope",sans-serif}
+    .dpm-panel30 p{margin:9px 0 18px;color:#cdb4c6;font-size:12.5px}
+    .dpm-x30{float:right;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.09);color:#fdf1e7;cursor:pointer;transition:transform .25s ease}
+    .dpm-x30:hover{transform:rotate(90deg)}
+    .dpm-ok30{height:40px;padding:0 18px;border:0;border-radius:8px;background:linear-gradient(120deg,#ffb35c,#ff7847);color:#2a1408;font-weight:800;cursor:pointer}
+
+    .fts30{display:grid;place-items:center;padding:24px}
+    .fts-stack30{width:min(320px,100%);display:grid;gap:10px}
+    .fts-toast30{position:relative;overflow:hidden;display:flex;gap:11px;align-items:center;padding:13px 14px;border-radius:12px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);animation:fts-in30 5.4s cubic-bezier(.2,.8,.2,1) infinite}
+    .fts-toast30:nth-child(2){animation-delay:.18s}
+    .fts-toast30:nth-child(3){animation-delay:.36s}
+    .fts-toast30::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-130%);animation:fts-shimmer30 5.4s ease infinite;pointer-events:none}
+    .fts-toast30::after{content:"";position:absolute;left:0;bottom:0;height:3px;background:linear-gradient(90deg,#9adcff,#ffb35c);animation:fts-prog30 5.4s linear infinite}
+    @keyframes fts-in30{0%,8%{opacity:0;transform:translateX(60px)}16%,84%{opacity:1;transform:none}95%,100%{opacity:0;transform:translateX(30px)}}
+    @keyframes fts-prog30{from{width:100%}to{width:0}}
+    @keyframes fts-shimmer30{0%,22%{transform:translateX(-130%)}58%,100%{transform:translateX(130%)}}
+    .fts-ic30{width:30px;height:30px;flex:none;display:grid;place-items:center;border-radius:50%;background:rgba(154,220,255,.2);color:#bfe6ff;font-weight:900;font-size:13px}
+    .fts-toast30 b{display:block;font-size:12.5px}
+    .fts-toast30 small{color:#d8c3d2;font-size:11px}
+
+    .sdc30{display:grid;place-items:center;padding:24px}
+    .sdc-grid30{display:grid;grid-template-columns:1fr 1fr;gap:13px;width:min(370px,100%)}
+    .sdc-card30{position:relative;padding:18px;border-radius:14px;background:#221126;transition:transform .3s ease,box-shadow .3s ease}
+    .sdc-card30::before{content:"";position:absolute;inset:0;border-radius:14px;padding:1.5px;background:linear-gradient(120deg,#ffb35c,#ff5e8a,#7a5cff,#ffb35c);background-size:300% 300%;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;animation:sdc-drift30 5s linear infinite;pointer-events:none}
+    @keyframes sdc-drift30{to{background-position:300% 0}}
+    .sdc-card30:hover{transform:perspective(620px) rotateX(5deg) rotateY(-6deg) translateY(-5px);box-shadow:0 22px 34px -12px rgba(0,0,0,.55),0 12px 20px -8px rgba(255,140,80,.35)}
+    .sdc-ic30{width:32px;height:32px;margin-bottom:11px;display:grid;place-items:center;border-radius:9px;background:rgba(255,179,92,.16);color:#ffb35c;font-weight:900}
+    .sdc-card30 b{display:block;margin-bottom:6px;font-size:14px}
+    .sdc-card30 p{margin:0;font-size:11.5px;color:#cdb4c6}
+
+    .awh30{display:grid;place-items:center;padding:26px;text-align:center}
+    .awh-in30{width:min(370px,100%)}
+    .awh-kick30{font-size:10px;font-weight:800;letter-spacing:.24em;color:#ff9ec4}
+    .awh-title30{margin:10px 0 13px;font:800 clamp(27px,5.4vw,38px)/1.05 "Manrope",sans-serif;letter-spacing:-.04em}
+    .awh-title30 span{display:inline-block;animation:awh-rise30 5.2s cubic-bezier(.2,.8,.2,1) infinite;animation-delay:calc(var(--i)*.09s)}
+    @keyframes awh-rise30{0%,8%{opacity:0;transform:translateY(22px)}20%,84%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateY(-10px)}}
+    .awh-wave30{display:block;width:min(240px,82%);height:14px;margin:0 auto}
+    .awh-wave30 path{fill:none;stroke:#ff9a5c;stroke-width:3;stroke-linecap:round;stroke-dasharray:340;animation:awh-draw30 5.2s ease-in-out infinite}
+    @keyframes awh-draw30{0%{stroke-dashoffset:340}35%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-340}}
+    .awh-in30 p{margin:14px 0 0;color:#cdb4c6;font-size:12.5px}
+
+    .hbn30{display:block;padding:22px}
+    .hbn-nav30{position:relative;display:flex;align-items:center;gap:2px;padding:9px 10px;border-radius:13px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+    .hbn-brand30{font:800 14px "Manrope",sans-serif;margin-right:auto;padding:0 8px}
+    .hbn-link30{position:relative;z-index:1;padding:8px 12px;border:0;background:transparent;color:#e9d5e2;font-size:12px;font-weight:700;cursor:pointer;border-radius:9px;transition:color .25s}
+    .hbn-link30.on{color:#fff}
+    .hbn-halo30{position:absolute;top:50%;height:36px;border-radius:11px;background:radial-gradient(closest-side,rgba(255,160,90,.55),rgba(255,110,150,.2) 70%,transparent);transform:translateY(-50%);transition:left .4s cubic-bezier(.2,.8,.2,1),width .4s;pointer-events:none}
+    .hbn-ind30{position:absolute;bottom:5px;height:2.5px;border-radius:3px;background:linear-gradient(90deg,#ffb35c,#ff7ab0);transition:left .4s cubic-bezier(.2,.8,.2,1),width .4s;pointer-events:none}
+    .hbn-burger30{position:relative;z-index:1;width:34px;height:34px;flex:none;margin-left:6px;border:1px solid rgba(255,255,255,.16);border-radius:9px;background:rgba(255,255,255,.05);color:#fdf1e7;cursor:pointer;font-size:14px}
+    .hbn-menu30{display:grid;gap:4px;max-height:0;overflow:hidden;transition:max-height .45s ease,margin .45s ease}
+    .hbn-menu30.open{max-height:180px;margin-top:10px}
+    .hbn-menu30 span{padding:9px 12px;border-radius:9px;background:rgba(255,255,255,.05);font-size:12px;animation:hbn-drop30 .4s ease both;animation-delay:calc(var(--i)*.05s)}
+    @keyframes hbn-drop30{from{opacity:0;transform:translateY(-7px)}}
+    .hbn-body30{margin-top:16px;display:grid;grid-template-columns:1.2fr .8fr;gap:11px}
+    .hbn-body30 i{height:62px;border-radius:10px;background:rgba(255,255,255,.06)}
+
+    .vnh30{display:grid;place-items:center;padding:28px;text-align:center;background:radial-gradient(120% 130% at 50% 0%,#2b1030,#12060f)}
+    .vnh-star30{position:absolute;border-radius:50%;background:#ffe9c9;animation:vnh-twinkle30 var(--d,3s) ease-in-out infinite}
+    @keyframes vnh-twinkle30{50%{opacity:.1;transform:scale(.55)}}
+    .vnh-in30{position:relative;z-index:2;width:min(380px,100%)}
+    .vnh-kick30{font-size:10px;font-weight:800;letter-spacing:.26em;color:#ff9ec4;animation:vnh-rise30 6s ease-in-out infinite}
+    .vnh-title30{margin:12px 0 0;font:800 clamp(30px,6vw,44px)/1.02 "Manrope",sans-serif;letter-spacing:-.04em}
+    .vnh-title30 span{display:block}
+    .vnh-title30 .l1{animation:vnh-rise30 6s cubic-bezier(.2,.8,.2,1) infinite}
+    .vnh-title30 .l2{background:linear-gradient(100deg,#fff,#ffb35c 55%,#ff7ab0);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:vnh-rise30 6s cubic-bezier(.2,.8,.2,1) infinite .14s,vnh-sheen30 4.5s ease-in-out infinite}
+    @keyframes vnh-rise30{0%,7%{opacity:0;transform:translateY(24px)}18%,86%{opacity:1;transform:none}97%,100%{opacity:0;transform:translateY(-10px)}}
+    @keyframes vnh-sheen30{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+    .vnh-in30 p{margin:14px 0 0;color:#d8bfd2;font-size:13px;animation:vnh-rise30 6s ease-in-out infinite .26s}
+    .vnh-cta30{margin-top:21px;height:46px;padding:0 26px;border:0;border-radius:999px;background:linear-gradient(120deg,#ffb35c,#ff5e8a);color:#fff;font-weight:800;cursor:pointer;box-shadow:0 12px 28px rgba(255,110,120,.4);transition:transform .16s ease-out;animation:vnh-glow30 2.8s ease-in-out infinite}
+    @keyframes vnh-glow30{0%,100%{box-shadow:0 12px 28px rgba(255,110,120,.35)}50%{box-shadow:0 12px 38px rgba(255,150,90,.65)}}
+
+    .elf30{display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+    .elf-line30{height:2.5px;border-radius:3px;background:linear-gradient(90deg,transparent,#ffb35c,#ff5e62,#ffb35c,transparent);background-size:200% 100%;box-shadow:0 0 14px rgba(255,140,70,.55);animation:elf-flow30 4s linear infinite;margin-bottom:20px}
+    @keyframes elf-flow30{to{background-position:200% 0}}
+    .elf-cols30{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px}
+    .elf-cols30 b{display:block;margin-bottom:9px;font-size:12.5px}
+    .elf-link30{display:block;width:fit-content;margin-bottom:7px;font-size:11px;color:#cdb4c6;text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0% 1.5px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s ease,color .3s}
+    .elf-link30:hover{background-size:100% 1.5px;color:#ffd9a0}
+    .elf-social30{display:flex;gap:9px;margin-top:15px}
+    .elf-soc30{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:transparent;color:#e9d5e2;font-size:9.5px;font-weight:800;cursor:pointer;transition:transform .25s ease,background .25s,color .25s}
+    .elf-soc30:hover{transform:translateY(-4px);background:linear-gradient(140deg,#ffb35c,#ff5e8a);color:#fff;border-color:transparent}
+    .elf-note30{margin-top:13px;font-size:10px;color:#9a7f92}
+
+    .drs30{display:grid;place-items:center;padding:22px}
+    .drs-win30{width:min(330px,100%);height:240px;overflow-y:auto;padding:14px;border-radius:12px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);scrollbar-width:thin}
+    .drs-hint30{margin-bottom:11px;font-size:10px;font-weight:800;letter-spacing:.18em;color:#ff9ec4}
+    .drs-item30{padding:15px;margin-bottom:11px;border-radius:10px;background:rgba(255,255,255,.06);opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*.06s)}
+    .drs-item30.in{opacity:1;transform:none}
+    .drs-item30 b{display:block;margin-bottom:4px;font-size:13px}
+    .drs-item30 p{margin:0;font-size:11px;color:#cdb4c6}
+
+    .gmb30{background:linear-gradient(170deg,#241a08,#170f16)}
+    .gmb-fog30{position:absolute;width:340px;height:150px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,205,120,.34),transparent);filter:blur(18px);animation:gmb-drift30 11s ease-in-out infinite alternate}
+    .gmb-fog30.b{animation-delay:-4s;width:280px}
+    .gmb-fog30.c{animation-delay:-8s;width:380px}
+    @keyframes gmb-drift30{to{transform:translate(72px,-14px) scale(1.13)}}
+    .gmb-ray30{position:absolute;top:-32%;left:58%;width:92px;height:175%;background:linear-gradient(rgba(255,220,150,.17),transparent 75%);transform:rotate(18deg);transform-origin:top center;filter:blur(4px);animation:gmb-sway30 9s ease-in-out infinite alternate}
+    .gmb-ray30.b{left:30%;width:60px;animation-delay:-4.5s}
+    @keyframes gmb-sway30{to{transform:rotate(10deg)}}
+    .gmb-cap30{position:absolute;left:0;right:0;bottom:20px;text-align:center;font:800 14px "Manrope",sans-serif;letter-spacing:.16em;color:#ffe9c4}
+    .gmb-cap30 small{display:block;margin-top:6px;font:600 10.5px "DM Sans",sans-serif;letter-spacing:.05em;color:#cdb894}
+
+    .esw30{display:grid;place-items:center;padding:22px}
+    .esw-grid30{display:grid;grid-template-columns:1fr 1fr;gap:11px;width:min(370px,100%)}
+    .esw-card30{position:relative;padding:15px 15px 13px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);overflow:hidden}
+    .esw-card30::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3.5px;background:linear-gradient(#ffb35c,#ff5e62);transform:scaleY(0);transform-origin:top;transition:transform .7s ease}
+    .esw-card30.in::before{transform:scaleY(1)}
+    .esw-card30 small{color:#cdb4c6;font-size:10.5px;font-weight:700;letter-spacing:.06em}
+    .esw-num30{display:block;margin:4px 0 8px;font:800 23px "Manrope",sans-serif}
+    .esw-spark30{width:100%;height:26px;display:block}
+    .esw-spark30 polyline{fill:none;stroke:#ff9a5c;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:130;stroke-dashoffset:130}
+    .esw-card30.in .esw-spark30 polyline{animation:esw-draw30 1.4s ease forwards}
+    @keyframes esw-draw30{to{stroke-dashoffset:0}}
+
+    .mrk30{display:grid;place-items:center;padding:24px}
+    .mrk-card30{width:min(315px,100%);padding:20px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+    .mrk-top30{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .mrk-top30 b{font:800 15px "Manrope",sans-serif}
+    .mrk-top30 small{display:block;color:#cdb4c6;font-size:11px;margin-top:2px}
+    .mrk-badge30{flex:none;padding:7px 12px;border-radius:999px;background:linear-gradient(120deg,#ffb35c,#ff5e8a);color:#fff;font-size:11px;font-weight:800;animation:mrk-pop30 2.6s ease-in-out infinite}
+    @keyframes mrk-pop30{0%,100%{transform:scale(1)}12%{transform:scale(1.15) rotate(-2deg)}24%{transform:scale(1)}}
+    .mrk-tier30{margin-top:17px;display:flex;justify-content:space-between;font-size:11px;color:#cdb4c6}
+    .mrk-tier30 b{color:#ffd9a0}
+    .mrk-bar30{height:9px;margin-top:7px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden}
+    .mrk-bar30 i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#ffb35c,#ff5e62);transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+    .mrk-card30.in .mrk-bar30 i{width:72%}
+    .mrk-perks30{display:flex;gap:7px;margin-top:15px;flex-wrap:wrap}
+    .mrk-perks30 span{font-size:10px;padding:5px 9px;border-radius:99px;border:1px solid rgba(255,255,255,.16);color:#e9d5e2}
+
+    .twk30{display:grid;place-items:center;padding:22px}
+    .twk-grid30{display:grid;grid-template-columns:1fr 1fr;gap:11px;width:min(380px,100%)}
+    .twk-tile30{padding:15px;border-radius:12px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);transition:box-shadow .25s ease;animation:twk-in30 6.5s cubic-bezier(.2,.8,.2,1) infinite;animation-delay:calc(var(--i)*.14s)}
+    @keyframes twk-in30{0%,6%{opacity:0;transform:translateY(20px)}16%,88%{opacity:1;transform:none}97%,100%{opacity:0;transform:translateY(-8px)}}
+    .twk-tile30:hover{box-shadow:0 16px 28px -12px rgba(0,0,0,.55)}
+    .twk-stars30{color:#ffb35c;font-size:11px;letter-spacing:2px}
+    .twk-tile30 p{margin:7px 0 9px;font-size:11.5px;color:#efdde8}
+    .twk-tile30 small{color:#b28ea6;font-weight:700}
+
+    .vsp30{display:grid;place-items:center;padding:24px}
+    .vsp-grid30{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;width:min(490px,100%);align-items:center}
+    .vsp-card30{padding:17px 15px;border-radius:13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);transition:transform .25s ease}
+    .vsp-card30:hover{transform:translateY(-5px)}
+    .vsp-card30.pop{padding:22px 15px;background:linear-gradient(170deg,rgba(255,179,92,.16),rgba(255,94,138,.1));border-color:rgba(255,179,92,.6);box-shadow:0 20px 38px -14px rgba(255,130,70,.4)}
+    .vsp-card30.pop:hover{transform:translateY(-9px)}
+    .vsp-tag30{display:inline-block;margin-bottom:9px;padding:3px 8px;border-radius:99px;background:#ffb35c;color:#2a1408;font-size:9px;font-weight:900;letter-spacing:.08em}
+    .vsp-card30 b{font-size:12px;display:block}
+    .vsp-amt30{display:block;margin:7px 0 2px;font:800 22px "Manrope",sans-serif}
+    .vsp-card30 small{color:#cdb4c6;font-size:9.5px}
+    .vsp-feat30{margin-top:11px;display:grid;gap:6px;font-size:10.5px;color:#e9d5e2}
+    .vsp-feat30 span{display:flex;gap:6px;align-items:center}
+    .vsp-feat30 span::before{content:"✓";display:grid;place-items:center;width:15px;height:15px;flex:none;border-radius:50%;background:rgba(255,179,92,.2);color:#ffb35c;font-size:9px;font-weight:900;animation:vsp-check30 3.4s ease-in-out infinite;animation-delay:calc(var(--i)*.18s)}
+    @keyframes vsp-check30{0%,100%{transform:scale(1)}50%{transform:scale(1.32)}}
+
+    @media(max-width:600px){.drop30 .preview{min-height:310px}.sdl30{grid-template-columns:.82fr 1.18fr}.sdl-side30{padding:12px 10px 12px 2px}.sdl-card30{padding:17px 13px}.esw-grid30{gap:6px}.esw-num30{font-size:16px}.vsp-grid30{gap:6px}.vsp-card30{padding:12px 9px}.vsp-card30.pop{padding:14px 9px}.vsp-amt30{font-size:17px}.hbn-link30{padding:7px 7px;font-size:10.5px}.twk-grid30{gap:8px}.elf-cols30{gap:9px}.sdc-grid30{gap:8px}}
+
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; gap: 44px; padding: 58px 0 72px; }
       .hero-stage { min-height: 440px; }
@@ -5309,7 +5572,7 @@
 
         <article class="product wide" data-category="bundles">
           <div class="preview">
-            <div class="bundle-preview" aria-label="Twenty-five animated login screen styles">
+            <div class="bundle-preview" aria-label="Twenty-six animated login screen styles">
               <div class="mini-login"><b>Orbit</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login"><b>Minimal</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login"><b>Midnight</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
@@ -5333,13 +5596,14 @@
               <div class="mini-login ivorymist-mini"><b>Ivory Mist</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login opalcascade-mini"><b>Opal Cascade</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login velvetdawn-mini"><b>Velvet Dawn</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
+              <div class="mini-login saffrondusk-mini"><b>Saffron Dusk</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
             </div>
           </div>
           <div class="product-info">
             <div class="meta"><span class="tag new">Login bundle</span><span class="tag">Authentication</span><span class="tag motion-level">Motion Lv 2</span></div>
             <h3>Auth Motion Bundle</h3>
-            <p>A twenty-five-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login and Velvet Dawn Login.</p>
-            <div class="details"><span>25 screen concepts</span><span>Now includes Velvet Dawn Login</span><span>Animated preview</span></div>
+            <p>A twenty-six-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login and Saffron Dusk Login.</p>
+            <div class="details"><span>26 screen concepts</span><span>Now includes Saffron Dusk Login</span><span>Animated preview</span></div>
             <div class="price-row"><span class="price">₹449</span><span class="price-note">Level 2 bundle</span></div>
             <div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy bundle · link pending</button></div>
           </div>
@@ -6591,6 +6855,44 @@
         <article class="product drop29" data-category="social"><div class="preview"><div class="drop29-stage gsk29" aria-label="Golden Star Kit animated preview"><div class="gsk-wrap29"><div class="gsk-quotebox29"><div class="gsk-quote29" style="--i:0"><p>“Five gold stars and our signups noticed within the week.”</p><span>Meera Pillai · Studio lead</span></div><div class="gsk-quote29" style="--i:1"><p>“The fill sweep makes every review feel earned.”</p><span>Jonas Weber · Founder</span></div><div class="gsk-quote29" style="--i:2"><p>“Warm, credible and quick to drop in. Pure gold.”</p><span>Ananya Rao · Marketer</span></div></div><div class="gsk-grid29"><div class="gsk-card29" style="--i:0"><span class="gsk-stars29"><span style="--i:0;--d:0s">★</span><span style="--i:1;--d:0s">★</span><span style="--i:2;--d:0s">★</span><span style="--i:3;--d:0s">★</span><span style="--i:4;--d:0s">★</span></span><p>“Stars fill, avatars pop — visitors actually stop and read.”</p><span class="gsk-who29"><span class="gsk-ava29" style="--g1:#ffd166;--g2:#ff8f5e">VK</span>Vikram Khanna · Indie maker</span></div><div class="gsk-card29" style="--i:1"><span class="gsk-stars29"><span style="--i:0;--d:.6s">★</span><span style="--i:1;--d:.6s">★</span><span style="--i:2;--d:.6s">★</span><span style="--i:3;--d:.6s">★</span><span style="--i:4;--d:.6s">★</span></span><p>“Setup took one evening. The praise finally shines.”</p><span class="gsk-who29"><span class="gsk-ava29" style="--g1:#f0a6d8;--g2:#8a7cff">SM</span>Sofia Marino · Designer</span></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">29 Oct drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Golden Star Kit</h3><p>A golden star-rating showcase with animated rating fills, reviewer avatars and a quote reveal.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <article class="product wide drop29" data-category="pricing"><div class="preview"><div class="drop29-stage gtp29" aria-label="Glow Tier Pricing animated preview"><div class="gtp-wrap29"><div class="gtp-toggle29"><span>Monthly</span><button class="gtp-switch29" type="button" role="switch" aria-checked="false" aria-label="Toggle annual billing"><i></i></button><span>Annual · save 20%</span></div><div class="gtp-grid29"><div class="gtp-card29"><b>Starter</b><span class="gtp-amt29" data-m="₹29" data-y="₹23">₹29</span><small>per month</small><div class="gtp-per29">3 projects · Core motion</div></div><div class="gtp-card29 pop"><b>Pro · glowing pick</b><span class="gtp-amt29" data-m="₹49" data-y="₹39">₹49</span><small>per month</small><div class="gtp-per29">Unlimited · Rich motion</div></div><div class="gtp-card29"><b>Studio</b><span class="gtp-amt29" data-m="₹79" data-y="₹63">₹79</span><small>per month</small><div class="gtp-per29">Teams · Full library</div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">29 Oct drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Glow Tier Pricing</h3><p>Pricing tiers with a glowing highlighted plan, hover lift and an animated billing toggle — flip the toggle.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop30" data-category="login-screens"><div class="preview"><div class="drop30-stage sdl30" aria-label="Saffron Dusk Login animated preview"><div class="sdl-scene30"><span class="sdl-ember30" style="left:18%;bottom:14%;width:8px;height:8px;--d:6s"></span><span class="sdl-ember30" style="left:58%;bottom:26%;width:6px;height:6px;--d:8s;animation-delay:-2.5s"></span><span class="sdl-ember30" style="left:36%;bottom:8%;width:5px;height:5px;--d:7s;animation-delay:-4.5s"></span><span class="sdl-ember30" style="left:76%;bottom:18%;width:7px;height:7px;--d:9s;animation-delay:-1.2s"></span><b class="sdl-brand30">SAFFRON&nbsp;DUSK</b></div><div class="sdl-side30"><div class="sdl-card30"><b class="sdl-el30" style="--i:0">Welcome back</b><small class="sdl-el30" style="--i:1">Sign in as the sun goes down</small><div class="sdl-field30 sdl-el30" style="--i:2"><input type="email" placeholder="Email address" aria-label="Email address"></div><div class="sdl-field30 sdl-el30" style="--i:3"><input type="password" placeholder="Password" aria-label="Password"></div><button class="sdl-go30 sdl-el30" style="--i:4" type="button">Sign in →</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Animated login screens</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Saffron Dusk Login</h3><p>A warm dusk-gradient login card with slow amber-to-plum gradient drift, floating ember particles, a glowing sign-in button with hover lift, and staggered field entrances.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 3 login screen</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="auth"><div class="preview"><div class="drop30-stage ekf30" aria-label="Echo Key Flow animated preview"><div class="ekf-card30"><div class="ekf-key30"><span class="ekf-ring30"></span></div><b>Verify your key</b><p>Hold your security key near this device, then confirm.</p><div class="ekf-rail30"><span class="ekf-step30 on">1</span><span class="ekf-bar30"><i></i></span><span class="ekf-step30">2</span><span class="ekf-bar30"><i></i></span><span class="ekf-step30">3</span></div><button class="ekf-btn30" type="button">Confirm key</button><div class="ekf-msg30" role="status">Waiting for your security key…</div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Auth flows</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Echo Key Flow</h3><p>A security-key verification flow with a pulsing key icon, an animated step rail, a success ripple on confirm, and smooth step transitions — tap Confirm key.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹49</span><span class="price-note">Level 2 auth flow</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="buttons"><div class="preview"><div class="drop30-stage epb30" aria-label="Ember Pulse Buttons animated preview"><div class="epb-board30"><button class="epb-btn30 pulse" type="button"><span>Ember primary</span></button><button class="epb-btn30 solid" type="button"><span>Fill sweep</span></button><button class="epb-btn30 ghost" type="button"><span>Ghost ember</span></button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Buttons &amp; CTAs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Ember Pulse Buttons</h3><p>Buttons with a pulsing ember glow, a hover fill sweep, and a soft press bounce on click.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="toggles"><div class="preview"><div class="drop30-stage vst30" aria-label="Velvet Slide Toggles animated preview"><div class="vst-list30"><div class="vst-row30"><span><b>Night mode</b><span class="vst-state30">ON</span></span><button class="vst-tog30 on" type="button" role="switch" aria-checked="true" aria-label="Night mode"></button></div><div class="vst-row30"><span><b>Soft glow</b><span class="vst-state30">OFF</span></span><button class="vst-tog30" type="button" role="switch" aria-checked="false" aria-label="Soft glow"></button></div><div class="vst-row30"><span><b>Ember alerts</b><span class="vst-state30">ON</span></span><button class="vst-tog30 on" type="button" role="switch" aria-checked="true" aria-label="Ember alerts"></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Toggles &amp; switches</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Velvet Slide Toggles</h3><p>Velvet-textured slide toggles with a smooth knob glide, a glow-on state, and a micro bounce at the end of travel — tap to flip them.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="loaders"><div class="preview"><div class="drop30-stage gsl30" aria-label="Galaxy Swirl Loader animated preview"><div><div class="gsl-core30"><span class="gsl-star30"></span><div class="gsl-orbit30" style="inset:0;--t:9s"><i style="--c:#ffb35c"></i><i class="b2" style="--c:#ff7ab0"></i></div><div class="gsl-orbit30 rev" style="inset:27px;--t:6.5s"><i style="--c:#9adcff"></i></div><div class="gsl-orbit30" style="inset:54px;--t:4.5s"><i style="--c:#ffe9b0"></i><i class="b2" style="--c:#ffb35c"></i></div><span class="gsl-spark30" style="left:12%;top:20%"></span><span class="gsl-spark30" style="left:84%;top:30%;animation-delay:-.8s"></span><span class="gsl-spark30" style="left:70%;top:82%;animation-delay:-1.6s"></span><span class="gsl-spark30" style="left:22%;top:76%;animation-delay:-.4s"></span></div><div class="gsl-label30">LOADING</div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Loaders &amp; spinners</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Galaxy Swirl Loader</h3><p>A swirling galaxy of orbiting dots that spiral inward, with a rotating star core and trailing sparkle particles.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="inputs"><div class="preview"><div class="drop30-stage mfi30" aria-label="Mist Field Inputs animated preview"><div class="mfi-form30"><b>Your details</b><div class="mfi-field30"><input type="text" placeholder=" " aria-label="Full name"><label>Full name</label></div><div class="mfi-field30"><input type="email" placeholder=" " aria-label="Email address"><label>Email address</label></div><div class="mfi-field30"><input type="text" placeholder=" " aria-label="City"><label>City</label></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Form inputs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Mist Field Inputs</h3><p>Inputs with a soft mist glow on focus, floating labels, and a gentle underline draw animation — click a field to feel it.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="modals"><div class="preview"><div class="drop30-stage dpm30" aria-label="Drift Panel Modal animated preview"><button class="dpm-open30" type="button">Open panel</button><div class="dpm-back30"><div class="dpm-panel30" role="dialog" aria-label="Drift panel preview"><button class="dpm-x30" type="button" aria-label="Close panel">✕</button><b>Panel settings</b><p>A side panel that drifts in while the page behind it softens into a blur.</p><button class="dpm-ok30" type="button">Looks good</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Modals &amp; dialogs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Drift Panel Modal</h3><p>A modal that drifts in from the side with a backdrop blur fade, staggered content entrance, and a smooth close-out slide — open the panel.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="feedback"><div class="preview"><div class="drop30-stage fts30" aria-label="Frost Toast Stack animated preview"><div class="fts-stack30"><div class="fts-toast30"><span class="fts-ic30">✓</span><span><b>Changes saved</b><small>Your workspace is up to date</small></span></div><div class="fts-toast30"><span class="fts-ic30">✦</span><span><b>New drop is live</b><small>Fresh components just landed</small></span></div><div class="fts-toast30"><span class="fts-ic30">i</span><span><b>Sync paused</b><small>We will retry in a moment</small></span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Toasts &amp; notifications</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Frost Toast Stack</h3><p>Frosted-glass toasts that slide in with a cool shimmer edge, a progress bar, and a dismiss sweep.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="cards"><div class="preview"><div class="drop30-stage sdc30" aria-label="Solar Drift Cards animated preview"><div class="sdc-grid30"><div class="sdc-card30"><span class="sdc-ic30">☀</span><b>Solar plan</b><p>Drifting gradient borders with layered depth on lift.</p></div><div class="sdc-card30"><span class="sdc-ic30">✦</span><b>Flare stats</b><p>Hover to tilt the card and feel the shadow stack.</p></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Cards</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Solar Drift Cards</h3><p>Cards with a drifting solar gradient border, hover tilt, and layered shadow depth on lift.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="titles"><div class="preview"><div class="drop30-stage awh30" aria-label="Aurora Wave Headers animated preview"><div class="awh-in30"><span class="awh-kick30">SECTION HEADERS</span><h4 class="awh-title30"><span style="--i:0">Design</span> <span style="--i:1">that</span> <span style="--i:2">drifts</span> <span style="--i:3">in</span> <span style="--i:4">softly</span></h4><svg class="awh-wave30" viewBox="0 0 240 14" aria-hidden="true"><path d="M2 7 C 32 -3, 62 17, 92 7 S 152 -3, 182 7 S 222 15, 238 7"/></svg><p>Staggered word reveals over an animated aurora wave underline.</p></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Title cards &amp; section headers</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Aurora Wave Headers</h3><p>Section headers with an animated aurora wave underline and a staggered word reveal.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="navbars"><div class="preview"><div class="drop30-stage hbn30" aria-label="Halo Bar Nav animated preview"><nav class="hbn-nav30"><span class="hbn-brand30">HALO</span><span class="hbn-halo30"></span><span class="hbn-ind30"></span><button class="hbn-link30 on" type="button">Home</button><button class="hbn-link30" type="button">Work</button><button class="hbn-link30" type="button">Studio</button><button class="hbn-link30" type="button">About</button><button class="hbn-burger30" type="button" aria-expanded="false" aria-label="Toggle menu">☰</button></nav><div class="hbn-menu30"><span style="--i:0">Home</span><span style="--i:1">Work</span><span style="--i:2">Studio</span><span style="--i:3">About</span></div><div class="hbn-body30"><i></i><i></i></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Navbars &amp; menus</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Halo Bar Nav</h3><p>A navbar with a soft halo glow behind the active link, a sliding indicator, and a smooth mobile menu expansion — hover the links, tap the menu.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="heroes"><div class="preview"><div class="drop30-stage vnh30" aria-label="Velvet Night Hero animated preview"><span class="vnh-star30" style="left:12%;top:16%;width:4px;height:4px;--d:2.6s"></span><span class="vnh-star30" style="left:26%;top:64%;width:3px;height:3px;--d:3.4s;animation-delay:-1s"></span><span class="vnh-star30" style="left:44%;top:10%;width:3px;height:3px;--d:2.2s;animation-delay:-.6s"></span><span class="vnh-star30" style="left:63%;top:26%;width:4px;height:4px;--d:3s;animation-delay:-1.8s"></span><span class="vnh-star30" style="left:78%;top:58%;width:3px;height:3px;--d:2.8s;animation-delay:-.3s"></span><span class="vnh-star30" style="left:88%;top:14%;width:4px;height:4px;--d:3.8s;animation-delay:-2.2s"></span><span class="vnh-star30" style="left:8%;top:78%;width:3px;height:3px;--d:3.1s;animation-delay:-1.4s"></span><div class="vnh-in30"><span class="vnh-kick30">VELVET NIGHT</span><h4 class="vnh-title30"><span class="l1">Built for the</span><span class="l2">quiet hours</span></h4><p>A hero that opens like midnight — calm, deep and ready to work.</p><button class="vnh-cta30" type="button">Start tonight</button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Hero sections</span><span class="tag motion-level">Motion Lv 3 · Rich kit</span></div><h3>Velvet Night Hero</h3><p>A velvet-dark hero with a twinkling star field, a gradient headline reveal, and a floating CTA with magnetic hover.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹89</span><span class="price-note">Level 3 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="footers"><div class="preview"><div class="drop30-stage elf30" aria-label="Ember Line Footer animated preview"><div class="elf-line30"></div><div class="elf-cols30"><div><b>Emberline</b><span class="elf-link30">About the studio</span><span class="elf-link30">Our process</span><span class="elf-link30">Careers</span></div><div><b>Explore</b><span class="elf-link30">Components</span><span class="elf-link30">Bundles</span><span class="elf-link30">Templates</span></div><div><b>Support</b><span class="elf-link30">Docs</span><span class="elf-link30">License</span><span class="elf-link30">Contact</span></div></div><div class="elf-social30"><button class="elf-soc30" type="button" aria-label="X profile">X</button><button class="elf-soc30" type="button" aria-label="Instagram profile">IG</button><button class="elf-soc30" type="button" aria-label="GitHub profile">GH</button><button class="elf-soc30" type="button" aria-label="LinkedIn profile">IN</button></div><div class="elf-note30">© 2026 Emberline Studio — crafted after dark.</div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Footers</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Ember Line Footer</h3><p>A footer with a glowing ember divider line, animated link underlines, and social icons with hover lift.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="effects"><div class="preview"><div class="drop30-stage drs30" aria-label="Drift Reveal Scroll Pack animated preview"><div class="drs-win30"><div class="drs-hint30">SCROLL ↓</div><div class="drs-item30" style="--i:0"><b>Drift-in blocks</b><p>Elements float up as they enter the viewport.</p></div><div class="drs-item30" style="--i:1"><b>Parallax offsets</b><p>Layers travel at slightly different speeds.</p></div><div class="drs-item30" style="--i:2"><b>Staggered entrances</b><p>Groups arrive one beat after another.</p></div><div class="drs-item30" style="--i:3"><b>Soft landings</b><p>Every reveal settles without a jolt.</p></div><div class="drs-item30" style="--i:4"><b>Once or repeat</b><p>Choose per element, per section.</p></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Scroll-animation packs</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Drift Reveal Scroll Pack</h3><p>Scroll-triggered drift-in reveals with parallax offsets and staggered element entrances — scroll the little window.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="backgrounds"><div class="preview"><div class="drop30-stage gmb30" aria-label="Golden Mist Background animated preview"><span class="gmb-fog30" style="left:-60px;top:6%"></span><span class="gmb-fog30 b" style="right:-50px;top:38%"></span><span class="gmb-fog30 c" style="left:16%;bottom:-58px"></span><span class="gmb-ray30"></span><span class="gmb-ray30 b"></span><div class="gmb-cap30">GOLDEN MIST<small>Drifting fog layers under soft light rays</small></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Background effects</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Golden Mist Background</h3><p>A golden mist background with slowly drifting fog layers and soft light rays.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="dashboard"><div class="preview"><div class="drop30-stage esw30" aria-label="Ember Stat Widgets animated preview"><div class="esw-grid30"><div class="esw-card30"><small>REVENUE</small><span class="esw-num30" data-count="48200" data-prefix="₹">₹0</span><svg class="esw-spark30" viewBox="0 0 100 26" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,20 20,15 40,17 60,9 80,11 100,4"/></svg></div><div class="esw-card30"><small>ORDERS</small><span class="esw-num30" data-count="1284">0</span><svg class="esw-spark30" viewBox="0 0 100 26" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,16 20,19 40,11 60,13 80,7 100,9"/></svg></div><div class="esw-card30"><small>VISITORS</small><span class="esw-num30" data-count="9360">0</span><svg class="esw-spark30" viewBox="0 0 100 26" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,21 20,13 40,15 60,8 80,12 100,3"/></svg></div><div class="esw-card30"><small>REFUNDS</small><span class="esw-num30" data-count="32">0</span><svg class="esw-spark30" viewBox="0 0 100 26" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,8 20,12 40,10 60,15 80,14 100,19"/></svg></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Dashboard widgets</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Ember Stat Widgets</h3><p>Stat widgets with ember accent bars, animated count-up numbers, and mini trend sparks.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="ecommerce"><div class="preview"><div class="drop30-stage mrk30" aria-label="Member Rewards Kit animated preview"><div class="mrk-card30"><div class="mrk-top30"><span><b>Member rewards</b><small>Keep going — Gold is close</small></span><span class="mrk-badge30">★ 2,450 pts</span></div><div class="mrk-tier30"><span>Silver</span><b>72% to Gold</b><span>Gold</span></div><div class="mrk-bar30"><i></i></div><div class="mrk-perks30"><span>Free delivery</span><span>Early drops</span><span>Birthday bonus</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">E-commerce kits</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Member Rewards Kit</h3><p>A rewards progress card, a points badge with a pop animation, and a tier progress bar that fills on view.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop30" data-category="social"><div class="preview"><div class="drop30-stage twk30" aria-label="Trust Wall Kit animated preview"><div class="twk-grid30"><div class="twk-tile30" style="--i:0"><span class="twk-stars30">★★★★★</span><p>"Shipped our landing in a weekend. The motion feels expensive."</p><small>Priya — Indie maker</small></div><div class="twk-tile30" style="--i:1"><span class="twk-stars30">★★★★★</span><p>"Clients keep asking who built our site. It is these components."</p><small>Arjun — Freelancer</small></div><div class="twk-tile30" style="--i:2"><span class="twk-stars30">★★★★★</span><p>"Clean, fast, and the previews are exactly what you get."</p><small>Meera — Designer</small></div><div class="twk-tile30" style="--i:3"><span class="twk-stars30">★★★★★</span><p>"The login bundle alone paid for itself on the first project."</p><small>Ravi — Developer</small></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Trust Wall Kit</h3><p>A wall of short testimonial tiles with hover lift, star ratings, and a staggered entrance.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop30" data-category="pricing"><div class="preview"><div class="drop30-stage vsp30" aria-label="Value Stack Pricing animated preview"><div class="vsp-grid30"><div class="vsp-card30"><b>Starter</b><span class="vsp-amt30">₹19</span><small>per component</small><div class="vsp-feat30"><span style="--i:0">Core motion</span><span style="--i:1">3 projects</span><span style="--i:2">Email support</span></div></div><div class="vsp-card30 pop"><span class="vsp-tag30">MOST POPULAR</span><b>Pro stack</b><span class="vsp-amt30">₹29</span><small>per component</small><div class="vsp-feat30"><span style="--i:0">Full motion library</span><span style="--i:1">Unlimited projects</span><span style="--i:2">Priority support</span></div></div><div class="vsp-card30"><b>Studio</b><span class="vsp-amt30">₹49</span><small>per component</small><div class="vsp-feat30"><span style="--i:0">Team seats</span><span style="--i:1">Client work</span><span style="--i:2">Lifetime updates</span></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">30 Oct drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Value Stack Pricing</h3><p>Pricing tiers with a stacked highlight card, hover raise on the popular tier, and animated feature checkmarks.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <div class="catalog-empty" id="catalog-empty" role="status" aria-live="polite" hidden>
           <h3>No components here yet</h3>
@@ -9971,6 +10273,161 @@
             window.setTimeout(function () { amt.textContent = annual ? amt.dataset.y : amt.dataset.m; }, reduceMotion ? 0 : 200);
           });
         });
+      });
+
+      document.querySelectorAll('.vst-tog30').forEach(function (tog) {
+        tog.addEventListener('click', function () {
+          var on = tog.classList.toggle('on');
+          tog.setAttribute('aria-checked', String(on));
+          var row = tog.closest('.vst-row30');
+          var state = row && row.querySelector('.vst-state30');
+          if (state) state.textContent = on ? 'ON' : 'OFF';
+        });
+      });
+
+      document.querySelectorAll('.dpm30').forEach(function (stage) {
+        var back = stage.querySelector('.dpm-back30');
+        var open = stage.querySelector('.dpm-open30');
+        if (!back || !open) return;
+        open.addEventListener('click', function () { back.classList.add('open'); });
+        back.addEventListener('click', function (e) { if (e.target === back) back.classList.remove('open'); });
+        var close = back.querySelector('.dpm-x30');
+        if (close) close.addEventListener('click', function () { back.classList.remove('open'); });
+        var ok = back.querySelector('.dpm-ok30');
+        if (ok) ok.addEventListener('click', function () { back.classList.remove('open'); });
+      });
+
+      document.querySelectorAll('.ekf30').forEach(function (stage) {
+        var btn = stage.querySelector('.ekf-btn30');
+        var msg = stage.querySelector('.ekf-msg30');
+        var steps = stage.querySelectorAll('.ekf-step30');
+        if (!btn) return;
+        var resetTimer = null;
+        btn.addEventListener('click', function (e) {
+          var rect = btn.getBoundingClientRect();
+          var rip = document.createElement('span');
+          rip.className = 'ekf-rip30';
+          rip.style.left = (e.clientX - rect.left) + 'px';
+          rip.style.top = (e.clientY - rect.top) + 'px';
+          btn.appendChild(rip);
+          window.setTimeout(function () { rip.remove(); }, 700);
+          stage.classList.add('done');
+          steps.forEach(function (s) { s.classList.add('on'); });
+          if (msg) msg.textContent = '✓ Key verified — welcome back';
+          if (resetTimer) window.clearTimeout(resetTimer);
+          resetTimer = window.setTimeout(function () {
+            stage.classList.remove('done');
+            steps.forEach(function (s, i) { s.classList.toggle('on', i === 0); });
+            if (msg) msg.textContent = 'Waiting for your security key…';
+          }, 3000);
+        });
+      });
+
+      document.querySelectorAll('.hbn30').forEach(function (stage) {
+        var nav = stage.querySelector('.hbn-nav30');
+        var menu = stage.querySelector('.hbn-menu30');
+        var burger = stage.querySelector('.hbn-burger30');
+        if (burger && menu) {
+          burger.addEventListener('click', function () {
+            var openMenu = menu.classList.toggle('open');
+            burger.setAttribute('aria-expanded', String(openMenu));
+          });
+        }
+        if (!nav) return;
+        var links = Array.prototype.slice.call(nav.querySelectorAll('.hbn-link30'));
+        var ind = nav.querySelector('.hbn-ind30');
+        var halo = nav.querySelector('.hbn-halo30');
+        if (!links.length || !ind) return;
+        var idx = 0, timer = null;
+        function place(i) {
+          idx = i;
+          var link = links[i];
+          ind.style.left = link.offsetLeft + 'px';
+          ind.style.width = link.offsetWidth + 'px';
+          if (halo) {
+            halo.style.left = (link.offsetLeft - 9) + 'px';
+            halo.style.width = (link.offsetWidth + 18) + 'px';
+          }
+          links.forEach(function (l, j) { l.classList.toggle('on', j === i); });
+        }
+        function stopAuto() { if (timer) { window.clearInterval(timer); timer = null; } }
+        links.forEach(function (link, i) {
+          link.addEventListener('mouseenter', function () { stopAuto(); place(i); });
+          link.addEventListener('focus', function () { stopAuto(); place(i); });
+          link.addEventListener('click', function () { place(i); });
+        });
+        place(0);
+        if (!reduceMotion) timer = window.setInterval(function () { place((idx + 1) % links.length); }, 2300);
+      });
+
+      document.querySelectorAll('.drs-win30').forEach(function (sc) {
+        var items = sc.querySelectorAll('.drs-item30');
+        if ('IntersectionObserver' in window) {
+          var drsio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); drsio.unobserve(en.target); } });
+          }, { root: sc, threshold: .3 });
+          items.forEach(function (item) { drsio.observe(item); });
+        } else {
+          items.forEach(function (item) { item.classList.add('in'); });
+        }
+      });
+
+      function countUp30(el) {
+        var target = parseFloat(el.dataset.count), suffix = el.dataset.suffix || '', prefix = el.dataset.prefix || '';
+        function format(v) { return prefix + Math.round(v).toLocaleString('en-IN') + suffix; }
+        if (reduceMotion) { el.textContent = format(target); return; }
+        var start = null;
+        function frame(ts) {
+          if (!start) start = ts;
+          var p = Math.min(1, (ts - start) / 1200);
+          el.textContent = format(target * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) window.requestAnimationFrame(frame);
+        }
+        window.requestAnimationFrame(frame);
+      }
+      document.querySelectorAll('.esw-card30').forEach(function (card) {
+        var num = card.querySelector('.esw-num30');
+        if ('IntersectionObserver' in window) {
+          var eswio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) {
+                en.target.classList.add('in');
+                var n = en.target.querySelector('.esw-num30');
+                if (n) countUp30(n);
+                eswio.unobserve(en.target);
+              }
+            });
+          }, { threshold: .4 });
+          eswio.observe(card);
+        } else {
+          card.classList.add('in');
+          if (num) countUp30(num);
+        }
+      });
+
+      document.querySelectorAll('.mrk-card30').forEach(function (card) {
+        if ('IntersectionObserver' in window) {
+          var mrkio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); mrkio.unobserve(en.target); } });
+          }, { threshold: .4 });
+          mrkio.observe(card);
+        } else {
+          card.classList.add('in');
+        }
+      });
+
+      document.querySelectorAll('.vnh-cta30').forEach(function (btn) {
+        var stage = btn.closest('.vnh30');
+        if (!stage || reduceMotion || !window.matchMedia('(pointer:fine)').matches) return;
+        stage.addEventListener('pointermove', function (e) {
+          var r = btn.getBoundingClientRect();
+          var dx = e.clientX - (r.left + r.width / 2);
+          var dy = e.clientY - (r.top + r.height / 2);
+          if (Math.abs(dx) < 140 && Math.abs(dy) < 100) {
+            btn.style.transform = 'translate(' + (dx * .25) + 'px,' + (dy * .3) + 'px)';
+          }
+        });
+        stage.addEventListener('pointerleave', function () { btn.style.transform = ''; });
       });
 
       var filterButtons = Array.prototype.slice.call(document.querySelectorAll('.filter'));
