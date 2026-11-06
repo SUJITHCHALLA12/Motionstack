@@ -7375,11 +7375,283 @@
     .dtp-feat05 span::before{content:"✓ ";color:#e0a387;font-weight:900}
 
     @media(max-width:600px){.drop05 .preview{min-height:310px}.dsc-grid05,.osw-grid05{gap:8px}.dtp-grid05{gap:6px}.dtp-card05{padding-inline:5px}.osf-cols05{grid-template-columns:1fr 1fr;padding-inline:16px}.osf-news05{padding-inline:16px}.bck-main05{grid-template-columns:1fr}.ssp-view05{gap:6px}.cvn-link05{padding-inline:5px;font-size:9.5px}}
+  
+    /* 06 November daily drop previews — storm theme */
+    .drop06{border-color:color-mix(in srgb,#8a7cff 42%,var(--line))}
+    .drop06 .preview{isolation:isolate}
+    .drop06 .drop-date{background:color-mix(in srgb,#8a7cff 18%,var(--surface))}
+    .drop06-stage{position:relative;width:min(500px,100%);min-height:290px;overflow:hidden;border-radius:13px;background:#0e1422;color:#eef2ff}
+    .thunderstorm-mini{background:linear-gradient(140deg,#141a33,#3b2f6e 55%,#6d5cff)!important;color:#eef2ff!important;border-color:#8a7cff!important}
+
+    .tsl06{display:grid;place-items:center;background:linear-gradient(155deg,#0b1020,#232a4d 52%,#3a2a6e)}
+    .tsl-flash06{position:absolute;inset:0;background:#eef2ff;opacity:0;pointer-events:none;animation:tsl-flash06 5.5s ease infinite}
+    .tsl-rain06{position:absolute;top:-30px;width:2px;height:34px;border-radius:2px;background:linear-gradient(180deg,transparent,#7ec3ff);opacity:.55;transform:rotate(12deg);animation:tsl-fall06 var(--d,1.1s) linear infinite;animation-delay:var(--dl,0s)}
+    .tsl-card06{position:relative;z-index:2;width:min(320px,86%);padding:24px;border:1px solid rgba(160,170,255,.35);border-radius:15px;background:rgba(16,20,40,.55);backdrop-filter:blur(13px);box-shadow:0 26px 60px rgba(0,0,0,.5)}
+    .tsl-card06 b{font:800 20px "Manrope",sans-serif}
+    .tsl-card06 small{display:block;margin:2px 0 10px;color:#a9b4e8}
+    .tsl-field06{margin-top:11px}
+    .tsl-field06 input{width:100%;height:43px;padding:0 12px;border:1px solid rgba(150,160,230,.35);border-radius:8px;outline:0;background:rgba(8,10,24,.55);color:#fff;transition:.25s}
+    .tsl-field06 input:focus{border-color:#8a7cff;box-shadow:0 0 0 3px rgba(138,124,255,.2),0 0 22px rgba(138,124,255,.45)}
+    .tsl-go06{position:relative;width:100%;height:42px;margin-top:13px;overflow:hidden;border:0;border-radius:8px;background:linear-gradient(90deg,#6d5cff,#8a7cff);color:#fff;font-weight:900;cursor:pointer;transition:box-shadow .3s}
+    .tsl-go06:hover{box-shadow:0 0 26px rgba(138,124,255,.8)}
+    .tsl-go06::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.8),transparent 65%);transform:translateX(-120%);animation:gate-sweep 2.6s ease infinite}
+    @keyframes tsl-flash06{0%,62%,68%,100%{opacity:0}64%{opacity:.28}66%{opacity:.05}}
+    @keyframes tsl-fall06{to{transform:rotate(12deg) translateY(360px)}}
+
+    .spf06{display:grid;place-items:center;background:#0b1220}
+    .spf-card06{width:min(430px,92%);padding:22px;border-radius:13px;background:var(--surface);color:var(--ink)}
+    .spf-rail06{position:relative;display:flex;justify-content:space-between;margin-bottom:18px;padding:0 6px}
+    .spf-rail06::before{content:"";position:absolute;left:14px;right:14px;top:13px;height:3px;border-radius:3px;background:var(--surface-2)}
+    .spf-cloud06{position:absolute;top:4px;left:0;width:34px;height:20px;border-radius:20px;background:linear-gradient(90deg,#6d5cff,#5bc0ff);box-shadow:0 0 14px rgba(109,92,255,.5);transition:left .5s cubic-bezier(.2,.9,.3,1.2)}
+    .spf-dot06{position:relative;z-index:2;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:900;transition:.3s}
+    .spf-dot06.done,.spf-dot06.active{background:#6d5cff;color:#fff}
+    .spf-dot06.active{animation:pulse 1.5s ease infinite}
+    .spf-window06{overflow:hidden}
+    .spf-track06{display:flex;width:300%;transition:transform .48s cubic-bezier(.2,.85,.25,1)}
+    .spf-panel06{width:33.333%;padding:2px}
+    .spf-panel06 b{display:block;margin-bottom:6px}
+    .spf-panel06 p{margin:0 0 10px;color:var(--muted);font-size:12px}
+    .spf-field06{height:40px;margin:8px 0;display:flex;align-items:center;padding:0 11px;border:1px solid var(--line);border-radius:8px;color:var(--muted);font-size:12px}
+    .spf-boxes06{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+    .spf-boxes06 i{display:grid;place-items:center;height:42px;border:1px solid var(--line);border-radius:8px;font-style:normal;font-weight:900;color:#6d5cff;animation:spf-pulse06 1.6s ease infinite;animation-delay:calc(var(--i)*.18s)}
+    @keyframes spf-pulse06{0%,100%{transform:scale(1)}50%{transform:scale(1.1);border-color:#8a7cff;box-shadow:0 0 12px rgba(138,124,255,.35)}}
+    .spf-next06{float:right;margin-top:12px;padding:9px 14px;border:0;border-radius:7px;background:#6d5cff;color:#fff;font-weight:900;cursor:pointer}
+    .spf-done06{text-align:center}
+    .spf-check06{width:64px;height:64px;margin:4px auto 10px}
+    .spf-check06 path{fill:none;stroke:#6d5cff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:60;stroke-dashoffset:60;animation:spf-draw06 1.6s ease infinite}
+    @keyframes spf-draw06{35%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:60}}
+
+    .lsb06{display:grid;place-items:center;background:#0d1322}
+    .lsb-board06{display:grid;grid-template-columns:1fr 1fr;gap:13px;width:min(430px,92%)}
+    .lsb-btn06{position:relative;overflow:hidden;min-height:62px;border:1px solid #3a4670;border-radius:10px;background:#182040;color:#eef2ff;font-weight:900;cursor:pointer;animation:lsb-in06 3.6s ease infinite;animation-delay:calc(var(--i)*.22s);transition:transform .2s,box-shadow .25s}
+    .lsb-btn06::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 38%,rgba(255,217,77,.55),transparent 62%);transform:translateX(-120%);transition:transform .5s ease}
+    .lsb-btn06:hover::before{transform:translateX(120%)}
+    .lsb-btn06:nth-child(2){background:linear-gradient(90deg,#6d5cff,#8a7cff);border-color:transparent}
+    .lsb-btn06:nth-child(3){background:#ffd94d;color:#241d05;border-color:transparent}
+    .lsb-btn06:hover{transform:translateY(-4px);box-shadow:0 0 22px rgba(138,124,255,.5)}
+    .lsb-btn06:active{transform:translateY(1px) scale(.98);box-shadow:0 0 30px rgba(255,217,77,.6)}
+    @keyframes lsb-in06{0%,8%{opacity:.3;filter:brightness(1.8)}18%,88%{opacity:1;filter:none}100%{opacity:.3}}
+
+    .sst06{display:grid;place-items:center;background:#0c1220}
+    .sst-panel06{width:min(410px,92%);display:grid;gap:15px;padding:20px;border-radius:13px;background:var(--surface);color:var(--ink)}
+    .sst-row06{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:800}
+    .sst-row06 small{display:block;color:var(--muted);font-weight:600;font-size:11px}
+    .sst-state06{color:#6d5cff;font-size:10px;font-weight:900}
+    .sst-right06{display:flex;align-items:center;gap:9px}
+    .sst-bolt06{color:#ffd94d;font-size:14px;opacity:0;transform:scale(.4);transition:.3s}
+    .sst-row06.on .sst-bolt06{opacity:1;transform:none;animation:switch-flicker .4s steps(2)}
+    .sst-tog06{position:relative;flex:0 0 auto;width:64px;height:35px;border:0;border-radius:999px;background:#8a93a8;cursor:pointer;box-shadow:inset 0 2px 5px rgba(10,14,30,.35);transition:background .35s,box-shadow .35s}
+    .sst-tog06::after{content:"";position:absolute;left:4px;top:4px;width:27px;height:22px;border-radius:45% 55% 55% 45%/60% 60% 40% 40%;background:linear-gradient(145deg,#ffffff,#dfe6f5);box-shadow:0 3px 8px rgba(10,14,30,.35);transition:transform .45s cubic-bezier(.3,1.5,.4,1)}
+    .sst-tog06[aria-checked="true"]{background:linear-gradient(90deg,#3d6fd1,#5bc0ff);box-shadow:0 0 18px rgba(91,192,255,.55)}
+    .sst-tog06[aria-checked="true"]::after{transform:translateX(29px)}
+
+    .rdl06{display:grid;place-items:center;background:linear-gradient(180deg,#0d1526,#132038)}
+    .rdl-wrap06{position:relative;width:min(360px,90%);height:210px;text-align:center}
+    .rdl-drop06{position:absolute;top:0;width:9px;height:15px;border-radius:50% 50% 60% 60%/40% 40% 70% 70%;background:linear-gradient(180deg,#8fd0ff,#5bc0ff);animation:rdl-fall06 var(--d,1.6s) ease-in infinite;animation-delay:var(--dl,0s)}
+    .rdl-ripple06{position:absolute;bottom:44px;width:34px;height:10px;border:2px solid rgba(91,192,255,.7);border-radius:50%;transform:translateX(-50%);animation:rdl-rip06 var(--d,1.6s) ease-out infinite;animation-delay:var(--dl,0s)}
+    @keyframes rdl-fall06{0%{transform:translateY(0);opacity:0}18%{opacity:1}72%{transform:translateY(148px);opacity:1}80%,100%{transform:translateY(152px);opacity:0}}
+    @keyframes rdl-rip06{0%,70%{transform:translateX(-50%) scale(.3);opacity:0}78%{opacity:.9}100%{transform:translateX(-50%) scale(1.5);opacity:0}}
+    .rdl-ring06{position:absolute;left:50%;bottom:0;width:64px;height:64px;transform:translateX(-50%);border-radius:50%;background:conic-gradient(#5bc0ff var(--p,68%),#263354 0);-webkit-mask:radial-gradient(circle,transparent 56%,#000 57%);mask:radial-gradient(circle,transparent 56%,#000 57%);animation:rdl-spin06 3s linear infinite}
+    @keyframes rdl-spin06{to{transform:translateX(-50%) rotate(360deg)}}
+    .rdl-wrap06 small{position:absolute;left:0;right:0;bottom:-24px;color:#8fb8e8;font-size:9px;font-weight:800;letter-spacing:.18em}
+
+    .tli06{display:grid;place-items:center;background:#0b1220}
+    .tli-form06{width:min(400px,92%);padding:22px;border-radius:13px;background:var(--surface);color:var(--ink)}
+    .tli-form06 b{font:800 17px "Manrope",sans-serif}
+    .tli-field06{position:relative;margin:13px 0 19px}
+    .tli-field06 input{width:100%;height:48px;padding:17px 2px 8px;border:0;border-bottom:1px solid var(--line);outline:0;background:transparent;color:var(--ink)}
+    .tli-field06 label{position:absolute;left:2px;top:16px;color:var(--muted);font-size:13px;pointer-events:none;transition:.22s}
+    .tli-field06:focus-within label,.tli-field06 input:not(:placeholder-shown)+label{top:0;font-size:10px;color:#6d5cff;font-weight:800}
+    .tli-line06{position:absolute;left:0;bottom:0;height:2.5px;width:100%;background:linear-gradient(90deg,#6d5cff,#ffd94d,#5bc0ff);clip-path:polygon(0 40%,12% 70%,26% 30%,42% 65%,58% 25%,74% 60%,88% 35%,100% 55%,100% 100%,0 100%);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.85,.25,1)}
+    .tli-field06:focus-within .tli-line06{transform:none}
+    .tli-field06.err06{animation:field-shake .36s ease}
+    .tli-field06.err06 .tli-line06{transform:none;background:#ff5e62}
+
+    .scm06{display:grid;place-items:center;background:linear-gradient(145deg,var(--surface),var(--surface-2));color:var(--ink)}
+    .scm-open06{padding:11px 16px;border:0;border-radius:8px;background:#6d5cff;color:#fff;font-weight:900;cursor:pointer}
+    .scm-layer06{position:absolute;inset:0;display:grid;place-items:center;padding:22px;background:linear-gradient(180deg,rgba(10,13,28,.25),rgba(10,13,28,.72));opacity:0;pointer-events:none;transition:.4s}
+    .scm06.open .scm-layer06{opacity:1;pointer-events:auto}
+    .scm-card06{width:min(300px,90%);padding:22px;border-radius:16px;background:var(--surface);box-shadow:0 26px 60px rgba(0,0,0,.35);transform:translateY(-26px) scale(.9);opacity:0;transition:.5s cubic-bezier(.2,1.2,.3,1)}
+    .scm06.open .scm-card06{transform:translateY(4px) scale(1);opacity:1}
+    .scm-card06 b{font:800 19px "Manrope",sans-serif}
+    .scm-card06 p{margin:8px 0 16px;color:var(--muted);font-size:13px}
+    .scm-close06{float:right;width:30px;height:30px;border:0;border-radius:50%;background:var(--surface-2);color:var(--ink);cursor:pointer;transition:transform .3s}
+    .scm-close06:hover{transform:rotate(90deg)}
+    .scm-ok06{padding:9px 13px;border:0;border-radius:7px;background:var(--ink);color:var(--bg);font-weight:900;cursor:pointer}
+
+    .lft06{display:grid;place-items:center;background:#0d1322}
+    .lft-stack06{width:min(410px,92%);display:grid;gap:9px}
+    .lft-toast06{position:relative;overflow:hidden;display:flex;gap:11px;align-items:center;padding:14px;border:1px solid rgba(150,160,230,.3);border-radius:10px;background:#182040;box-shadow:0 14px 30px rgba(0,0,0,.4);animation:lft-in06 5.4s cubic-bezier(.2,.9,.25,1) infinite;animation-delay:calc(var(--i)*.18s)}
+    .lft-toast06::before{content:"";position:absolute;inset:0;background:#fff;opacity:0;animation:lft-flash06 5.4s ease infinite;animation-delay:calc(var(--i)*.18s);pointer-events:none}
+    .lft-toast06::after{content:"";position:absolute;left:0;bottom:0;height:3px;background:linear-gradient(90deg,#8a7cff,#5bc0ff);animation:notify-progress 5.4s linear infinite}
+    .lft-ic06{flex:0 0 auto;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#ffd94d;color:#241d05;font-weight:900}
+    .lft-toast06 small{display:block;color:#a9b4e8}
+    @keyframes lft-in06{0%,8%{opacity:0;transform:translateX(80px)}15%,86%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateX(30px);filter:brightness(1.6)}}
+    @keyframes lft-flash06{0%,10%{opacity:0}13%{opacity:.35}17%,100%{opacity:0}}
+
+    .rcc06{display:grid;place-items:center;background:#0c1220;perspective:900px}
+    .rcc-grid06{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(460px,94%)}
+    .rcc-card06{position:relative;overflow:hidden;padding:16px;border:1px solid #33406b;border-radius:12px;background:#141b33;transition:transform .3s,box-shadow .3s}
+    .rcc-card06:hover{transform:translateY(-6px);box-shadow:0 22px 40px rgba(0,0,0,.45)}
+    .rcc-card06::after{content:"";position:absolute;left:50%;bottom:-14px;width:70px;height:20px;border:2px solid rgba(91,192,255,.5);border-radius:50%;transform:translateX(-50%) scale(.4);opacity:0;transition:.45s}
+    .rcc-card06:hover::after{transform:translateX(-50%) scale(1.2);opacity:1}
+    .rcc-ava06{width:52px;height:44px;margin-bottom:10px;display:grid;place-items:center;border-radius:48% 52% 55% 45%/70% 70% 40% 40%;background:linear-gradient(135deg,#6d5cff,#5bc0ff);color:#fff;font-weight:900;box-shadow:0 0 0 3px rgba(138,124,255,.3)}
+    .rcc-card06 b{display:block;font-size:13px}
+    .rcc-card06 small{color:#a9b4e8}
+    .rcc-num06{display:block;margin-top:8px;font:800 22px "Manrope",sans-serif;color:#ffd94d}
+
+    .sfh06{display:grid;place-items:center;background:#101830}
+    .sfh-box06{position:relative;padding:28px 22px;text-align:center}
+    .sfh-cloud06{position:absolute;left:50%;top:2px;width:74px;height:22px;border-radius:22px;background:rgba(138,124,255,.35);filter:blur(1px);transform:translateX(-50%);animation:sfh-drift06 5s ease-in-out infinite alternate}
+    .sfh-kick06{position:relative;color:#ffd94d;font-size:10px;font-weight:800;letter-spacing:.2em}
+    .sfh-title06{display:flex;flex-wrap:wrap;justify-content:center;gap:0 .26em;margin:12px 0 15px;font:800 clamp(30px,6vw,48px)/.95 "Manrope",sans-serif;letter-spacing:-.04em}
+    .sfh-title06 span{display:inline-block;animation:sfh-sweep06 5s cubic-bezier(.2,.8,.2,1) infinite;animation-delay:calc(var(--i)*.06s)}
+    .sfh-rule06{width:72%;height:5px;margin:0 auto;border-radius:5px;background:linear-gradient(90deg,#6d5cff,#ffd94d);transform-origin:left;animation:rule-sweep 5s ease infinite;box-shadow:0 0 14px rgba(138,124,255,.6)}
+    @keyframes sfh-drift06{to{transform:translateX(-30%)}}
+    @keyframes sfh-sweep06{0%,10%{opacity:0;transform:translateX(-30px)}26%,84%{opacity:1;transform:none}100%{opacity:0;transform:translateX(14px)}}
+
+    .lbn06{background:#0b1220}
+    .lbn-scroll06{position:absolute;inset:0;overflow:hidden}
+    .lbn-nav06{position:relative;margin:14px 12px 0;display:flex;align-items:center;gap:2px;padding:10px 12px;border:1px solid rgba(150,160,230,.3);border-radius:11px;background:rgba(20,27,51,.95)}
+    .lbn-brand06{margin-right:auto;font-weight:900;font-size:12px;white-space:nowrap}
+    .lbn-brand06 i{color:#ffd94d;font-style:normal;text-shadow:0 0 12px rgba(255,217,77,.9)}
+    .lbn-link06{position:relative;padding:7px 9px;border:0;background:transparent;color:#a9b4e8;font-size:10.5px;font-weight:800;cursor:pointer;white-space:nowrap}
+    .lbn-link06.on{color:#fff}
+    .lbn-marker06{position:absolute;left:0;bottom:1px;height:3px;border-radius:3px;background:linear-gradient(90deg,#8a7cff,#ffd94d);box-shadow:0 0 10px rgba(138,124,255,.7);transition:left .35s cubic-bezier(.2,1.2,.3,1),width .35s}
+    .lbn-menu06{display:grid;gap:6px;margin:10px 12px 0;padding:10px;border:1px solid rgba(150,160,230,.25);border-radius:11px;background:#141b33;transform-origin:top;transform:scaleY(.6);opacity:.35;transition:.4s cubic-bezier(.2,.9,.25,1)}
+    .lbn06.menu-open .lbn-menu06{transform:none;opacity:1}
+    .lbn-menu06 span{padding:8px 10px;border-radius:6px;font-size:11px;color:#dbe2ff;background:rgba(138,124,255,.1)}
+    .lbn-body06{display:grid;gap:10px;padding:14px 12px}
+    .lbn-body06 i{display:block;height:74px;border-radius:9px;background:rgba(138,124,255,.09)}
+
+    .tsh06{background:linear-gradient(180deg,#131a33,#1d2545 60%,#2c2154)}
+    .tsh-flash06{position:absolute;inset:0;background:#eef2ff;opacity:0;pointer-events:none;animation:tsl-flash06 6.5s ease infinite}
+    .tsh-rain06{position:absolute;top:-26px;width:2px;height:30px;border-radius:2px;background:linear-gradient(180deg,transparent,#7ec3ff);opacity:.45;transform:rotate(11deg);animation:tsl-fall06 var(--d,1.2s) linear infinite;animation-delay:var(--dl,0s)}
+    .tsh-cloud06{position:absolute;width:150px;height:30px;border-radius:50%;background:rgba(20,26,52,.85);filter:blur(2px);animation:tsh-drift06 12s linear infinite}
+    .tsh-cloud06.a{top:22px;left:-120px}.tsh-cloud06.b{top:56px;left:-180px;animation-delay:-6s;animation-duration:17s}
+    .tsh-copy06{position:relative;z-index:3;padding:34px 20px;text-align:center}
+    .tsh-copy06 h4{margin:0;font:800 clamp(32px,6vw,50px)/.95 "Manrope",sans-serif;letter-spacing:-.04em}
+    .tsh-copy06 h4 span{display:inline-block;animation:tsh-word06 5.5s ease infinite;animation-delay:calc(var(--i)*.14s)}
+    .tsh-copy06 h4 .hl{background:linear-gradient(90deg,#8a7cff,#5bc0ff,#ffd94d);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .tsh-copy06 p{margin:12px auto 16px;max-width:300px;color:#c3cbf2;font-size:12px;animation:tsh-word06 5.5s .4s ease infinite}
+    .tsh-cta06{display:inline-block;padding:10px 18px;border-radius:9px;background:linear-gradient(90deg,#6d5cff,#8a7cff);color:#fff;font-weight:900;font-size:12px;box-shadow:0 0 24px rgba(138,124,255,.55);animation:tsh-word06 5.5s .55s ease infinite}
+    @keyframes tsh-drift06{to{transform:translateX(720px)}}
+    @keyframes tsh-word06{0%,10%{opacity:0;transform:translateY(24px)}26%,88%{opacity:1;transform:none}100%{opacity:0}}
+
+    .rft06{display:grid;align-content:end;background:#0d1424;color:#e6ebff}
+    .rft-rain06{position:absolute;left:0;right:0;top:0;height:26px;overflow:hidden}
+    .rft-rain06 i{position:absolute;top:-14px;width:2px;height:14px;border-radius:2px;background:linear-gradient(180deg,transparent,#5bc0ff);animation:rft-fall06 var(--d,1s) linear infinite;animation-delay:var(--dl,0s)}
+    @keyframes rft-fall06{to{transform:translateY(44px)}}
+    .rft-cols06{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;padding:22px 22px 6px}
+    .rft-cols06 div{display:grid;gap:7px;align-content:start;font-size:10px;color:#93a1d4;animation:rft-in06 5s ease infinite;animation-delay:calc(var(--i)*.2s)}
+    .rft-cols06 b{color:#fff;font-size:12px}
+    @keyframes rft-in06{0%,12%{opacity:.25;transform:translateY(12px)}30%,88%{opacity:1;transform:none}100%{opacity:.25}}
+    .rft-news06{display:flex;gap:8px;padding:10px 22px 12px}
+    .rft-news06 input{flex:1;min-width:0;height:40px;padding:0 11px;border:1px solid #33406b;border-radius:8px;outline:0;background:#111a30;color:#fff;transition:.25s}
+    .rft-news06 input:focus{border-color:#8a7cff;box-shadow:0 0 0 3px rgba(138,124,255,.18),0 0 18px rgba(138,124,255,.3)}
+    .rft-news06 button{position:relative;overflow:hidden;padding:0 15px;border:0;border-radius:8px;background:#6d5cff;color:#fff;font-weight:900;cursor:pointer;box-shadow:0 0 16px rgba(109,92,255,.5)}
+    .rft-news06 button::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.7),transparent 65%);animation:gate-sweep 2.8s ease infinite}
+    .rft-base06{display:flex;justify-content:space-between;padding:8px 22px 13px;color:#7180b3;font-size:9px}
+
+    .ssg06{display:grid;place-items:center;background:#0d1322;overflow:hidden}
+    .ssg-view06{width:min(430px,92%);height:236px;overflow:hidden;border:1px solid #33406b;border-radius:11px;background:#111a30;padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:start}
+    .ssg-item06{min-height:64px;border-radius:9px;background:#1a2447;display:grid;place-items:center;animation:ssg-in06 5.4s cubic-bezier(.25,.9,.3,1) infinite;animation-delay:calc(var(--i)*.18s)}
+    .ssg-item06::after{content:"";width:52%;height:7px;border-radius:6px;background:#8a7cff}
+    .ssg-item06.tall{grid-row:span 2;min-height:138px}
+    .ssg-item06.gold::after{background:#ffd94d}
+    .ssg-item06.wide{grid-column:span 2}
+    .ssg-item06.wide::after{width:80%;background:linear-gradient(90deg,#8a7cff,#5bc0ff);-webkit-mask:linear-gradient(#000,#000);animation:ssg-mask06 5.4s ease infinite}
+    @keyframes ssg-in06{0%,8%{opacity:0;transform:translateX(-38px)}26%,86%{opacity:1;transform:none}100%{opacity:0;transform:translateX(14px)}}
+    @keyframes ssg-mask06{0%,20%{clip-path:inset(0 100% 0 0)}45%,86%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 100%)}}
+
+    .lsbkg06{background:linear-gradient(170deg,#0a0f1e,#141b33 55%,#1d2545)}
+    .lsbkg-flash06{position:absolute;inset:0;background:#eef2ff;opacity:0;pointer-events:none;animation:tsl-flash06 7s ease infinite}
+    .lsbkg-cloud06{position:absolute;width:190px;height:38px;border-radius:50%;background:rgba(16,21,42,.9);filter:blur(3px);animation:tsh-drift06 16s linear infinite}
+    .lsbkg-cloud06.a{top:26px;left:-150px}.lsbkg-cloud06.b{top:74px;left:-220px;animation-delay:-8s;animation-duration:22s}
+    .lsbkg-rain06{position:absolute;top:-26px;width:2px;height:28px;border-radius:2px;background:linear-gradient(180deg,transparent,#7ec3ff);opacity:.5;transform:rotate(14deg);animation:tsl-fall06 var(--d,1.1s) linear infinite;animation-delay:var(--dl,0s)}
+    .lsbkg-cap06{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:7px 12px;border:1px solid rgba(150,160,230,.35);border-radius:999px;background:rgba(13,18,36,.6);font-size:10px;font-weight:800;letter-spacing:.14em;white-space:nowrap}
+
+    .sgw06{display:grid;place-items:center;background:#0c1220}
+    .sgw-grid06{display:grid;grid-template-columns:1fr 1fr;gap:11px;width:min(460px,94%)}
+    .sgw-card06{position:relative;padding:15px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);transition:transform .3s,box-shadow .3s}
+    .sgw-card06:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.14)}
+    .sgw-card06 small{color:var(--muted);font-weight:700}
+    .sgw-num06{display:block;margin:4px 0 9px;font:800 25px "Manrope",sans-serif}
+    .sgw-gauge06{position:absolute;right:12px;top:12px;width:50px;height:50px}
+    .sgw-gauge06 svg{display:block;transform:rotate(-90deg)}
+    .sgw-gauge06 circle{fill:none;stroke-width:5;stroke-linecap:round}
+    .sgw-track06{stroke:var(--surface-2)}
+    .sgw-prog06{stroke:#6d5cff;stroke-dasharray:151;stroke-dashoffset:151;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.8,.2,1)}
+    .sgw-card06.in .sgw-prog06{stroke-dashoffset:var(--off,40)}
+    .sgw-bars06{display:flex;align-items:end;gap:4px;height:28px}
+    .sgw-bars06 i{flex:1;border-radius:3px 3px 1px 1px;background:linear-gradient(180deg,#5bc0ff,#6d5cff);height:var(--h);transform-origin:bottom;animation:sgw-grow06 2.6s ease-in-out infinite alternate;animation-delay:calc(var(--i)*.12s)}
+    @keyframes sgw-grow06{from{transform:scaleY(.45)}}
+    .sgw-delta06{display:block;margin-top:7px;color:#6d5cff;font-size:10px;font-weight:800}
+
+    .ssk06{display:grid;place-items:center;background:#141126}
+    .ssk-wrap06{width:min(450px,94%)}
+    .ssk-top06{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px;flex-wrap:wrap}
+    .ssk-badge06{padding:6px 11px;border-radius:999px;background:#ffd94d;color:#241d05;font-size:11px;font-weight:900;animation:ssk-flash06 1.4s ease infinite}
+    @keyframes ssk-flash06{50%{filter:brightness(1.35);box-shadow:0 0 18px rgba(255,217,77,.7)}}
+    .ssk-count06{font:800 19px "Manrope",sans-serif;color:#fff}
+    .ssk-count06 b{display:inline-block;animation:ssk-pulse06 1s ease infinite}
+    @keyframes ssk-pulse06{50%{transform:scale(1.14);color:#ffd94d}}
+    .ssk-card06{padding:14px;border:1px solid #3a3468;border-radius:11px;background:#1d1838}
+    .ssk-thumb06{height:66px;margin-bottom:10px;border-radius:8px;background:linear-gradient(135deg,#3a2a6e,#6d5cff)}
+    .ssk-card06 b{display:block;font-size:12px;color:#eef2ff}
+    .ssk-card06 small{color:#a9a3d9}
+    .ssk-row06{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .ssk-price06{font-weight:900;color:#fff}
+    .ssk-add06{position:relative;overflow:hidden;padding:9px 13px;border:0;border-radius:7px;background:#6d5cff;color:#fff;font-weight:900;cursor:pointer}
+    .ssk-add06.added{background:#3fae6a}
+    .ssk-rip06{position:absolute;width:14px;height:14px;border-radius:50%;background:rgba(255,217,77,.6);transform:translate(-50%,-50%) scale(0);animation:ripple-wave .6s ease-out;pointer-events:none}
+
+    .svk06{display:grid;place-items:center;background:#0e1526}
+    .svk-box06{width:min(430px,92%)}
+    .svk-avatars06{display:flex;align-items:center;margin-bottom:12px;padding-left:10px}
+    .svk-ava06{width:38px;height:38px;margin-left:-10px;display:grid;place-items:center;border:2px solid #0e1526;border-radius:50%;background:var(--tone);color:#10142a;font-size:10px;font-weight:900;box-shadow:0 0 0 2px var(--tone),0 0 14px var(--tone)}
+    .svk-avatars06 span{margin-left:12px;color:#a9b4e8;font-size:10px;font-weight:800}
+    .svk-view06{overflow:hidden}
+    .svk-track06{display:flex;transition:transform .55s cubic-bezier(.2,.85,.25,1)}
+    .svk-card06{min-width:100%;padding:19px;border:1px solid #33406b;border-radius:12px;background:#141b33}
+    .svk-stars06{display:inline-block;color:#ffd94d;letter-spacing:.12em;animation:svk-stars06 3.2s ease infinite}
+    @keyframes svk-stars06{0%,12%{opacity:.3;letter-spacing:.3em}30%,88%{opacity:1;letter-spacing:.12em}100%{opacity:.5}}
+    .svk-card06 p{margin:10px 0 12px;color:#e2e8ff;font-size:13px}
+    .svk-who06{display:flex;align-items:center;gap:9px;font-size:11px;color:#eef2ff}
+    .svk-who06 small{display:block;color:#a9b4e8}
+    .svk-dot06{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--tone);color:#10142a;font-size:9px;font-weight:900}
+    .svk-dots06{display:flex;justify-content:center;gap:7px;margin-top:12px}
+    .svk-dotbtn06{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:#33406b;cursor:pointer;transition:.25s}
+    .svk-dotbtn06.on{width:22px;border-radius:8px;background:#8a7cff}
+
+    .stp06{display:grid;place-items:center;background:#121830}
+    .stp-wrap06{width:min(480px,95%)}
+    .stp-toggle06{display:flex;justify-content:center;align-items:center;gap:9px;margin-bottom:14px;font-size:11px;font-weight:800;color:#eef2ff}
+    .stp-sw06{position:relative;width:52px;height:29px;padding:0;border:0;border-radius:999px;background:#3a3468;cursor:pointer}
+    .stp-sw06::after{content:"";position:absolute;left:4px;top:4px;width:21px;height:21px;border-radius:50%;background:#8a7cff;transition:transform .38s cubic-bezier(.2,.9,.3,1.3)}
+    .stp-wrap06.yearly .stp-sw06::after{transform:translateX(23px)}
+    .stp-save06{padding:4px 8px;border-radius:999px;background:#ffd94d;color:#241d05;font-size:9px;font-weight:900;opacity:0;transform:scale(.5);transition:.3s}
+    .stp-wrap06.yearly .stp-save06{opacity:1;transform:none}
+    .stp-grid06{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;align-items:center}
+    .stp-card06{padding:16px 9px;border:1px solid #33406b;border-radius:10px;background:#182040;text-align:center;transition:transform .3s,box-shadow .3s;color:#eef2ff}
+    .stp-card06:hover{transform:translateY(-5px)}
+    .stp-card06.pop{padding-block:25px;border-color:#8a7cff;box-shadow:0 0 26px rgba(138,124,255,.45)}
+    .stp-bolt06{display:block;font-size:17px;color:#ffd94d}
+    .stp-card06 b{display:block;font-size:11px}
+    .stp-amt06{display:block;margin:7px 0 2px;font:800 clamp(19px,4vw,27px) "Manrope",sans-serif}
+    .stp-amt06.flip{animation:number-roll14 .35s ease}
+    .stp-card06 small{color:#93a1d4;font-size:9px}
+    .stp-feat06{display:grid;gap:5px;margin-top:10px;color:#dbe2ff;font-size:9px;text-align:left}
+    .stp-feat06 span{animation:feature-in 4s ease infinite;animation-delay:calc(var(--i)*.11s)}
+    .stp-feat06 span::before{content:"✓ ";color:#ffd94d;font-weight:900}
+
+    @media(max-width:600px){.drop06 .preview{min-height:310px}.rcc-grid06,.sgw-grid06{gap:8px}.stp-grid06{gap:6px}.stp-card06{padding-inline:5px}.rft-cols06{grid-template-columns:1fr 1fr;padding-inline:16px}.rft-news06{padding-inline:16px}.ssg-view06{gap:6px}.lbn-link06{padding-inline:5px;font-size:9.5px}}
+
   </style>
 </head>
 <body>
   <header class="shell utility">
-    <div class="drop-label">Daily drop · 437 products · 29 Oct 2026</div>
+    <div class="drop-label">Daily drop · 592 products · 06 Nov 2026</div>
     <div class="utility-right">
       <nav aria-label="Page navigation">
         <a href="#components">Catalog</a>
@@ -7622,13 +7894,14 @@
               <div class="mini-login willowgrove-mini"><b>Willow Grove</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login alpinefrost-mini"><b>Alpine Frost</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login dunemirage-mini"><b>Dune Mirage</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
+              <div class="mini-login thunderstorm-mini"><b>Thunderstorm</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
             </div>
           </div>
           <div class="product-info">
             <div class="meta"><span class="tag new">Login bundle</span><span class="tag">Authentication</span><span class="tag motion-level">Motion Lv 2</span></div>
             <h3>Auth Motion Bundle</h3>
-            <p>A thirty-two-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login, Saffron Dusk Login, Midnight Bloom Login, Amber Horizon Login, Seaside Dawn Login, Willow Grove Login, Alpine Frost Login and Dune Mirage Login.</p>
-            <div class="details"><span>32 screen concepts</span><span>Now includes Dune Mirage Login</span><span>Animated preview</span></div>
+            <p>A thirty-three-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login, Saffron Dusk Login, Midnight Bloom Login, Amber Horizon Login, Seaside Dawn Login, Willow Grove Login, Alpine Frost Login, Dune Mirage Login and Thunderstorm Login.</p>
+            <div class="details"><span>33 screen concepts</span><span>Now includes Thunderstorm Login</span><span>Animated preview</span></div>
             <div class="price-row"><span class="price">₹449</span><span class="price-note">Level 2 bundle</span></div>
             <div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy bundle · link pending</button></div>
           </div>
@@ -9153,6 +9426,44 @@
 
         <article class="product wide drop05" data-category="pricing"><div class="preview"><div class="drop05-stage dtp05" aria-label="Desert Tier Pricing animated preview"><div class="dtp-wrap05"><div class="dtp-toggle05"><span>Monthly</span><button class="dtp-sw05" type="button" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button><span>Yearly</span><span class="dtp-save05">SAVE 20%</span></div><div class="dtp-grid05"><div class="dtp-card05"><span class="dtp-sun05"></span><b>Dune</b><span class="dtp-amt05" data-m="₹499" data-y="₹399">₹499</span><small>per month</small><div class="dtp-feat05"><span style="--i:0">2 guided routes</span><span style="--i:1">Oasis stops</span><span style="--i:2">Trail notes</span></div></div><div class="dtp-card05 pop"><span class="dtp-sun05"></span><b>Oasis</b><span class="dtp-amt05" data-m="₹999" data-y="₹799">₹999</span><small>per month</small><div class="dtp-feat05"><span style="--i:0">Unlimited routes</span><span style="--i:1">Shaded camps</span><span style="--i:2">Bazaar perks</span><span style="--i:3">Priority guides</span></div></div><div class="dtp-card05"><span class="dtp-sun05"></span><b>Mirage</b><span class="dtp-amt05" data-m="₹1,999" data-y="₹1,599">₹1,999</span><small>per month</small><div class="dtp-feat05"><span style="--i:0">Private caravan</span><span style="--i:1">Night-sky suite</span><span style="--i:2">Concierge</span></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">05 Nov drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Desert Tier Pricing</h3><p>Pricing tables with a highlighted middle tier, a billing-period toggle that animates prices, hover lift, and a checkmark stagger on features.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
+
+        <article class="product wide drop06" data-category="login-screens"><div class="preview"><div class="drop06-stage tsl06" aria-label="Thunderstorm Login animated preview"><span class="tsl-flash06"></span><span class="tsl-rain06" style="left:8%;--d:1s;--dl:-.3s"></span><span class="tsl-rain06" style="left:22%;--d:1.3s;--dl:-.8s"></span><span class="tsl-rain06" style="left:38%;--d:.9s;--dl:-.1s"></span><span class="tsl-rain06" style="left:57%;--d:1.2s;--dl:-.6s"></span><span class="tsl-rain06" style="left:73%;--d:1s;--dl:-.9s"></span><span class="tsl-rain06" style="left:88%;--d:1.4s;--dl:-.4s"></span><form class="tsl-card06"><b>Thunderstorm</b><small>Sign in through the storm</small><div class="tsl-field06"><input type="email" placeholder="Email address" aria-label="Preview email"></div><div class="tsl-field06"><input type="password" placeholder="Password" aria-label="Preview password"></div><button class="tsl-go06" type="submit">Sign in</button></form></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Animated login screens</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Thunderstorm Login</h3><p>A stormy split-panel login screen: animated rain streaks falling behind frosted glass, a lightning flash that briefly lights the panel, thunder-cloud gradient shifting from deep slate to electric violet, email + password fields with a glowing focus ring, and a "Sign in" button with a ripple flash on hover.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 3 login screen</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="auth"><div class="preview"><div class="drop06-stage spf06" aria-label="Storm Pass Flow animated preview"><div class="spf-card06"><div class="spf-rail06"><span class="spf-cloud06"></span><span class="spf-dot06 active">1</span><span class="spf-dot06">2</span><span class="spf-dot06">3</span></div><div class="spf-window06"><div class="spf-track06"><div class="spf-panel06"><b>Verify your email</b><p>Enter the email tied to your account to begin.</p><div class="spf-field06">you@storm.design</div><button class="spf-next06" type="button">Send code →</button></div><div class="spf-panel06"><b>Enter storm code</b><p>We sent a six-digit code to your inbox.</p><div class="spf-boxes06"><i style="--i:0">4</i><i style="--i:1">8</i><i style="--i:2">2</i><i style="--i:3">0</i><i style="--i:4">6</i><i style="--i:5">1</i></div><button class="spf-next06" type="button">Verify code →</button></div><div class="spf-panel06 spf-done06"><svg class="spf-check06" viewBox="0 0 52 52" aria-hidden="true"><path d="M8 28 L20 40 L44 12"/></svg><b>Password reset</b><p>Your new password is set. Ride out the storm.</p><button class="spf-next06" type="button">Start again →</button></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Auth flows</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Pass Flow</h3><p>A multi-step password-reset flow: step rail (verify email → code → new password) with a sliding storm-cloud progress indicator, animated 6-digit code boxes that pulse as each digit is entered, and a success check that draws itself in with a lightning-bolt flourish.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹49</span><span class="price-note">Level 2 auth flow</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="buttons"><div class="preview"><div class="drop06-stage lsb06" aria-label="Lightning Strike Buttons animated preview"><div class="lsb-board06"><button class="lsb-btn06" type="button" style="--i:0">Strike ⚡</button><button class="lsb-btn06" type="button" style="--i:1">Primary bolt</button><button class="lsb-btn06" type="button" style="--i:2">Charge up</button><button class="lsb-btn06" type="button" style="--i:3">Ghost flash</button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Buttons &amp; CTAs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lightning Strike Buttons</h3><p>A set of call-to-action buttons with a jagged lightning-bolt sweep across the surface on hover, electric glow that intensifies on press, and a staggered entrance where each button flashes in sequence.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="toggles"><div class="preview"><div class="drop06-stage sst06" aria-label="Storm Switch Toggles animated preview"><div class="sst-panel06"><div class="sst-row06"><div>Storm alerts<small>Lightning notifications</small></div><div class="sst-right06"><span class="sst-bolt06">⚡</span><span class="sst-state06">OFF</span><button class="sst-tog06" type="button" role="switch" aria-checked="false" aria-label="Storm alerts toggle"></button></div></div><div class="sst-row06"><div>Rain sounds<small>Ambient storm audio</small></div><div class="sst-right06"><span class="sst-bolt06">⚡</span><span class="sst-state06">OFF</span><button class="sst-tog06" type="button" role="switch" aria-checked="false" aria-label="Rain sounds toggle"></button></div></div><div class="sst-row06"><div>Night watch<small>Track the front overnight</small></div><div class="sst-right06"><span class="sst-bolt06">⚡</span><span class="sst-state06">OFF</span><button class="sst-tog06" type="button" role="switch" aria-checked="false" aria-label="Night watch toggle"></button></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Toggles &amp; switches</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Switch Toggles</h3><p>A set of switches styled as storm clouds: the knob slides like a rain cloud, a tiny lightning bolt flickers on when active, and the track fills with a gradient from grey to electric blue.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="loaders"><div class="preview"><div class="drop06-stage rdl06" aria-label="Rain Drop Loader animated preview"><div class="rdl-wrap06"><span class="rdl-drop06" style="left:22%;--d:1.6s;--dl:0s"></span><span class="rdl-ripple06" style="left:22%;--d:1.6s;--dl:0s"></span><span class="rdl-drop06" style="left:44%;--d:1.9s;--dl:-.6s"></span><span class="rdl-ripple06" style="left:44%;--d:1.9s;--dl:-.6s"></span><span class="rdl-drop06" style="left:64%;--d:1.4s;--dl:-1s"></span><span class="rdl-ripple06" style="left:64%;--d:1.4s;--dl:-1s"></span><span class="rdl-drop06" style="left:82%;--d:2.1s;--dl:-.3s"></span><span class="rdl-ripple06" style="left:82%;--d:2.1s;--dl:-.3s"></span><span class="rdl-ring06"></span><small>STORM GATHERING</small></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Loaders &amp; spinners</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Rain Drop Loader</h3><p>A loading indicator of falling raindrops that ripple outward on landing, looping with staggered timing, plus a circular progress ring that fills like a gathering storm.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="inputs"><div class="preview"><div class="drop06-stage tli06" aria-label="Thunder Line Inputs animated preview"><form class="tli-form06"><b>Join the storm watch</b><div class="tli-field06"><input type="email" placeholder=" " required aria-label="Preview email"><label>Email address</label><span class="tli-line06"></span></div><div class="tli-field06"><input type="text" placeholder=" " required minlength="3" aria-label="Preview call sign"><label>Call sign</label><span class="tli-line06"></span></div></form></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Form inputs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Thunder Line Inputs</h3><p>Text fields with an animated underline that draws itself like a lightning crack on focus, labels that float up, and a subtle shake + red flash on invalid input.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="modals"><div class="preview"><div class="drop06-stage scm06" aria-label="Storm Cloud Modal animated preview"><button class="scm-open06" type="button">Summon the storm</button><div class="scm-layer06"><div class="scm-card06"><button class="scm-close06" type="button" aria-label="Close dialog">×</button><b>Storm rolling in</b><p>The dialog drifts in like a storm cloud, settles softly, and closes just as calmly.</p><button class="scm-ok06" type="button">Got it</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Modals &amp; dialogs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Cloud Modal</h3><p>A dialog that drifts in like a storm cloud (soft scale + fade with a slight downward settle), backdrop dims with a slow darkening gradient, and a close button with a rotating X.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="feedback"><div class="preview"><div class="drop06-stage lft06" aria-label="Lightning Flash Toasts animated preview"><div class="lft-stack06"><div class="lft-toast06" style="--i:0"><span class="lft-ic06">⚡</span><span><strong>Storm warning issued</strong><small>Lightning detected 4 km away.</small></span></div><div class="lft-toast06" style="--i:1"><span class="lft-ic06">⚡</span><span><strong>Rain starting soon</strong><small>Front arrives in about 10 minutes.</small></span></div><div class="lft-toast06" style="--i:2"><span class="lft-ic06">⚡</span><span><strong>All clear</strong><small>The storm has passed your area.</small></span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Toasts &amp; notifications</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lightning Flash Toasts</h3><p>Notification toasts that slide in with a quick white flash, stack with staggered offsets, show a thin progress bar draining like rain, and dismiss with a fade-out flicker.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="cards"><div class="preview"><div class="drop06-stage rcc06" aria-label="Rain Cloud Cards animated preview"><div class="rcc-grid06"><div class="rcc-card06"><div class="rcc-ava06">SK</div><b>Storm Keeper</b><small>Field observer · North ridge</small><span class="rcc-num06">128 alerts</span></div><div class="rcc-card06"><div class="rcc-ava06">RW</div><b>Rain Watcher</b><small>Gauge lead · River valley</small><span class="rcc-num06">42 mm today</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Cards</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Rain Cloud Cards</h3><p>Profile and dashboard cards with a rain-drop ripple on hover, a cloud-shaped avatar ring, and a gentle floating lift with a soft shadow that deepens on hover.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="titles"><div class="preview"><div class="drop06-stage sfh06" aria-label="Storm Front Headers animated preview"><div class="sfh-box06"><span class="sfh-cloud06"></span><div class="sfh-kick06">WEATHER FRONT</div><div class="sfh-title06"><span style="--i:0">S</span><span style="--i:1">t</span><span style="--i:2">o</span><span style="--i:3">r</span><span style="--i:4">m</span><span style="--i:5">&nbsp;</span><span style="--i:6">f</span><span style="--i:7">r</span><span style="--i:8">o</span><span style="--i:9">n</span><span style="--i:10">t</span></div><div class="sfh-rule06"></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Title cards &amp; section headers</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Front Headers</h3><p>Section headers where the title letters sweep in like a weather front, an underline draws across like lightning, and a small animated cloud drifts behind the kicker text.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="navbars"><div class="preview"><div class="drop06-stage lbn06" aria-label="Lightning Bar Nav animated preview"><div class="lbn-scroll06"><nav class="lbn-nav06"><span class="lbn-brand06"><i>⚡</i> STORMBAR</span><button class="lbn-link06 on" type="button">Forecast</button><button class="lbn-link06" type="button">Radar</button><button class="lbn-link06" type="button">Alerts</button><button class="lbn-link06" type="button" data-lbn-menu>Menu ☰</button><span class="lbn-marker06"></span></nav><div class="lbn-menu06"><span>Storm tracker</span><span>Rain gauges</span><span>Wind map</span></div><div class="lbn-body06"><i></i><i></i></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Navbars &amp; menus</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lightning Bar Nav</h3><p>A top navbar with an electric underline that zips to the active link, a glowing logo mark, and a mobile menu that unfolds like a storm rolling in.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="heroes"><div class="preview"><div class="drop06-stage tsh06" aria-label="Thunder Sky Hero animated preview"><span class="tsh-flash06"></span><span class="tsh-cloud06 a"></span><span class="tsh-cloud06 b"></span><span class="tsh-rain06" style="left:12%;--d:1.1s;--dl:-.2s"></span><span class="tsh-rain06" style="left:34%;--d:1.3s;--dl:-.7s"></span><span class="tsh-rain06" style="left:58%;--d:1s;--dl:-.5s"></span><span class="tsh-rain06" style="left:79%;--d:1.2s;--dl:-.9s"></span><div class="tsh-copy06"><h4><span style="--i:0">Ride</span> <span style="--i:1">the</span> <span class="hl" style="--i:2">thunder</span></h4><p>Forecasts, alerts and live radar for weather that moves fast.</p><span class="tsh-cta06">See the forecast</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Hero sections</span><span class="tag motion-level">Motion Lv 3 · Rich kit</span></div><h3>Thunder Sky Hero</h3><p>A full hero with an animated storm sky: drifting clouds, occasional lightning flashes, rain streaks in the background, and a headline that reveals word by word with a gradient shimmer.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹89</span><span class="price-note">Level 3 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="footers"><div class="preview"><div class="drop06-stage rft06" aria-label="Rain Footer animated preview"><div class="rft-rain06"><i style="left:10%;--d:.9s;--dl:-.2s"></i><i style="left:28%;--d:1.1s;--dl:-.6s"></i><i style="left:47%;--d:.8s;--dl:-.4s"></i><i style="left:66%;--d:1.2s;--dl:-.8s"></i><i style="left:85%;--d:1s;--dl:-.1s"></i></div><div class="rft-cols06"><div style="--i:0"><b>STORMBAR</b><span>Weather interfaces</span><span>for fast products.</span></div><div style="--i:1"><b>Explore</b><span>Components</span><span>Bundles</span><span>Templates</span></div><div style="--i:2"><b>Company</b><span>About</span><span>Journal</span><span>Support</span></div></div><form class="rft-news06"><input type="email" placeholder="Email for storm alerts" aria-label="Preview newsletter email"><button type="submit">Join</button></form><div class="rft-base06"><span>© 2026 Stormbar</span><span>Built for the rain</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Footers</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Rain Footer</h3><p>A site footer with a subtle rain animation along the top edge, link columns that fade in on scroll, and a newsletter input with a glowing submit button.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="effects"><div class="preview"><div class="drop06-stage ssg06" aria-label="Storm Surge Scroll Pack animated preview"><div class="ssg-view06"><div class="ssg-item06 tall" style="--i:0"></div><div class="ssg-item06 gold" style="--i:1"></div><div class="ssg-item06" style="--i:2"></div><div class="ssg-item06 wide" style="--i:3"></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Scroll-animation packs</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Storm Surge Scroll Pack</h3><p>A pack of scroll-driven reveals: sections that surge in from the sides like a wave, images that scale as they enter view, and text that unmasks line by line as you scroll.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="backgrounds"><div class="preview"><div class="drop06-stage lsbkg06" aria-label="Lightning Storm Background animated preview"><span class="lsbkg-flash06"></span><span class="lsbkg-cloud06 a"></span><span class="lsbkg-cloud06 b"></span><span class="lsbkg-rain06" style="left:9%;--d:1s;--dl:-.3s"></span><span class="lsbkg-rain06" style="left:26%;--d:1.2s;--dl:-.7s"></span><span class="lsbkg-rain06" style="left:44%;--d:.9s;--dl:-.1s"></span><span class="lsbkg-rain06" style="left:61%;--d:1.3s;--dl:-.5s"></span><span class="lsbkg-rain06" style="left:78%;--d:1.1s;--dl:-.9s"></span><span class="lsbkg-rain06" style="left:92%;--d:1.4s;--dl:-.4s"></span><span class="lsbkg-cap06">STORM SKY · LIVE</span></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Background effects</span><span class="tag motion-level">Motion Lv 3 · Rich kit</span></div><h3>Lightning Storm Background</h3><p>A full-page animated background: dark storm clouds drifting, randomized lightning flashes with a soft glow, and fine rain streaks falling at an angle.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹89</span><span class="price-note">Level 3 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="dashboard"><div class="preview"><div class="drop06-stage sgw06" aria-label="Storm Gauge Widgets animated preview"><div class="sgw-grid06"><div class="sgw-card06"><small>Wind gusts</small><span class="sgw-num06" data-count="86" data-suffix=" km/h">0</span><span class="sgw-gauge06"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="sgw-track06" cx="25" cy="25" r="24"></circle><circle class="sgw-prog06" cx="25" cy="25" r="24" style="--off:38"></circle></svg></span><span class="sgw-delta06">▲ Gust front near</span></div><div class="sgw-card06"><small>Rainfall today</small><span class="sgw-num06" data-count="42" data-suffix=" mm">0</span><span class="sgw-gauge06"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="sgw-track06" cx="25" cy="25" r="24"></circle><circle class="sgw-prog06" cx="25" cy="25" r="24" style="--off:64"></circle></svg></span><div class="sgw-bars06"><i style="--i:0;--h:40%"></i><i style="--i:1;--h:65%"></i><i style="--i:2;--h:50%"></i><i style="--i:3;--h:85%"></i><i style="--i:4;--h:70%"></i></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Dashboard widgets</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Storm Gauge Widgets</h3><p>Stat widgets with animated gauge dials that sweep to their values, rain-bar mini charts, and count-up numbers with a storm-grey-to-electric accent.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="ecommerce"><div class="preview"><div class="drop06-stage ssk06" aria-label="Storm Sale Kit animated preview"><div class="ssk-wrap06"><div class="ssk-top06"><span class="ssk-badge06">⚡ STORM SALE</span><span class="ssk-count06">Ends in <b>04:59</b></span></div><div class="ssk-card06"><div class="ssk-thumb06"></div><b>Storm shell jacket</b><small>Waterproof · Lightning lining</small><div class="ssk-row06"><span class="ssk-price06">₹2,499</span><button class="ssk-add06" type="button">Add to cart</button></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">E-commerce kits</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Storm Sale Kit</h3><p>Sale and cart bits: a flashing "Storm Sale" badge, a countdown timer with pulsing digits, and an add-to-cart button that bursts with a lightning ripple on click.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop06" data-category="social"><div class="preview"><div class="drop06-stage svk06" aria-label="Storm Voices Kit animated preview"><div class="svk-box06"><div class="svk-avatars06"><span class="svk-ava06" style="--tone:#8a7cff">AR</span><span class="svk-ava06" style="--tone:#5bc0ff">JM</span><span class="svk-ava06" style="--tone:#ffd94d">KP</span><span>2,400+ storm watchers</span></div><div class="svk-view06"><div class="svk-track06"><div class="svk-card06"><span class="svk-stars06">★★★★★</span><p>"The alerts hit before the rain did. This kit paid for itself in one storm."</p><div class="svk-who06"><span class="svk-dot06" style="--tone:#8a7cff">AR</span><span>Asha Rao<small>Coastal observer</small></span></div></div><div class="svk-card06"><span class="svk-stars06">★★★★★</span><p>"Clean, fast and dramatic without ever feeling gimmicky. Our users love it."</p><div class="svk-who06"><span class="svk-dot06" style="--tone:#5bc0ff">JM</span><span>Jonah Miles<small>Product lead</small></span></div></div><div class="svk-card06"><span class="svk-stars06">★★★★★</span><p>"Dropped it into our dashboard in an afternoon. The motion feels premium."</p><div class="svk-who06"><span class="svk-dot06" style="--tone:#ffd94d">KP</span><span>Kavya Pillai<small>Indie maker</small></span></div></div></div></div><div class="svk-dots06"><button class="svk-dotbtn06 on" type="button" aria-label="Show testimonial 1"></button><button class="svk-dotbtn06" type="button" aria-label="Show testimonial 2"></button><button class="svk-dotbtn06" type="button" aria-label="Show testimonial 3"></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Voices Kit</h3><p>A testimonial set with quote cards that fade and slide in sequence, avatar rings with a soft electric glow, and a star rating that fills star by star.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop06" data-category="pricing"><div class="preview"><div class="drop06-stage stp06" aria-label="Storm Tier Pricing animated preview"><div class="stp-wrap06"><div class="stp-toggle06"><span>Monthly</span><button class="stp-sw06" type="button" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button><span>Yearly</span><span class="stp-save06">Save 20%</span></div><div class="stp-grid06"><div class="stp-card06"><span class="stp-bolt06">☁</span><b>Drizzle</b><span class="stp-amt06" data-m="₹499" data-y="₹399">₹499</span><small>per month</small><div class="stp-feat06"><span style="--i:0">Live radar</span><span style="--i:1">Rain alerts</span><span style="--i:2">1 location</span></div></div><div class="stp-card06 pop"><span class="stp-bolt06">⚡</span><b>Storm</b><span class="stp-amt06" data-m="₹999" data-y="₹799">₹999</span><small>per month</small><div class="stp-feat06"><span style="--i:0">Lightning alerts</span><span style="--i:1">Gust gauges</span><span style="--i:2">10 locations</span></div></div><div class="stp-card06"><span class="stp-bolt06">🌩</span><b>Tempest</b><span class="stp-amt06" data-m="₹1,999" data-y="₹1,599">₹1,999</span><small>per month</small><div class="stp-feat06"><span style="--i:0">Full storm API</span><span style="--i:1">Team watch</span><span style="--i:2">Unlimited</span></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Tier Pricing</h3><p>Pricing tiers with a highlighted "Storm" plan that glows, toggle between monthly and annual with animated price swaps, and feature lists that check in with a staggered draw.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <div class="catalog-empty" id="catalog-empty" role="status" aria-live="polite" hidden>
           <h3>No components here yet</h3>
@@ -13934,6 +14245,193 @@
           sw.setAttribute('aria-checked', String(annual));
           wrap.classList.toggle('yearly', annual);
           wrap.querySelectorAll('.dtp-amt05').forEach(function (amt) {
+            amt.classList.remove('flip');
+            void amt.offsetWidth;
+            amt.classList.add('flip');
+            window.setTimeout(function () { amt.textContent = annual ? amt.dataset.y : amt.dataset.m; }, reduceMotion ? 0 : 170);
+          });
+        });
+      });
+
+      /* 06 November daily drop interactions */
+      document.querySelectorAll('.tsl-card06').forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var go = form.querySelector('.tsl-go06');
+          if (!go) return;
+          var original = go.textContent;
+          go.textContent = 'Welcome through the storm ✓';
+          window.setTimeout(function () { go.textContent = original; }, 1600);
+        });
+      });
+
+      document.querySelectorAll('.rft-news06').forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var btn = form.querySelector('button');
+          if (!btn) return;
+          var original = btn.textContent;
+          btn.textContent = 'Joined ✓';
+          window.setTimeout(function () { btn.textContent = original; }, 1600);
+        });
+      });
+
+      document.querySelectorAll('.spf-card06').forEach(function (card) {
+        var dots = Array.prototype.slice.call(card.querySelectorAll('.spf-dot06'));
+        var cloud = card.querySelector('.spf-cloud06');
+        var track = card.querySelector('.spf-track06');
+        var step = 0;
+        function render() {
+          if (track) track.style.transform = 'translateX(' + (-step * 33.333) + '%)';
+          if (cloud) cloud.style.left = (step * 46) + '%';
+          dots.forEach(function (d, i) {
+            d.classList.toggle('done', i < step);
+            d.classList.toggle('active', i === step);
+          });
+        }
+        card.querySelectorAll('.spf-next06').forEach(function (btn) {
+          btn.addEventListener('click', function () { step = (step + 1) % 3; render(); });
+        });
+        render();
+      });
+
+      document.querySelectorAll('.sst-tog06').forEach(function (tog) {
+        tog.addEventListener('click', function () {
+          var on = tog.getAttribute('aria-checked') !== 'true';
+          tog.setAttribute('aria-checked', String(on));
+          var row = tog.closest('.sst-row06');
+          if (row) {
+            row.classList.toggle('on', on);
+            var state = row.querySelector('.sst-state06');
+            if (state) state.textContent = on ? 'ON' : 'OFF';
+          }
+        });
+      });
+
+      document.querySelectorAll('.scm06').forEach(function (stage) {
+        var open = stage.querySelector('.scm-open06');
+        var close = stage.querySelector('.scm-close06');
+        var ok = stage.querySelector('.scm-ok06');
+        if (!open) return;
+        open.addEventListener('click', function () { stage.classList.add('open'); });
+        function shut() { stage.classList.remove('open'); }
+        if (close) close.addEventListener('click', shut);
+        if (ok) ok.addEventListener('click', shut);
+      });
+
+      document.querySelectorAll('.tli-form06').forEach(function (form) {
+        form.addEventListener('submit', function (event) { event.preventDefault(); });
+        form.querySelectorAll('.tli-field06 input').forEach(function (input) {
+          input.addEventListener('blur', function () {
+            var field = input.closest('.tli-field06');
+            if (!field) return;
+            var bad = input.required && !input.value.trim();
+            field.classList.remove('err06');
+            if (bad) { void field.offsetWidth; field.classList.add('err06'); }
+          });
+        });
+      });
+
+      document.querySelectorAll('.lbn06').forEach(function (stage) {
+        var marker = stage.querySelector('.lbn-marker06');
+        var links = Array.prototype.slice.call(stage.querySelectorAll('.lbn-link06'));
+        function mark(link) {
+          if (!marker || !link) return;
+          marker.style.left = link.offsetLeft + 'px';
+          marker.style.width = link.offsetWidth + 'px';
+        }
+        links.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (link.hasAttribute('data-lbn-menu')) { stage.classList.toggle('menu-open'); return; }
+            links.forEach(function (l) { l.classList.remove('on'); });
+            link.classList.add('on');
+            stage.classList.remove('menu-open');
+            mark(link);
+          });
+        });
+        mark(stage.querySelector('.lbn-link06.on') || links[0]);
+      });
+
+      document.querySelectorAll('.sgw-card06').forEach(function (card) {
+        var num = card.querySelector('.sgw-num06');
+        function run() {
+          card.classList.add('in');
+          if (!num) return;
+          var target = parseInt(num.getAttribute('data-count'), 10) || 0;
+          var suffix = num.getAttribute('data-suffix') || '';
+          if (reduceMotion) { num.textContent = target.toLocaleString('en-IN') + suffix; return; }
+          var start = null;
+          function tick(ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / 1300, 1);
+            num.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString('en-IN') + suffix;
+            if (p < 1) window.requestAnimationFrame(tick);
+          }
+          window.requestAnimationFrame(tick);
+        }
+        if ('IntersectionObserver' in window) {
+          var sgwio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { run(); sgwio.unobserve(en.target); } });
+          }, { threshold: .4 });
+          sgwio.observe(card);
+        } else { run(); }
+      });
+
+      document.querySelectorAll('.ssk-add06').forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+          var rect = btn.getBoundingClientRect();
+          var ripple = document.createElement('span');
+          ripple.className = 'ssk-rip06';
+          ripple.style.left = (event.clientX - rect.left) + 'px';
+          ripple.style.top = (event.clientY - rect.top) + 'px';
+          btn.appendChild(ripple);
+          window.setTimeout(function () { ripple.remove(); }, 650);
+          btn.classList.add('added');
+          var original = 'Add to cart';
+          btn.textContent = 'Added ✓';
+          window.setTimeout(function () { btn.classList.remove('added'); btn.textContent = original; }, 1300);
+        });
+      });
+
+      document.querySelectorAll('.ssk06').forEach(function (stage) {
+        var el = stage.querySelector('.ssk-count06 b');
+        if (!el || reduceMotion) return;
+        var secs = 299;
+        window.setInterval(function () {
+          secs = secs > 0 ? secs - 1 : 299;
+          var m = Math.floor(secs / 60), s = secs % 60;
+          el.textContent = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+        }, 1000);
+      });
+
+      document.querySelectorAll('.svk-box06').forEach(function (box) {
+        var track = box.querySelector('.svk-track06');
+        var cards = box.querySelectorAll('.svk-card06');
+        var dots = Array.prototype.slice.call(box.querySelectorAll('.svk-dotbtn06'));
+        if (!track || !cards.length) return;
+        var idx = 0, timer = null;
+        function go(i) {
+          idx = (i + cards.length) % cards.length;
+          track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+          dots.forEach(function (d, j) { d.classList.toggle('on', j === idx); });
+        }
+        function startAuto() { if (reduceMotion) return; stopAuto(); timer = window.setInterval(function () { go(idx + 1); }, 3600); }
+        function stopAuto() { if (timer) { window.clearInterval(timer); timer = null; } }
+        dots.forEach(function (d, i) { d.addEventListener('click', function () { go(i); startAuto(); }); });
+        box.addEventListener('mouseenter', stopAuto);
+        box.addEventListener('mouseleave', startAuto);
+        go(0);
+        startAuto();
+      });
+
+      document.querySelectorAll('.stp-wrap06').forEach(function (wrap) {
+        var sw = wrap.querySelector('.stp-sw06');
+        if (!sw) return;
+        sw.addEventListener('click', function () {
+          var annual = sw.getAttribute('aria-checked') !== 'true';
+          sw.setAttribute('aria-checked', String(annual));
+          wrap.classList.toggle('yearly', annual);
+          wrap.querySelectorAll('.stp-amt06').forEach(function (amt) {
             amt.classList.remove('flip');
             void amt.offsetWidth;
             amt.classList.add('flip');
