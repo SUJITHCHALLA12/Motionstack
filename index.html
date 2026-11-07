@@ -7647,11 +7647,320 @@
 
     @media(max-width:600px){.drop06 .preview{min-height:310px}.rcc-grid06,.sgw-grid06{gap:8px}.stp-grid06{gap:6px}.stp-card06{padding-inline:5px}.rft-cols06{grid-template-columns:1fr 1fr;padding-inline:16px}.rft-news06{padding-inline:16px}.ssg-view06{gap:6px}.lbn-link06{padding-inline:5px;font-size:9.5px}}
 
+    /* 07 November daily drop previews — lavender theme */
+    .drop07{border-color:color-mix(in srgb,#9d7bea 42%,var(--line))}
+    .drop07 .preview{isolation:isolate}
+    .drop07 .drop-date{background:color-mix(in srgb,#9d7bea 18%,var(--surface))}
+    .drop07-stage{position:relative;width:min(500px,100%);min-height:290px;overflow:hidden;border-radius:13px;background:linear-gradient(160deg,#e9defc,#f5efff);color:#3a2a63}
+    .lavenderhaze-mini{background:linear-gradient(140deg,#d9c8ff,#b79ced 55%,#eec3ff)!important;color:#37245e!important;border-color:#9d7bea!important}
+    .petal07{position:absolute;border-radius:90% 4px 90% 4px;background:linear-gradient(135deg,#cdb2ff,#edaef7);opacity:.75;pointer-events:none}
+
+    .lhl07{display:grid;place-items:center;background:linear-gradient(155deg,#c9b3f5,#e3d2ff 52%,#f6d9f2)}
+    .lhl-bloom07{position:absolute;border-radius:50%;filter:blur(22px);pointer-events:none}
+    .lhl-bloom07.a{width:150px;height:150px;left:-40px;top:-30px;background:rgba(230,168,255,.55);animation:lhl-drift07 9s ease-in-out infinite alternate}
+    .lhl-bloom07.b{width:120px;height:120px;right:-30px;bottom:-20px;background:rgba(157,123,234,.5);animation:lhl-drift07 11s ease-in-out infinite alternate-reverse}
+    @keyframes lhl-drift07{to{transform:translate(22px,16px) scale(1.12)}}
+    .lhl-petal07{top:-24px;width:14px;height:14px;animation:lhl-fall07 var(--d,8s) linear infinite;animation-delay:var(--dl,0s)}
+    @keyframes lhl-fall07{0%{transform:translate(0,-10px) rotate(0deg);opacity:0}12%{opacity:.85}50%{transform:translate(16px,150px) rotate(190deg)}100%{transform:translate(-10px,320px) rotate(360deg);opacity:.1}}
+    .lhl-card07{position:relative;z-index:2;width:min(320px,86%);padding:24px;border:1px solid rgba(255,255,255,.65);border-radius:16px;background:rgba(255,255,255,.42);backdrop-filter:blur(14px);box-shadow:0 26px 60px rgba(90,60,160,.3)}
+    .lhl-card07 b{font:800 20px "Manrope",sans-serif;color:#37245e}
+    .lhl-card07 small{display:block;margin:2px 0 8px;color:#6d5aa5}
+    .lhl-field07{margin-top:11px;animation:lhl-in07 5.2s ease infinite;animation-delay:calc(var(--i)*.3s)}
+    @keyframes lhl-in07{0%,6%{opacity:.25;transform:translateY(12px)}20%,88%{opacity:1;transform:none}100%{opacity:.25}}
+    .lhl-field07 input{width:100%;height:43px;padding:0 12px;border:1px solid rgba(122,90,190,.35);border-radius:8px;outline:0;background:rgba(255,255,255,.55);color:#37245e;transition:.25s}
+    .lhl-field07 input:focus{border-color:#9d7bea;box-shadow:0 0 0 3px rgba(157,123,234,.22),0 0 22px rgba(157,123,234,.45)}
+    .lhl-go07{position:relative;width:100%;height:42px;margin-top:14px;overflow:hidden;border:0;border-radius:8px;background:linear-gradient(90deg,#8a5cf6,#c084fc,#e6a8ff);color:#fff;font-weight:900;cursor:pointer;box-shadow:0 8px 24px rgba(157,123,234,.45);transition:box-shadow .3s}
+    .lhl-go07:hover{box-shadow:0 0 28px rgba(192,132,252,.85)}
+    .lhl-go07::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.75),transparent 65%);transform:translateX(-120%);animation:gate-sweep 2.6s ease infinite}
+
+    .lkf07{display:grid;place-items:center;background:linear-gradient(160deg,#e6dbfc,#f2eafd)}
+    .lkf-card07{width:min(430px,92%);padding:22px;border-radius:13px;background:var(--surface);color:var(--ink);box-shadow:0 20px 44px rgba(90,60,160,.16)}
+    .lkf-rail07{position:relative;display:flex;justify-content:space-between;margin-bottom:18px;padding:0 6px}
+    .lkf-rail07::before{content:"";position:absolute;left:14px;right:14px;top:13px;height:3px;border-radius:3px;background:var(--surface-2)}
+    .lkf-key07{position:absolute;z-index:3;top:-4px;left:0;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#9d7bea,#e6a8ff);font-size:14px;box-shadow:0 0 16px rgba(157,123,234,.55);transition:left .5s cubic-bezier(.2,.9,.3,1.2);animation:lkf-bob07 2.2s ease-in-out infinite}
+    @keyframes lkf-bob07{50%{transform:translateY(-4px) rotate(-10deg)}}
+    .lkf-dot07{position:relative;z-index:2;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:900;transition:.3s}
+    .lkf-dot07.done,.lkf-dot07.active{background:#9d7bea;color:#fff}
+    .lkf-dot07.active{animation:lkf-pulse07 1.5s ease infinite}
+    @keyframes lkf-pulse07{50%{box-shadow:0 0 0 6px rgba(157,123,234,.18)}}
+    .lkf-window07{overflow:hidden}
+    .lkf-track07{display:flex;width:300%;transition:transform .48s cubic-bezier(.2,.85,.25,1)}
+    .lkf-panel07{width:33.333%;padding:2px}
+    .lkf-panel07 b{display:block;margin-bottom:6px}
+    .lkf-panel07 p{margin:0 0 10px;color:var(--muted);font-size:12px}
+    .lkf-field07{height:40px;margin:8px 0;display:flex;align-items:center;padding:0 11px;border:1px solid var(--line);border-radius:8px;color:var(--muted);font-size:12px}
+    .lkf-boxes07{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+    .lkf-boxes07 i{display:grid;place-items:center;height:42px;border:1px solid var(--line);border-radius:8px;font-style:normal;font-weight:900;color:#8a5cf6;animation:lkf-box07 1.6s ease infinite;animation-delay:calc(var(--i)*.18s)}
+    @keyframes lkf-box07{0%,100%{transform:scale(1)}50%{transform:scale(1.1);border-color:#c4a5ff;box-shadow:0 0 12px rgba(157,123,234,.35)}}
+    .lkf-next07{float:right;margin-top:12px;padding:9px 14px;border:0;border-radius:7px;background:linear-gradient(90deg,#8a5cf6,#b07fe8);color:#fff;font-weight:900;cursor:pointer}
+    .lkf-done07{text-align:center}
+    .lkf-bloom07{position:relative;display:grid;place-items:center;width:76px;height:76px;margin:4px auto 10px}
+    .lkf-bloom07::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(157,123,234,.5);animation:lkf-bloom07 1.8s ease-out infinite}
+    @keyframes lkf-bloom07{0%{transform:scale(.55);opacity:0}35%{opacity:1}100%{transform:scale(1.25);opacity:0}}
+    .lkf-check07{width:56px;height:56px}
+    .lkf-check07 path{fill:none;stroke:#8a5cf6;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:60;stroke-dashoffset:60;animation:lkf-draw07 1.8s ease infinite}
+    @keyframes lkf-draw07{35%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:60}}
+
+    .lbb07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f6ecff)}
+    .lbb-board07{display:grid;grid-template-columns:1fr 1fr;gap:13px;width:min(430px,92%)}
+    .lbb-btn07{position:relative;overflow:hidden;min-height:62px;border:1px solid #cdbcf3;border-radius:10px;background:#fff;color:#4a3480;font-weight:900;cursor:pointer;animation:lbb-in07 3.8s ease infinite;animation-delay:calc(var(--i)*.22s);transition:transform .2s,box-shadow .25s}
+    .lbb-btn07::before{content:"";position:absolute;right:-16px;top:-16px;width:40px;height:40px;border-radius:90% 4px 90% 4px;background:rgba(230,168,255,.55);transform:scale(.25) rotate(45deg);transition:transform .5s cubic-bezier(.2,.9,.3,1.3)}
+    .lbb-btn07:hover::before{transform:scale(1.9) rotate(45deg)}
+    .lbb-btn07:nth-child(2){background:linear-gradient(90deg,#8a5cf6,#c084fc);border-color:transparent;color:#fff}
+    .lbb-btn07:nth-child(3){background:#f0e6ff}
+    .lbb-btn07:nth-child(4){background:transparent;border-style:dashed}
+    .lbb-btn07:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(157,123,234,.35)}
+    .lbb-btn07:active{transform:translateY(1px) scale(.98)}
+    .lbb-rip07{position:absolute;width:14px;height:14px;border-radius:50%;background:rgba(157,123,234,.45);transform:translate(-50%,-50%) scale(0);animation:lbb-rip07 .6s ease-out forwards;pointer-events:none}
+    @keyframes lbb-rip07{to{transform:translate(-50%,-50%) scale(9);opacity:0}}
+    @keyframes lbb-in07{0%,8%{opacity:.35}20%,88%{opacity:1}100%{opacity:.35}}
+
+    .lmt07{display:grid;place-items:center;background:linear-gradient(160deg,#e6dbfc,#f3edff)}
+    .lmt-panel07{width:min(410px,92%);display:grid;gap:15px;padding:20px;border-radius:13px;background:var(--surface);color:var(--ink);box-shadow:0 20px 44px rgba(90,60,160,.14)}
+    .lmt-row07{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:800}
+    .lmt-row07 small{display:block;color:var(--muted);font-weight:600;font-size:11px}
+    .lmt-state07{color:#8a5cf6;font-size:10px;font-weight:900}
+    .lmt-right07{display:flex;align-items:center;gap:9px}
+    .lmt-mist07{width:12px;height:12px;border-radius:50%;background:#cdbcf3;opacity:.4;transition:.35s}
+    .lmt-row07.on .lmt-mist07{opacity:1;background:#e6a8ff;box-shadow:0 0 14px 4px rgba(230,168,255,.65)}
+    .lmt-tog07{position:relative;flex:0 0 auto;width:64px;height:35px;border:0;border-radius:999px;background:#cfc4ea;cursor:pointer;box-shadow:inset 0 2px 5px rgba(58,42,99,.25);transition:background .35s,box-shadow .35s}
+    .lmt-tog07::after{content:"";position:absolute;left:4px;top:4px;width:27px;height:27px;border-radius:50%;background:linear-gradient(145deg,#ffffff,#efe8ff);box-shadow:0 3px 8px rgba(58,42,99,.3);transition:transform .45s cubic-bezier(.3,1.6,.4,1)}
+    .lmt-tog07[aria-checked="true"]{background:linear-gradient(90deg,#8a5cf6,#d8a5f2);box-shadow:0 0 18px rgba(192,132,252,.6)}
+    .lmt-tog07[aria-checked="true"]::after{transform:translateX(29px)}
+
+    .lpl07{display:grid;place-items:center;background:linear-gradient(180deg,#e2d4fb,#f2e9ff)}
+    .lpl-wrap07{position:relative;width:min(360px,90%);height:210px;text-align:center}
+    .lpl-petal07{top:0;width:13px;height:13px;animation:lpl-fall07 var(--d,2.4s) ease-in infinite;animation-delay:var(--dl,0s)}
+    @keyframes lpl-fall07{0%{transform:translateY(0) rotate(0deg);opacity:0}16%{opacity:.9}70%{transform:translateY(140px) rotate(300deg);opacity:.9}88%,100%{transform:translateY(158px) rotate(380deg) scale(.4);opacity:0}}
+    .lpl-ring07{position:absolute;left:50%;bottom:6px;width:72px;height:72px;transform:translateX(-50%);border-radius:50%;background:conic-gradient(#9d7bea 72%,#ddd0f7 0);-webkit-mask:radial-gradient(circle,transparent 56%,#000 57%);mask:radial-gradient(circle,transparent 56%,#000 57%);animation:lpl-spin07 3.2s linear infinite}
+    @keyframes lpl-spin07{to{transform:translateX(-50%) rotate(360deg)}}
+    .lpl-dot07{position:absolute;left:50%;bottom:36px;width:12px;height:12px;border-radius:50%;background:#c084fc;transform:translateX(-50%);animation:lpl-pulse07 1.6s ease-in-out infinite}
+    @keyframes lpl-pulse07{50%{transform:translateX(-50%) scale(1.55);box-shadow:0 0 18px rgba(192,132,252,.8)}}
+    .lpl-wrap07 small{position:absolute;left:0;right:0;bottom:-22px;color:#8a6fc9;font-size:9px;font-weight:800;letter-spacing:.18em}
+
+    .lli07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f5efff)}
+    .lli-form07{width:min(400px,92%);padding:22px;border-radius:13px;background:var(--surface);color:var(--ink);box-shadow:0 20px 44px rgba(90,60,160,.14)}
+    .lli-form07 b{font:800 17px "Manrope",sans-serif}
+    .lli-field07{position:relative;margin:13px 0 19px}
+    .lli-field07 input{width:100%;height:48px;padding:17px 2px 8px;border:0;border-bottom:1px solid var(--line);outline:0;background:transparent;color:var(--ink)}
+    .lli-field07 label{position:absolute;left:2px;top:16px;color:var(--muted);font-size:13px;pointer-events:none;transition:.22s}
+    .lli-field07:focus-within label,.lli-field07 input:not(:placeholder-shown)+label{top:0;font-size:10px;color:#8a5cf6;font-weight:800}
+    .lli-line07{position:absolute;left:0;bottom:0;height:2.5px;width:100%;border-radius:3px;background:linear-gradient(90deg,#8a5cf6,#c084fc,#e6a8ff);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.85,.25,1),box-shadow .3s}
+    .lli-field07:focus-within .lli-line07{transform:none;box-shadow:0 2px 12px rgba(157,123,234,.55)}
+    .lli-field07.err07{animation:lli-shake07 .36s ease}
+    .lli-field07.err07 .lli-line07{transform:none;background:#e05260;box-shadow:none}
+    @keyframes lli-shake07{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+
+    .lmm07{display:grid;place-items:center;background:linear-gradient(145deg,#ddd0f9,#efe6ff);color:var(--ink)}
+    .lmm-open07{padding:11px 16px;border:0;border-radius:8px;background:linear-gradient(90deg,#8a5cf6,#b07fe8);color:#fff;font-weight:900;cursor:pointer;box-shadow:0 10px 24px rgba(157,123,234,.4)}
+    .lmm-layer07{position:absolute;inset:0;display:grid;place-items:center;padding:22px;background:rgba(96,66,165,.22);opacity:0;pointer-events:none;transition:.45s}
+    .lmm07.open .lmm-layer07{opacity:1;pointer-events:auto;backdrop-filter:blur(7px)}
+    .lmm-card07{width:min(300px,90%);padding:22px;border:1px solid rgba(157,123,234,.25);border-radius:16px;background:var(--surface);box-shadow:0 26px 60px rgba(90,60,160,.35);transform:scale(.88);opacity:0;transition:.5s cubic-bezier(.2,1.2,.3,1)}
+    .lmm07.open .lmm-card07{transform:scale(1);opacity:1}
+    .lmm-card07 b{font:800 19px "Manrope",sans-serif}
+    .lmm-card07 p{margin:8px 0 16px;color:var(--muted);font-size:13px}
+    .lmm-close07{float:right;width:30px;height:30px;border:0;border-radius:50%;background:var(--surface-2);color:var(--ink);cursor:pointer;transition:transform .35s}
+    .lmm-close07:hover{transform:rotate(90deg) scale(.92)}
+    .lmm-ok07{padding:9px 13px;border:0;border-radius:7px;background:linear-gradient(90deg,#8a5cf6,#b07fe8);color:#fff;font-weight:900;cursor:pointer}
+
+    .lts07{display:grid;place-items:center;background:linear-gradient(160deg,#e6dbfc,#f3edff)}
+    .lts-stack07{width:min(410px,92%);display:grid;gap:9px}
+    .lts-toast07{position:relative;overflow:hidden;display:flex;gap:11px;align-items:center;padding:14px 14px 16px;border:1px solid rgba(157,123,234,.35);border-radius:10px;background:#fff;box-shadow:0 12px 28px rgba(90,60,160,.16);animation:lts-in07 5.6s cubic-bezier(.2,.9,.25,1) infinite;animation-delay:calc(var(--i)*.18s)}
+    .lts-toast07::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#8a5cf6,#e6a8ff)}
+    .lts-toast07::after{content:"";position:absolute;left:0;bottom:0;height:3px;background:linear-gradient(90deg,#9d7bea,#e6a8ff);animation:lts-prog07 5.6s linear infinite;animation-delay:calc(var(--i)*.18s)}
+    .lts-ic07{flex:0 0 auto;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#cdb2ff,#edaef7);color:#4a3480;font-size:13px;font-weight:900}
+    .lts-toast07 small{display:block;color:#7a6aa8}
+    @keyframes lts-in07{0%,8%{opacity:0;transform:translateX(70px)}15%,86%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateX(24px)}}
+    @keyframes lts-prog07{0%,15%{width:100%;opacity:.9}86%,100%{width:0;opacity:.4}}
+
+    .lpc07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f6ecff);perspective:900px}
+    .lpc-grid07{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(460px,94%)}
+    .lpc-card07{position:relative;overflow:hidden;padding:16px;border:1px solid #ddd0f7;border-radius:12px;background:#fff;box-shadow:0 10px 24px rgba(90,60,160,.12);transition:box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+    .lpc-card07:hover{box-shadow:0 24px 44px rgba(90,60,160,.25)}
+    .lpc-petal07{width:16px;height:16px;right:12px;top:12px;animation:lpc-drift07 5s ease-in-out infinite alternate}
+    @keyframes lpc-drift07{to{transform:translate(-8px,10px) rotate(50deg)}}
+    .lpc-ava07{width:46px;height:46px;margin-bottom:10px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#9d7bea,#e6a8ff);color:#fff;font-weight:900;box-shadow:0 0 0 3px rgba(157,123,234,.25)}
+    .lpc-card07 b{display:block;font-size:13px;color:#37245e}
+    .lpc-card07 small{color:#7a6aa8}
+    .lpc-card07 b,.lpc-card07 small,.lpc-num07{animation:lpc-in07 5.5s ease infinite;animation-delay:calc(var(--i)*.15s)}
+    .lpc-num07{display:block;margin-top:8px;font:800 22px "Manrope",sans-serif;color:#8a5cf6}
+    @keyframes lpc-in07{0%,8%{opacity:.2;transform:translateY(8px)}22%,90%{opacity:1;transform:none}100%{opacity:.2}}
+
+    .lth07{display:grid;place-items:center;background:linear-gradient(160deg,#efe7ff,#f8f2ff)}
+    .lth-box07{position:relative;padding:28px 22px;text-align:center}
+    .lth-petal07{position:relative;display:block;width:18px;height:18px;margin:0 auto 8px;animation:lth-bloom07 4.6s ease-in-out infinite}
+    @keyframes lth-bloom07{0%,12%{transform:scale(.4) rotate(-30deg);opacity:.4}32%,84%{transform:scale(1.15) rotate(12deg);opacity:.95}100%{transform:scale(.4) rotate(-30deg);opacity:.4}}
+    .lth-kick07{color:#a678e0;font-size:10px;font-weight:800;letter-spacing:.22em}
+    .lth-title07{display:flex;flex-wrap:wrap;justify-content:center;gap:0 .26em;margin:12px 0 15px;font:800 clamp(30px,6vw,48px)/.95 "Manrope",sans-serif;letter-spacing:-.03em;color:#5b439e}
+    .lth-title07 span{display:inline-block;animation:lth-in07 4.6s cubic-bezier(.2,.8,.2,1) infinite;animation-delay:calc(var(--i)*.055s)}
+    .lth-title07 span.alt{color:#c084fc}
+    @keyframes lth-in07{0%,10%{opacity:0;transform:translateY(20px)}26%,86%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-8px)}}
+    .lth-rule07{width:72%;height:4px;margin:0 auto;border-radius:4px;background:linear-gradient(90deg,#8a5cf6,#e6a8ff);transform-origin:left;animation:lth-rule07 4.6s ease infinite;box-shadow:0 0 12px rgba(157,123,234,.5)}
+    @keyframes lth-rule07{0%,14%{transform:scaleX(0)}38%,86%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+
+    .lnv07{background:linear-gradient(160deg,#e9defc,#f4edff)}
+    .lnv-scroll07{position:absolute;inset:0;overflow:hidden}
+    .lnv-nav07{position:relative;margin:14px 12px 0;display:flex;align-items:center;gap:2px;padding:10px 12px;border:1px solid rgba(255,255,255,.7);border-radius:11px;background:rgba(255,255,255,.55);backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(90,60,160,.15)}
+    .lnv-brand07{margin-right:auto;font-weight:900;font-size:12px;color:#4a3480;white-space:nowrap}
+    .lnv-brand07 i{color:#b565d8;font-style:normal}
+    .lnv-link07{position:relative;padding:7px 9px;border:0;background:transparent;color:#7a6aa8;font-size:10.5px;font-weight:800;cursor:pointer;white-space:nowrap;transition:color .25s,text-shadow .25s}
+    .lnv-link07:hover{color:#5b439e;text-shadow:0 0 12px rgba(192,132,252,.7)}
+    .lnv-link07.on{color:#37245e}
+    .lnv-marker07{position:absolute;left:0;bottom:1px;height:3px;border-radius:3px;background:linear-gradient(90deg,#9d7bea,#e6a8ff);box-shadow:0 0 10px rgba(157,123,234,.7);transition:left .35s cubic-bezier(.2,1.2,.3,1),width .35s}
+    .lnv-menu07{display:grid;gap:6px;margin:10px 12px 0;padding:10px;border:1px solid rgba(157,123,234,.25);border-radius:11px;background:rgba(255,255,255,.78);transform-origin:top;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.4s cubic-bezier(.2,.9,.25,1)}
+    .lnv07.menu-open .lnv-menu07{transform:none;opacity:1;pointer-events:auto}
+    .lnv-menu07 span{padding:8px 10px;border-radius:6px;font-size:11px;color:#4a3480;background:rgba(157,123,234,.12)}
+    .lnv-body07{display:grid;gap:10px;padding:14px 12px}
+    .lnv-body07 i{display:block;height:74px;border-radius:9px;background:rgba(157,123,234,.12)}
+
+    .ldh07{background:linear-gradient(180deg,#4a3480,#7a5fc0 55%,#c99ae0)}
+    .ldh-orb07{position:absolute;border-radius:50%;filter:blur(6px);pointer-events:none}
+    .ldh-orb07.a{width:210px;height:210px;left:-70px;top:-60px;background:rgba(230,168,255,.35);animation:ldh-par07 13s ease-in-out infinite alternate}
+    .ldh-orb07.b{width:150px;height:150px;right:-40px;bottom:-30px;background:rgba(255,214,245,.3);animation:ldh-par07 9s ease-in-out infinite alternate-reverse}
+    @keyframes ldh-par07{to{transform:translate(30px,22px)}}
+    .ldh-petal07{width:13px;height:13px;animation:ldh-float07 var(--d,8s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+    @keyframes ldh-float07{from{transform:translateY(-6px) rotate(0deg)}to{transform:translateY(20px) rotate(70deg)}}
+    .ldh-copy07{position:relative;z-index:3;padding:34px 20px;text-align:center;color:#fff}
+    .ldh-copy07 h4{margin:0;font:800 clamp(32px,6vw,50px)/.98 "Manrope",sans-serif;letter-spacing:-.03em}
+    .ldh-copy07 h4 span{display:inline-block;animation:ldh-word07 5.5s ease infinite;animation-delay:calc(var(--i)*.14s)}
+    .ldh-copy07 h4 .hl{background:linear-gradient(90deg,#e9d5ff,#f6c9f2);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .ldh-copy07 p{margin:12px auto 16px;max-width:300px;color:#e6dcff;font-size:12px;animation:ldh-word07 5.5s .4s ease infinite}
+    .ldh-cta07{display:inline-block;padding:10px 18px;border-radius:999px;background:linear-gradient(90deg,#8a5cf6,#e6a8ff);color:#fff;font-weight:900;font-size:12px;box-shadow:0 0 26px rgba(230,168,255,.65);animation:ldh-word07 5.5s .55s ease infinite}
+    @keyframes ldh-word07{0%,10%{opacity:0;transform:translateY(24px)}26%,88%{opacity:1;transform:none}100%{opacity:0}}
+
+    .lfo07{display:grid;align-content:end;background:linear-gradient(180deg,#f1eafd,#e9defc);color:#4a3480}
+    .lfo07::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#8a5cf6,#c084fc,#e6a8ff,#f6c9f2)}
+    .lfo-cols07{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;padding:22px 22px 6px}
+    .lfo-cols07>div{display:grid;gap:7px;align-content:start;font-size:10px;color:#7a6aa8;animation:lfo-in07 5.4s ease infinite;animation-delay:calc(var(--i)*.2s)}
+    .lfo-cols07 b{color:#37245e;font-size:12px}
+    .lfo-cols07 span{transition:transform .25s,color .25s;cursor:pointer}
+    .lfo-cols07 span:hover{transform:translateY(-2px);color:#8a5cf6}
+    @keyframes lfo-in07{0%,12%{opacity:.3;transform:translateY(10px)}30%,88%{opacity:1;transform:none}100%{opacity:.3}}
+    .lfo-petals07{display:flex;justify-content:center;gap:7px;padding:10px 0 2px}
+    .lfo-petals07 i{width:11px;height:11px;border-radius:90% 4px 90% 4px;background:linear-gradient(135deg,#cdb2ff,#edaef7);animation:lfo-sway07 3.4s ease-in-out infinite alternate;animation-delay:calc(var(--i)*.25s)}
+    @keyframes lfo-sway07{to{transform:rotate(38deg) translateY(-3px)}}
+    .lfo-social07{display:flex;gap:7px}
+    .lfo-social07 span{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:#fff;border:1px solid #ddd0f7;font-size:8px;font-weight:900;color:#8a5cf6;cursor:pointer;transition:.3s}
+    .lfo-social07 span:hover{box-shadow:0 0 14px rgba(192,132,252,.8);transform:translateY(-2px)}
+    .lfo-base07{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 22px 13px;color:#9a86c9;font-size:9px}
+
+    .lds07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f5efff);overflow:hidden}
+    .lds-view07{position:relative;width:min(430px,92%);height:236px;overflow:hidden;border:1px solid #ddd0f7;border-radius:11px;background:rgba(255,255,255,.65);padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:start}
+    .lds-item07{min-height:64px;border-radius:9px;background:linear-gradient(135deg,#e5d8fd,#f3e4fb);display:grid;place-items:center;animation:lds-in07 5.6s cubic-bezier(.25,.9,.3,1) infinite;animation-delay:calc(var(--i)*.18s)}
+    .lds-item07::after{content:"";width:52%;height:7px;border-radius:6px;background:#b79ced}
+    .lds-item07.tall{grid-row:span 2;min-height:138px}
+    .lds-item07.pink::after{background:#e6a8ff}
+    .lds-item07.wide{grid-column:span 2}
+    .lds-item07.wide::after{width:80%;background:linear-gradient(90deg,#9d7bea,#e6a8ff)}
+    @keyframes lds-in07{0%,8%{opacity:0;transform:translateY(30px)}26%,86%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-12px)}}
+    .lds-petal07{width:12px;height:12px;z-index:2;animation:lds-par07 7s ease-in-out infinite alternate}
+    @keyframes lds-par07{to{transform:translateY(46px) rotate(80deg)}}
+
+    .lmb07{background:linear-gradient(170deg,#e3d5fb,#f2e9ff 60%,#f9e8f7)}
+    .lmb-mist07{position:absolute;border-radius:50%;filter:blur(28px);background:rgba(255,255,255,.75);pointer-events:none;animation:lmb-drift07 14s ease-in-out infinite alternate}
+    .lmb-mist07.a{width:260px;height:120px;left:-60px;top:20px}
+    .lmb-mist07.b{width:220px;height:100px;right:-50px;bottom:26px;animation-duration:18s;animation-direction:alternate-reverse}
+    @keyframes lmb-drift07{to{transform:translateX(64px)}}
+    .lmb-orb07{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f3e4ff,#c9a5f5);box-shadow:0 0 34px rgba(192,132,252,.75);animation:lmb-pulse07 4.5s ease-in-out infinite;animation-delay:calc(var(--i)*.8s)}
+    @keyframes lmb-pulse07{50%{transform:scale(1.18);box-shadow:0 0 48px rgba(230,168,255,.95)}}
+    .lmb-grain07{position:absolute;inset:0;opacity:.05;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E")}
+    .lmb-petal07{width:12px;height:12px;animation:ldh-float07 var(--d,8s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+    .lmb-cap07{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:7px 12px;border:1px solid rgba(157,123,234,.4);border-radius:999px;background:rgba(255,255,255,.55);backdrop-filter:blur(6px);color:#5b439e;font-size:10px;font-weight:800;letter-spacing:.14em;white-space:nowrap}
+
+    .lsw07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f5efff)}
+    .lsw-grid07{display:grid;grid-template-columns:1fr 1fr;gap:11px;width:min(460px,94%)}
+    .lsw-card07{position:relative;padding:15px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);transition:transform .3s,box-shadow .3s}
+    .lsw-card07:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(90,60,160,.16)}
+    .lsw-card07 small{color:var(--muted);font-weight:700}
+    .lsw-num07{display:block;margin:4px 0 9px;font:800 25px "Manrope",sans-serif}
+    .lsw-gauge07{position:absolute;right:12px;top:12px;width:50px;height:50px}
+    .lsw-gauge07 svg{display:block;transform:rotate(-90deg)}
+    .lsw-gauge07 circle{fill:none;stroke-width:5;stroke-linecap:round}
+    .lsw-track07{stroke:var(--surface-2)}
+    .lsw-prog07{stroke:#9d7bea;stroke-dasharray:151;stroke-dashoffset:151;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.8,.2,1)}
+    .lsw-card07.two .lsw-prog07{stroke:#d06fd8}
+    .lsw-card07.in .lsw-prog07{stroke-dashoffset:var(--off,40)}
+    .lsw-spark07{width:100%;height:30px;display:block}
+    .lsw-spark07 polyline{fill:none;stroke:#9d7bea;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:220;stroke-dashoffset:220;animation:lsw-draw07 3.4s ease-in-out infinite}
+    @keyframes lsw-draw07{25%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-220}}
+    .lsw-delta07{display:block;margin-top:7px;color:#8a5cf6;font-size:10px;font-weight:800}
+
+    .lck07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f7ecff)}
+    .lck-wrap07{position:relative;width:min(450px,94%)}
+    .lck-top07{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px}
+    .lck-brand07{font:800 15px "Manrope",sans-serif;color:#4a3480}
+    .lck-cartbtn07{position:relative;padding:8px 13px;border:1px solid #cdbcf3;border-radius:999px;background:#fff;color:#4a3480;font-weight:900;cursor:pointer}
+    .lck-count07{display:inline-grid;place-items:center;min-width:19px;height:19px;margin-left:5px;padding:0 4px;border-radius:999px;background:linear-gradient(135deg,#8a5cf6,#e6a8ff);color:#fff;font-size:10px}
+    .lck-count07.bump{animation:lck-bump07 .45s cubic-bezier(.2,1.6,.4,1)}
+    @keyframes lck-bump07{40%{transform:scale(1.45)}}
+    .lck-card07{padding:14px;border:1px solid #ddd0f7;border-radius:11px;background:#fff;box-shadow:0 14px 30px rgba(90,60,160,.13)}
+    .lck-thumb07{height:66px;margin-bottom:10px;border-radius:8px;background:linear-gradient(135deg,#cdb2ff,#edaef7)}
+    .lck-card07 b{display:block;font-size:12px;color:#37245e}
+    .lck-card07 small{color:#7a6aa8}
+    .lck-row07{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
+    .lck-price07{font-weight:900;color:#4a3480}
+    .lck-step07{display:inline-flex;align-items:center;gap:8px}
+    .lck-step07 button{width:26px;height:26px;border:1px solid #cdbcf3;border-radius:50%;background:#f3edff;color:#5b439e;font-weight:900;cursor:pointer;transition:transform .15s}
+    .lck-step07 button:active{transform:scale(1.25)}
+    .lck-qty07{min-width:16px;text-align:center;font-weight:900;color:#4a3480}
+    .lck-qty07.pop{animation:lck-bump07 .35s ease}
+    .lck-add07{padding:9px 13px;border:0;border-radius:7px;background:linear-gradient(90deg,#8a5cf6,#b07fe8);color:#fff;font-weight:900;cursor:pointer}
+    .lck-add07.added{background:#b565d8}
+    .lck-fly07{position:absolute;z-index:6;width:14px;height:14px;border-radius:90% 4px 90% 4px;background:linear-gradient(135deg,#cdb2ff,#edaef7);pointer-events:none}
+    .lck-drawer07{position:absolute;top:-6px;right:0;width:min(230px,74%);height:calc(100% + 12px);padding:14px;border:1px solid #ddd0f7;border-radius:11px;background:#fff;box-shadow:-18px 20px 44px rgba(90,60,160,.25);transform:translateX(112%);transition:transform .5s cubic-bezier(.2,.9,.25,1);z-index:5;display:flex;flex-direction:column}
+    .lck-wrap07.open .lck-drawer07{transform:none}
+    .lck-dhead07{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;color:#37245e}
+    .lck-close07{width:26px;height:26px;border:0;border-radius:50%;background:#f3edff;color:#5b439e;cursor:pointer}
+    .lck-ditem07{display:flex;justify-content:space-between;gap:8px;padding:9px;border-radius:8px;background:#f7f2ff;font-size:11px;color:#4a3480}
+    .lck-check07{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:10px;border-top:1px solid #eee5ff;font-size:11px;color:#4a3480}
+    .lck-check07 button{padding:8px 11px;border:0;border-radius:7px;background:linear-gradient(90deg,#8a5cf6,#e6a8ff);color:#fff;font-weight:900;cursor:pointer}
+
+    .lvk07{display:grid;place-items:center;background:linear-gradient(160deg,#2e2150,#463173)}
+    .lvk-box07{width:min(430px,92%)}
+    .lvk-avatars07{display:flex;align-items:center;margin-bottom:12px;padding-left:10px}
+    .lvk-ava07{width:38px;height:38px;margin-left:-10px;display:grid;place-items:center;border:2px solid #33255c;border-radius:50%;background:var(--tone);color:#2a1c47;font-size:10px;font-weight:900;box-shadow:0 0 12px var(--tone)}
+    .lvk-count07{margin-left:12px;color:#cdbcf3;font-size:10px;font-weight:800}
+    .lvk-view07{overflow:hidden}
+    .lvk-track07{display:flex;transition:transform .55s cubic-bezier(.2,.85,.25,1)}
+    .lvk-card07{min-width:100%;padding:19px;border:1px solid rgba(205,188,243,.35);border-radius:12px;background:rgba(255,255,255,.06)}
+    .lvk-stars07{display:inline-block;color:#edaef7;letter-spacing:.12em;animation:lvk-stars07 3.2s ease infinite}
+    @keyframes lvk-stars07{0%,12%{opacity:.35;transform:scale(.85)}30%,88%{opacity:1;transform:scale(1)}100%{opacity:.5}}
+    .lvk-card07 p{margin:10px 0 12px;color:#efe9ff;font-size:13px}
+    .lvk-who07{display:flex;align-items:center;gap:9px;font-size:11px;color:#fff}
+    .lvk-who07 small{display:block;color:#c3aef0}
+    .lvk-dot07{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--tone);color:#2a1c47;font-size:9px;font-weight:900}
+    .lvk-dots07{display:flex;justify-content:center;gap:7px;margin-top:12px}
+    .lvk-dotbtn07{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:#5d499e;cursor:pointer;transition:.25s}
+    .lvk-dotbtn07.on{width:22px;border-radius:8px;background:#c9a5f5}
+
+    .ltp07{display:grid;place-items:center;background:linear-gradient(160deg,#e9defc,#f6ecff)}
+    .ltp-wrap07{width:min(480px,95%)}
+    .ltp-toggle07{display:flex;justify-content:center;align-items:center;gap:9px;margin-bottom:14px;font-size:11px;font-weight:800;color:#4a3480}
+    .ltp-sw07{position:relative;width:52px;height:29px;padding:0;border:0;border-radius:999px;background:#d9cdf5;cursor:pointer;box-shadow:inset 0 2px 5px rgba(58,42,99,.18)}
+    .ltp-sw07::after{content:"";position:absolute;left:4px;top:4px;width:21px;height:21px;border-radius:50%;background:linear-gradient(135deg,#8a5cf6,#e6a8ff);transition:transform .38s cubic-bezier(.2,.9,.3,1.3)}
+    .ltp-wrap07.yearly .ltp-sw07::after{transform:translateX(23px)}
+    .ltp-save07{padding:4px 8px;border-radius:999px;background:#e6a8ff;color:#4a1060;font-size:9px;font-weight:900;opacity:0;transform:scale(.5);transition:.3s}
+    .ltp-wrap07.yearly .ltp-save07{opacity:1;transform:none}
+    .ltp-grid07{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;align-items:center}
+    .ltp-card07{padding:16px 9px;border:1px solid #ddd0f7;border-radius:10px;background:#fff;text-align:center;transition:transform .3s,box-shadow .3s;color:#4a3480}
+    .ltp-card07:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(90,60,160,.16)}
+    .ltp-card07.pop{padding-block:25px;border-color:#9d7bea;box-shadow:0 0 26px rgba(157,123,234,.4)}
+    .ltp-mark07{display:block;font-size:15px;color:#b565d8}
+    .ltp-card07 b{display:block;font-size:11px}
+    .ltp-amt07{display:block;margin:7px 0 2px;font:800 clamp(19px,4vw,27px) "Manrope",sans-serif;color:#37245e}
+    .ltp-amt07.flip{animation:number-roll14 .35s ease}
+    .ltp-card07 small{color:#8a76bd;font-size:9px}
+    .ltp-feat07{display:grid;gap:5px;margin-top:10px;color:#5d4a8a;font-size:9px;text-align:left}
+    .ltp-feat07 span{animation:feature-in 4s ease infinite;animation-delay:calc(var(--i)*.11s)}
+    .ltp-feat07 span::before{content:"✓ ";color:#b565d8;font-weight:900}
+
+    @media(max-width:600px){.drop07 .preview{min-height:310px}.lpc-grid07,.lsw-grid07{gap:8px}.ltp-grid07{gap:6px}.ltp-card07{padding-inline:5px}.lfo-cols07{grid-template-columns:1fr 1fr;padding-inline:16px}.lfo-base07{padding-inline:16px}.lds-view07{gap:6px}.lnv-link07{padding-inline:5px;font-size:9.5px}}
+
   </style>
 </head>
 <body>
   <header class="shell utility">
-    <div class="drop-label">Daily drop · 592 products · 06 Nov 2026</div>
+    <div class="drop-label">Daily drop · 611 products · 07 Nov 2026</div>
     <div class="utility-right">
       <nav aria-label="Page navigation">
         <a href="#components">Catalog</a>
@@ -7895,13 +8204,14 @@
               <div class="mini-login alpinefrost-mini"><b>Alpine Frost</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login dunemirage-mini"><b>Dune Mirage</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login thunderstorm-mini"><b>Thunderstorm</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
+              <div class="mini-login lavenderhaze-mini"><b>Lavender Haze</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
             </div>
           </div>
           <div class="product-info">
             <div class="meta"><span class="tag new">Login bundle</span><span class="tag">Authentication</span><span class="tag motion-level">Motion Lv 2</span></div>
             <h3>Auth Motion Bundle</h3>
-            <p>A thirty-three-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login, Saffron Dusk Login, Midnight Bloom Login, Amber Horizon Login, Seaside Dawn Login, Willow Grove Login, Alpine Frost Login, Dune Mirage Login and Thunderstorm Login.</p>
-            <div class="details"><span>33 screen concepts</span><span>Now includes Thunderstorm Login</span><span>Animated preview</span></div>
+            <p>A thirty-four-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login, Saffron Dusk Login, Midnight Bloom Login, Amber Horizon Login, Seaside Dawn Login, Willow Grove Login, Alpine Frost Login, Dune Mirage Login, Thunderstorm Login and Lavender Haze Login.</p>
+            <div class="details"><span>34 screen concepts</span><span>Now includes Lavender Haze Login</span><span>Animated preview</span></div>
             <div class="price-row"><span class="price">₹449</span><span class="price-note">Level 2 bundle</span></div>
             <div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy bundle · link pending</button></div>
           </div>
@@ -9464,6 +9774,44 @@
         <article class="product drop06" data-category="social"><div class="preview"><div class="drop06-stage svk06" aria-label="Storm Voices Kit animated preview"><div class="svk-box06"><div class="svk-avatars06"><span class="svk-ava06" style="--tone:#8a7cff">AR</span><span class="svk-ava06" style="--tone:#5bc0ff">JM</span><span class="svk-ava06" style="--tone:#ffd94d">KP</span><span>2,400+ storm watchers</span></div><div class="svk-view06"><div class="svk-track06"><div class="svk-card06"><span class="svk-stars06">★★★★★</span><p>"The alerts hit before the rain did. This kit paid for itself in one storm."</p><div class="svk-who06"><span class="svk-dot06" style="--tone:#8a7cff">AR</span><span>Asha Rao<small>Coastal observer</small></span></div></div><div class="svk-card06"><span class="svk-stars06">★★★★★</span><p>"Clean, fast and dramatic without ever feeling gimmicky. Our users love it."</p><div class="svk-who06"><span class="svk-dot06" style="--tone:#5bc0ff">JM</span><span>Jonah Miles<small>Product lead</small></span></div></div><div class="svk-card06"><span class="svk-stars06">★★★★★</span><p>"Dropped it into our dashboard in an afternoon. The motion feels premium."</p><div class="svk-who06"><span class="svk-dot06" style="--tone:#ffd94d">KP</span><span>Kavya Pillai<small>Indie maker</small></span></div></div></div></div><div class="svk-dots06"><button class="svk-dotbtn06 on" type="button" aria-label="Show testimonial 1"></button><button class="svk-dotbtn06" type="button" aria-label="Show testimonial 2"></button><button class="svk-dotbtn06" type="button" aria-label="Show testimonial 3"></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Voices Kit</h3><p>A testimonial set with quote cards that fade and slide in sequence, avatar rings with a soft electric glow, and a star rating that fills star by star.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <article class="product wide drop06" data-category="pricing"><div class="preview"><div class="drop06-stage stp06" aria-label="Storm Tier Pricing animated preview"><div class="stp-wrap06"><div class="stp-toggle06"><span>Monthly</span><button class="stp-sw06" type="button" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button><span>Yearly</span><span class="stp-save06">Save 20%</span></div><div class="stp-grid06"><div class="stp-card06"><span class="stp-bolt06">☁</span><b>Drizzle</b><span class="stp-amt06" data-m="₹499" data-y="₹399">₹499</span><small>per month</small><div class="stp-feat06"><span style="--i:0">Live radar</span><span style="--i:1">Rain alerts</span><span style="--i:2">1 location</span></div></div><div class="stp-card06 pop"><span class="stp-bolt06">⚡</span><b>Storm</b><span class="stp-amt06" data-m="₹999" data-y="₹799">₹999</span><small>per month</small><div class="stp-feat06"><span style="--i:0">Lightning alerts</span><span style="--i:1">Gust gauges</span><span style="--i:2">10 locations</span></div></div><div class="stp-card06"><span class="stp-bolt06">🌩</span><b>Tempest</b><span class="stp-amt06" data-m="₹1,999" data-y="₹1,599">₹1,999</span><small>per month</small><div class="stp-feat06"><span style="--i:0">Full storm API</span><span style="--i:1">Team watch</span><span style="--i:2">Unlimited</span></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">06 Nov drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Storm Tier Pricing</h3><p>Pricing tiers with a highlighted "Storm" plan that glows, toggle between monthly and annual with animated price swaps, and feature lists that check in with a staggered draw.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop07" data-category="login-screens"><div class="preview"><div class="drop07-stage lhl07" aria-label="Lavender Haze Login animated preview"><span class="lhl-bloom07 a"></span><span class="lhl-bloom07 b"></span><span class="petal07 lhl-petal07" style="left:14%;--d:8s;--dl:-2s"></span><span class="petal07 lhl-petal07" style="left:38%;--d:10s;--dl:-6s"></span><span class="petal07 lhl-petal07" style="left:63%;--d:7.5s;--dl:-1s"></span><span class="petal07 lhl-petal07" style="left:84%;--d:9s;--dl:-4s"></span><form class="lhl-card07"><b>Lavender Haze</b><small>Sign in beneath the blooms</small><div class="lhl-field07" style="--i:0"><input type="email" placeholder="Email address" aria-label="Preview email"></div><div class="lhl-field07" style="--i:1"><input type="password" placeholder="Password" aria-label="Preview password"></div><button class="lhl-go07" type="submit">Sign in</button></form></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Animated login screens</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Lavender Haze Login</h3><p>A login screen with a soft lavender gradient sky, drifting petal particles, a glassmorphic card, floating lavender blooms, staggered field entrances and a glowing gradient sign-in button.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 3 login screen</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="auth"><div class="preview"><div class="drop07-stage lkf07" aria-label="Lavender Key Flow animated preview"><div class="lkf-card07"><div class="lkf-rail07"><span class="lkf-key07">🔑</span><span class="lkf-dot07 active">1</span><span class="lkf-dot07">2</span><span class="lkf-dot07">3</span></div><div class="lkf-window07"><div class="lkf-track07"><div class="lkf-panel07"><b>Verify your email</b><p>Enter the email tied to your account to begin.</p><div class="lkf-field07">you@lavender.design</div><button class="lkf-next07" type="button">Send key →</button></div><div class="lkf-panel07"><b>Enter lavender code</b><p>We sent a six-digit code to your inbox.</p><div class="lkf-boxes07"><i style="--i:0">7</i><i style="--i:1">3</i><i style="--i:2">9</i><i style="--i:3">1</i><i style="--i:4">5</i><i style="--i:5">8</i></div><button class="lkf-next07" type="button">Verify code →</button></div><div class="lkf-panel07 lkf-done07"><span class="lkf-bloom07"><svg class="lkf-check07" viewBox="0 0 52 52" aria-hidden="true"><path d="M8 28 L20 40 L44 12"/></svg></span><b>Password reset</b><p>Your new password is set. Breathe easy.</p><button class="lkf-next07" type="button">Start again →</button></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Auth flows</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Key Flow</h3><p>A password-reset/key-verification flow with a lavender step rail, animated key icon, smooth step transitions and a success checkmark bloom.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹49</span><span class="price-note">Level 2 auth flow</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="buttons"><div class="preview"><div class="drop07-stage lbb07" aria-label="Lavender Bloom Buttons animated preview"><div class="lbb-board07"><button class="lbb-btn07" type="button" style="--i:0">Bloom now</button><button class="lbb-btn07" type="button" style="--i:1">Petal press</button><button class="lbb-btn07" type="button" style="--i:2">Soft launch</button><button class="lbb-btn07" type="button" style="--i:3">Ghost haze</button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Buttons &amp; CTAs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Bloom Buttons</h3><p>Button pack with petal-bloom hover expansion, soft lavender gradient fills, ripple on click and staggered icon entrances.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="toggles"><div class="preview"><div class="drop07-stage lmt07" aria-label="Lavender Mist Toggles animated preview"><div class="lmt-panel07"><div class="lmt-row07"><div>Petal alerts<small>Bloom notifications</small></div><div class="lmt-right07"><span class="lmt-mist07"></span><span class="lmt-state07">OFF</span><button class="lmt-tog07" type="button" role="switch" aria-checked="false" aria-label="Petal alerts toggle"></button></div></div><div class="lmt-row07"><div>Mist mode<small>Soft lavender glow</small></div><div class="lmt-right07"><span class="lmt-mist07"></span><span class="lmt-state07">OFF</span><button class="lmt-tog07" type="button" role="switch" aria-checked="false" aria-label="Mist mode toggle"></button></div></div><div class="lmt-row07"><div>Quiet hours<small>Dim after dusk</small></div><div class="lmt-right07"><span class="lmt-mist07"></span><span class="lmt-state07">OFF</span><button class="lmt-tog07" type="button" role="switch" aria-checked="false" aria-label="Quiet hours toggle"></button></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Toggles &amp; switches</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Mist Toggles</h3><p>Toggle set with misty lavender glow, smooth sliding knobs, gentle scale bounce and soft shadow transitions.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="loaders"><div class="preview"><div class="drop07-stage lpl07" aria-label="Lavender Petal Loader animated preview"><div class="lpl-wrap07"><span class="petal07 lpl-petal07" style="left:24%;--d:2.2s;--dl:0s"></span><span class="petal07 lpl-petal07" style="left:42%;--d:2.6s;--dl:-.8s"></span><span class="petal07 lpl-petal07" style="left:58%;--d:2s;--dl:-1.4s"></span><span class="petal07 lpl-petal07" style="left:74%;--d:2.9s;--dl:-.4s"></span><span class="lpl-ring07"></span><span class="lpl-dot07"></span><small>PETALS GATHERING</small></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Loaders &amp; spinners</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Petal Loader</h3><p>A loader of falling lavender petals swirling into a ring, with a pulsing center dot and looping keyframe motion.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="inputs"><div class="preview"><div class="drop07-stage lli07" aria-label="Lavender Line Inputs animated preview"><form class="lli-form07"><b>Join the lavender list</b><div class="lli-field07"><input type="email" placeholder=" " required aria-label="Preview email"><label>Email address</label><span class="lli-line07"></span></div><div class="lli-field07"><input type="text" placeholder=" " required minlength="3" aria-label="Preview garden name"><label>Garden name</label><span class="lli-line07"></span></div></form></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Form inputs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Line Inputs</h3><p>Input fields with lavender underline draw-on-focus, floating labels, soft glow on focus and a subtle shake on error.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="modals"><div class="preview"><div class="drop07-stage lmm07" aria-label="Lavender Mist Modal animated preview"><button class="lmm-open07" type="button">Drift into the mist</button><div class="lmm-layer07"><div class="lmm-card07"><button class="lmm-close07" type="button" aria-label="Close dialog">×</button><b>Wrapped in mist</b><p>The dialog fades in through a lavender mist, settles softly, and closes just as calmly.</p><button class="lmm-ok07" type="button">Got it</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Modals &amp; dialogs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Mist Modal</h3><p>A modal that fades in through a lavender mist blur backdrop, with a gentle scale-up entrance and a soft close animation.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="feedback"><div class="preview"><div class="drop07-stage lts07" aria-label="Lavender Toast Stack animated preview"><div class="lts-stack07"><div class="lts-toast07" style="--i:0"><span class="lts-ic07">✿</span><span><strong>Bloom delivered</strong><small>Your lavender order is on its way.</small></span></div><div class="lts-toast07" style="--i:1"><span class="lts-ic07">✿</span><span><strong>Mist mode on</strong><small>Soft glow applied across the app.</small></span></div><div class="lts-toast07" style="--i:2"><span class="lts-ic07">✿</span><span><strong>Petal saved</strong><small>Added to your favourites.</small></span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Toasts &amp; notifications</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Toast Stack</h3><p>Toast notifications sliding in with a lavender accent bar, soft glow border, progress fade and smooth stack reordering.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="cards"><div class="preview"><div class="drop07-stage lpc07" aria-label="Lavender Petal Cards animated preview"><div class="lpc-grid07"><div class="lpc-card07"><span class="petal07 lpc-petal07"></span><div class="lpc-ava07">HC</div><b style="--i:0">Haze Curator</b><small style="--i:1">Bloom lead · North garden</small><span class="lpc-num07" style="--i:2">128 designs</span></div><div class="lpc-card07"><span class="petal07 lpc-petal07"></span><div class="lpc-ava07">PK</div><b style="--i:0">Petal Keeper</b><small style="--i:1">Field designer · Violet studio</small><span class="lpc-num07" style="--i:2">42 launches</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Cards</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Lavender Petal Cards</h3><p>Dashboard/product/profile cards with 3D tilt on hover, drifting petal accents, layered shadows and choreographed content reveal.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="titles"><div class="preview"><div class="drop07-stage lth07" aria-label="Lavender Type Headers animated preview"><div class="lth-box07"><span class="petal07 lth-petal07"></span><div class="lth-kick07">LAVENDER SEASON</div><div class="lth-title07"><span style="--i:0">L</span><span style="--i:1">a</span><span style="--i:2">v</span><span style="--i:3">e</span><span style="--i:4">n</span><span style="--i:5">d</span><span style="--i:6">e</span><span style="--i:7">r</span><span style="--i:8">&nbsp;</span><span class="alt" style="--i:9">h</span><span class="alt" style="--i:10">a</span><span class="alt" style="--i:11">z</span><span class="alt" style="--i:12">e</span></div><div class="lth-rule07"></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Title cards &amp; section headers</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Type Headers</h3><p>Section headers with lavender gradient text, letter-by-letter reveal, an underline draw and a small blooming petal mark.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="navbars"><div class="preview"><div class="drop07-stage lnv07" aria-label="Lavender Bar Nav animated preview"><div class="lnv-scroll07"><nav class="lnv-nav07"><span class="lnv-brand07"><i>✿</i> LAVBAR</span><button class="lnv-link07 on" type="button">Blooms</button><button class="lnv-link07" type="button">Scents</button><button class="lnv-link07" type="button">Care</button><button class="lnv-link07" type="button" data-lnv-menu>Menu ☰</button><span class="lnv-marker07"></span></nav><div class="lnv-menu07"><span>Bloom tracker</span><span>Petal guide</span><span>Garden map</span></div><div class="lnv-body07"><i></i><i></i></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Navbars &amp; menus</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lavender Bar Nav</h3><p>A navbar kit with a frosted lavender bar, animated underline on active links, a sliding mobile menu and a soft glow on hover.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="heroes"><div class="preview"><div class="drop07-stage ldh07" aria-label="Lavender Dusk Hero animated preview"><span class="ldh-orb07 a"></span><span class="ldh-orb07 b"></span><span class="petal07 ldh-petal07" style="left:16%;top:18%;--d:8s;--dl:-2s"></span><span class="petal07 ldh-petal07" style="left:78%;top:14%;--d:10s;--dl:-5s"></span><span class="petal07 ldh-petal07" style="left:64%;top:64%;--d:7s;--dl:-1s"></span><span class="petal07 ldh-petal07" style="left:26%;top:72%;--d:9s;--dl:-3.5s"></span><div class="ldh-copy07"><h4><span style="--i:0">Drift</span> <span style="--i:1">into</span> <span class="hl" style="--i:2">lavender dusk</span></h4><p>Calm interfaces, soft motion and blooms that follow the light.</p><span class="ldh-cta07">Start drifting</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Hero sections</span><span class="tag motion-level">Motion Lv 3 · Rich kit</span></div><h3>Lavender Dusk Hero</h3><p>A hero section with a lavender dusk gradient, floating petals, parallax layers, staggered headline reveal and a glowing CTA.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹89</span><span class="price-note">Level 3 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="footers"><div class="preview"><div class="drop07-stage lfo07" aria-label="Lavender Footer animated preview"><div class="lfo-cols07"><div style="--i:0"><b>LAVENDER</b><span>Components grown</span><span>for calm products.</span></div><div style="--i:1"><b>Explore</b><span>Components</span><span>Bundles</span><span>Templates</span></div><div style="--i:2"><b>Company</b><span>About</span><span>Journal</span><span>Support</span></div></div><div class="lfo-petals07"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></div><div class="lfo-base07"><span>© 2026 Lavender</span><span class="lfo-social07"><span>IG</span><span>X</span><span>IN</span><span>YT</span></span><span>Grown in the haze</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Footers</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lavender Footer</h3><p>A footer with a lavender gradient top border, link columns with hover lifts, social icons with glow and a petal divider.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="effects"><div class="preview"><div class="drop07-stage lds07" aria-label="Lavender Drift Scroll Pack animated preview"><div class="lds-view07"><span class="petal07 lds-petal07" style="left:12%;top:10px"></span><span class="petal07 lds-petal07" style="left:84%;top:26px;animation-delay:-3s"></span><div class="lds-item07 tall" style="--i:0"></div><div class="lds-item07 pink" style="--i:1"></div><div class="lds-item07" style="--i:2"></div><div class="lds-item07 wide" style="--i:3"></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Scroll-animation packs</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lavender Drift Scroll Pack</h3><p>A scroll pack with elements drifting in on lavender-tinted fades, staggered reveals, parallax petals and smooth section transitions.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="backgrounds"><div class="preview"><div class="drop07-stage lmb07" aria-label="Lavender Mist Background animated preview"><span class="lmb-mist07 a"></span><span class="lmb-mist07 b"></span><span class="lmb-orb07" style="left:18%;top:22%;width:34px;height:34px;--i:0"></span><span class="lmb-orb07" style="left:72%;top:58%;width:24px;height:24px;--i:1"></span><span class="lmb-orb07" style="left:82%;top:16%;width:16px;height:16px;--i:2"></span><span class="petal07 lmb-petal07" style="left:30%;top:64%;--d:8s;--dl:-2s"></span><span class="petal07 lmb-petal07" style="left:56%;top:20%;--d:10s;--dl:-6s"></span><span class="lmb-grain07"></span><span class="lmb-cap07">LAVENDER MIST · LIVE</span></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Background effects</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lavender Mist Background</h3><p>A background effect of drifting lavender mist, soft glowing orbs, subtle grain and floating petal particles.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="dashboard"><div class="preview"><div class="drop07-stage lsw07" aria-label="Lavender Stats Widgets animated preview"><div class="lsw-grid07"><div class="lsw-card07"><small>Blooms shipped</small><span class="lsw-num07" data-count="1284" data-suffix="">0</span><span class="lsw-gauge07"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="lsw-track07" cx="25" cy="25" r="24"></circle><circle class="lsw-prog07" cx="25" cy="25" r="24" style="--off:44"></circle></svg></span><svg class="lsw-spark07" viewBox="0 0 120 30" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,24 20,18 40,20 60,10 80,13 100,5 120,8"/></svg></div><div class="lsw-card07 two"><small>Petal saves</small><span class="lsw-num07" data-count="862" data-suffix="">0</span><span class="lsw-gauge07"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="lsw-track07" cx="25" cy="25" r="24"></circle><circle class="lsw-prog07" cx="25" cy="25" r="24" style="--off:66"></circle></svg></span><span class="lsw-delta07">▲ Bloom season near</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Dashboard widgets</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lavender Stats Widgets</h3><p>Stat widgets with lavender gradient rings, animated count-up numbers, sparkline draws and soft hover lifts.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="ecommerce"><div class="preview"><div class="drop07-stage lck07" aria-label="Lavender Cart Kit animated preview"><div class="lck-wrap07"><div class="lck-top07"><span class="lck-brand07">Lavender Lane</span><button class="lck-cartbtn07" type="button">Cart<span class="lck-count07">0</span></button></div><div class="lck-card07"><div class="lck-thumb07"></div><b>Dried lavender bundle</b><small>Hand-tied · Violet stems</small><div class="lck-row07"><span class="lck-price07">₹499</span><span class="lck-step07"><button type="button" class="lck-minus07" aria-label="Decrease quantity">−</button><span class="lck-qty07">1</span><button type="button" class="lck-plus07" aria-label="Increase quantity">+</button></span><button class="lck-add07" type="button">Add to cart</button></div></div><aside class="lck-drawer07"><div class="lck-dhead07"><b>Your cart</b><button class="lck-close07" type="button" aria-label="Close cart">×</button></div><div class="lck-ditem07"><span>Dried lavender bundle</span><span class="lck-dqty07">× 0</span></div><div class="lck-check07"><span>Total <b class="lck-total07">₹0</b></span><button type="button">Checkout</button></div></aside></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">E-commerce kits</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Lavender Cart Kit</h3><p>Cart kit with a sliding lavender cart drawer, quantity steppers with bounce, add-to-cart fly animation and a soft checkout bar.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop07" data-category="social"><div class="preview"><div class="drop07-stage lvk07" aria-label="Lavender Voices Kit animated preview"><div class="lvk-box07"><div class="lvk-avatars07"><span class="lvk-ava07" style="--tone:#c9a5f5">AR</span><span class="lvk-ava07" style="--tone:#edaef7">JM</span><span class="lvk-ava07" style="--tone:#9d7bea">KP</span><span class="lvk-count07">2,400+ lavender lovers</span></div><div class="lvk-view07"><div class="lvk-track07"><div class="lvk-card07"><span class="lvk-stars07">★★★★★</span><p>"The haze theme made our whole app feel calmer overnight. Users noticed immediately."</p><div class="lvk-who07"><span class="lvk-dot07" style="--tone:#c9a5f5">AR</span><span>Asha Rao<small>Wellness founder</small></span></div></div><div class="lvk-card07"><span class="lvk-stars07">★★★★★</span><p>"Soft, premium motion without a hint of heaviness. The petal details are lovely."</p><div class="lvk-who07"><span class="lvk-dot07" style="--tone:#edaef7">JM</span><span>Jonah Miles<small>Product lead</small></span></div></div><div class="lvk-card07"><span class="lvk-stars07">★★★★★</span><p>"Dropped the kit into our shop in an afternoon. Checkout comments doubled."</p><div class="lvk-who07"><span class="lvk-dot07" style="--tone:#9d7bea">KP</span><span>Kavya Pillai<small>Indie maker</small></span></div></div></div></div><div class="lvk-dots07"><button class="lvk-dotbtn07 on" type="button" aria-label="Show testimonial 1"></button><button class="lvk-dotbtn07" type="button" aria-label="Show testimonial 2"></button><button class="lvk-dotbtn07" type="button" aria-label="Show testimonial 3"></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Voices Kit</h3><p>Testimonial kit with lavender quote cards, avatar stacks, star ratings with pop-in animation and a gentle carousel slide.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop07" data-category="pricing"><div class="preview"><div class="drop07-stage ltp07" aria-label="Lavender Tier Pricing animated preview"><div class="ltp-wrap07"><div class="ltp-toggle07"><span>Monthly</span><button class="ltp-sw07" type="button" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button><span>Yearly</span><span class="ltp-save07">Save 20%</span></div><div class="ltp-grid07"><div class="ltp-card07"><span class="ltp-mark07">✿</span><b>Bud</b><span class="ltp-amt07" data-m="₹299" data-y="₹239">₹299</span><small>per month</small><div class="ltp-feat07"><span style="--i:0">Petal basics</span><span style="--i:1">Mist themes</span><span style="--i:2">1 garden</span></div></div><div class="ltp-card07 pop"><span class="ltp-mark07">✿</span><b>Bloom</b><span class="ltp-amt07" data-m="₹599" data-y="₹479">₹599</span><small>per month</small><div class="ltp-feat07"><span style="--i:0">Full haze kit</span><span style="--i:1">Dusk heroes</span><span style="--i:2">10 gardens</span></div></div><div class="ltp-card07"><span class="ltp-mark07">✿</span><b>Meadow</b><span class="ltp-amt07" data-m="₹1,199" data-y="₹959">₹1,199</span><small>per month</small><div class="ltp-feat07"><span style="--i:0">All lavender drops</span><span style="--i:1">Team greenhouse</span><span style="--i:2">Unlimited</span></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Tier Pricing</h3><p>Pricing table with lavender highlight on the popular tier, toggle between monthly/yearly with a sliding pill, and hover lifts on each tier card.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <div class="catalog-empty" id="catalog-empty" role="status" aria-live="polite" hidden>
           <h3>No components here yet</h3>
@@ -14432,6 +14780,236 @@
           sw.setAttribute('aria-checked', String(annual));
           wrap.classList.toggle('yearly', annual);
           wrap.querySelectorAll('.stp-amt06').forEach(function (amt) {
+            amt.classList.remove('flip');
+            void amt.offsetWidth;
+            amt.classList.add('flip');
+            window.setTimeout(function () { amt.textContent = annual ? amt.dataset.y : amt.dataset.m; }, reduceMotion ? 0 : 170);
+          });
+        });
+      });
+
+      /* 07 November daily drop interactions */
+      document.querySelectorAll('.lhl-card07').forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var go = form.querySelector('.lhl-go07');
+          if (!go) return;
+          var original = go.textContent;
+          go.textContent = 'Welcome to the haze ✓';
+          window.setTimeout(function () { go.textContent = original; }, 1600);
+        });
+      });
+
+      document.querySelectorAll('.lkf-card07').forEach(function (card) {
+        var dots = Array.prototype.slice.call(card.querySelectorAll('.lkf-dot07'));
+        var key = card.querySelector('.lkf-key07');
+        var track = card.querySelector('.lkf-track07');
+        var step = 0;
+        function render() {
+          if (track) track.style.transform = 'translateX(' + (-step * 33.333) + '%)';
+          if (key) key.style.left = (step * 45) + '%';
+          dots.forEach(function (d, i) {
+            d.classList.toggle('done', i < step);
+            d.classList.toggle('active', i === step);
+          });
+        }
+        card.querySelectorAll('.lkf-next07').forEach(function (btn) {
+          btn.addEventListener('click', function () { step = (step + 1) % 3; render(); });
+        });
+        render();
+      });
+
+      document.querySelectorAll('.lbb-btn07').forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+          var rect = btn.getBoundingClientRect();
+          var ripple = document.createElement('span');
+          ripple.className = 'lbb-rip07';
+          ripple.style.left = (event.clientX - rect.left) + 'px';
+          ripple.style.top = (event.clientY - rect.top) + 'px';
+          btn.appendChild(ripple);
+          window.setTimeout(function () { ripple.remove(); }, 650);
+        });
+      });
+
+      document.querySelectorAll('.lmt-tog07').forEach(function (tog) {
+        tog.addEventListener('click', function () {
+          var on = tog.getAttribute('aria-checked') !== 'true';
+          tog.setAttribute('aria-checked', String(on));
+          var row = tog.closest('.lmt-row07');
+          if (row) {
+            row.classList.toggle('on', on);
+            var state = row.querySelector('.lmt-state07');
+            if (state) state.textContent = on ? 'ON' : 'OFF';
+          }
+        });
+      });
+
+      document.querySelectorAll('.lmm07').forEach(function (stage) {
+        var open = stage.querySelector('.lmm-open07');
+        var close = stage.querySelector('.lmm-close07');
+        var ok = stage.querySelector('.lmm-ok07');
+        if (!open) return;
+        open.addEventListener('click', function () { stage.classList.add('open'); });
+        function shut() { stage.classList.remove('open'); }
+        if (close) close.addEventListener('click', shut);
+        if (ok) ok.addEventListener('click', shut);
+      });
+
+      document.querySelectorAll('.lli-form07').forEach(function (form) {
+        form.addEventListener('submit', function (event) { event.preventDefault(); });
+        form.querySelectorAll('.lli-field07 input').forEach(function (input) {
+          input.addEventListener('blur', function () {
+            var field = input.closest('.lli-field07');
+            if (!field) return;
+            var bad = input.required && !input.value.trim();
+            field.classList.remove('err07');
+            if (bad) { void field.offsetWidth; field.classList.add('err07'); }
+          });
+        });
+      });
+
+      document.querySelectorAll('.lnv07').forEach(function (stage) {
+        var marker = stage.querySelector('.lnv-marker07');
+        var links = Array.prototype.slice.call(stage.querySelectorAll('.lnv-link07'));
+        function mark(link) {
+          if (!marker || !link) return;
+          marker.style.left = link.offsetLeft + 'px';
+          marker.style.width = link.offsetWidth + 'px';
+        }
+        links.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (link.hasAttribute('data-lnv-menu')) { stage.classList.toggle('menu-open'); return; }
+            links.forEach(function (l) { l.classList.remove('on'); });
+            link.classList.add('on');
+            stage.classList.remove('menu-open');
+            mark(link);
+          });
+        });
+        mark(stage.querySelector('.lnv-link07.on') || links[0]);
+      });
+
+      if (window.matchMedia('(pointer:fine)').matches) {
+        document.querySelectorAll('.lpc-card07').forEach(function (card) {
+          card.addEventListener('pointermove', function (event) {
+            var rect = card.getBoundingClientRect();
+            var rx = ((event.clientY - rect.top) / rect.height - .5) * -8;
+            var ry = ((event.clientX - rect.left) / rect.width - .5) * 10;
+            card.style.transform = 'rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+          });
+          card.addEventListener('pointerleave', function () { card.style.transform = ''; });
+        });
+      }
+
+      document.querySelectorAll('.lsw-card07').forEach(function (card) {
+        var num = card.querySelector('.lsw-num07');
+        function run() {
+          card.classList.add('in');
+          if (!num) return;
+          var target = parseInt(num.getAttribute('data-count'), 10) || 0;
+          var suffix = num.getAttribute('data-suffix') || '';
+          if (reduceMotion) { num.textContent = target.toLocaleString('en-IN') + suffix; return; }
+          var start = null;
+          function tick(ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / 1300, 1);
+            num.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString('en-IN') + suffix;
+            if (p < 1) window.requestAnimationFrame(tick);
+          }
+          window.requestAnimationFrame(tick);
+        }
+        if ('IntersectionObserver' in window) {
+          var lswio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { run(); lswio.unobserve(en.target); } });
+          }, { threshold: .4 });
+          lswio.observe(card);
+        } else { run(); }
+      });
+
+      document.querySelectorAll('.lck-wrap07').forEach(function (wrap) {
+        var qtyEl = wrap.querySelector('.lck-qty07');
+        var countEl = wrap.querySelector('.lck-count07');
+        var dqty = wrap.querySelector('.lck-dqty07');
+        var total = wrap.querySelector('.lck-total07');
+        var cartBtn = wrap.querySelector('.lck-cartbtn07');
+        var qty = 1, inCart = 0;
+        function renderQty() {
+          if (!qtyEl) return;
+          qtyEl.textContent = qty;
+          qtyEl.classList.remove('pop');
+          void qtyEl.offsetWidth;
+          qtyEl.classList.add('pop');
+        }
+        var minus = wrap.querySelector('.lck-minus07');
+        var plus = wrap.querySelector('.lck-plus07');
+        if (minus) minus.addEventListener('click', function () { qty = Math.max(1, qty - 1); renderQty(); });
+        if (plus) plus.addEventListener('click', function () { qty = Math.min(9, qty + 1); renderQty(); });
+        var add = wrap.querySelector('.lck-add07');
+        if (add) add.addEventListener('click', function () {
+          inCart += qty;
+          if (countEl) {
+            countEl.textContent = inCart;
+            countEl.classList.remove('bump');
+            void countEl.offsetWidth;
+            countEl.classList.add('bump');
+          }
+          if (dqty) dqty.textContent = '× ' + inCart;
+          if (total) total.textContent = '₹' + (499 * inCart).toLocaleString('en-IN');
+          if (cartBtn && !reduceMotion) {
+            var fly = document.createElement('span');
+            fly.className = 'lck-fly07';
+            var wr = wrap.getBoundingClientRect();
+            var ar = add.getBoundingClientRect();
+            var cr = cartBtn.getBoundingClientRect();
+            fly.style.left = (ar.left - wr.left + ar.width / 2) + 'px';
+            fly.style.top = (ar.top - wr.top) + 'px';
+            wrap.appendChild(fly);
+            if (fly.animate) {
+              fly.animate([
+                { transform: 'translate(0,0) scale(1)', opacity: 1 },
+                { transform: 'translate(' + (cr.left + cr.width / 2 - ar.left - ar.width / 2) + 'px,' + (cr.top - ar.top) + 'px) scale(.4)', opacity: .5 }
+              ], { duration: 650, easing: 'cubic-bezier(.2,.8,.3,1)' }).onfinish = function () { fly.remove(); };
+            } else {
+              window.setTimeout(function () { fly.remove(); }, 650);
+            }
+          }
+          add.classList.add('added');
+          var original = 'Add to cart';
+          add.textContent = 'Added ✓';
+          window.setTimeout(function () { add.classList.remove('added'); add.textContent = original; }, 1300);
+        });
+        if (cartBtn) cartBtn.addEventListener('click', function () { wrap.classList.toggle('open'); });
+        var closeBtn = wrap.querySelector('.lck-close07');
+        if (closeBtn) closeBtn.addEventListener('click', function () { wrap.classList.remove('open'); });
+      });
+
+      document.querySelectorAll('.lvk-box07').forEach(function (box) {
+        var track = box.querySelector('.lvk-track07');
+        var cards = box.querySelectorAll('.lvk-card07');
+        var dots = Array.prototype.slice.call(box.querySelectorAll('.lvk-dotbtn07'));
+        if (!track || !cards.length) return;
+        var idx = 0, timer = null;
+        function go(i) {
+          idx = (i + cards.length) % cards.length;
+          track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+          dots.forEach(function (d, j) { d.classList.toggle('on', j === idx); });
+        }
+        function startAuto() { if (reduceMotion) return; stopAuto(); timer = window.setInterval(function () { go(idx + 1); }, 3600); }
+        function stopAuto() { if (timer) { window.clearInterval(timer); timer = null; } }
+        dots.forEach(function (d, i) { d.addEventListener('click', function () { go(i); startAuto(); }); });
+        box.addEventListener('mouseenter', stopAuto);
+        box.addEventListener('mouseleave', startAuto);
+        go(0);
+        startAuto();
+      });
+
+      document.querySelectorAll('.ltp-wrap07').forEach(function (wrap) {
+        var sw = wrap.querySelector('.ltp-sw07');
+        if (!sw) return;
+        sw.addEventListener('click', function () {
+          var annual = sw.getAttribute('aria-checked') !== 'true';
+          sw.setAttribute('aria-checked', String(annual));
+          wrap.classList.toggle('yearly', annual);
+          wrap.querySelectorAll('.ltp-amt07').forEach(function (amt) {
             amt.classList.remove('flip');
             void amt.offsetWidth;
             amt.classList.add('flip');
