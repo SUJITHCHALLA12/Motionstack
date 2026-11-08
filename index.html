@@ -7956,11 +7956,357 @@
 
     @media(max-width:600px){.drop07 .preview{min-height:310px}.lpc-grid07,.lsw-grid07{gap:8px}.ltp-grid07{gap:6px}.ltp-card07{padding-inline:5px}.lfo-cols07{grid-template-columns:1fr 1fr;padding-inline:16px}.lfo-base07{padding-inline:16px}.lds-view07{gap:6px}.lnv-link07{padding-inline:5px;font-size:9.5px}}
 
+    /* 08 November daily drop previews — maple / autumn theme */
+    .drop08{border-color:color-mix(in srgb,#d97706 42%,var(--line))}
+    .drop08 .preview{isolation:isolate}
+    .drop08 .drop-date{background:color-mix(in srgb,#f59e0b 20%,var(--surface))}
+    .drop08-stage{position:relative;width:min(500px,100%);min-height:290px;overflow:hidden;border-radius:13px;background:linear-gradient(160deg,#fdeed3,#fdf6e9);color:#4a2c0a}
+    .mapleglow-mini{background:linear-gradient(140deg,#fde68a,#f59e0b 55%,#ea580c)!important;color:#451a03!important;border-color:#d97706!important}
+    .leaf08{position:absolute;border-radius:80% 3px 80% 3px;background:linear-gradient(135deg,#f59e0b,#dc2626);opacity:.8;pointer-events:none}
+
+    .mgl08{display:grid;place-items:center;background:linear-gradient(155deg,#fbbf24,#f59e0b 48%,#ea580c)}
+    .mgl-glow08{position:absolute;border-radius:50%;filter:blur(22px);pointer-events:none}
+    .mgl-glow08.a{width:160px;height:160px;left:-40px;top:-30px;background:rgba(254,243,199,.65);animation:mgl-drift08 9s ease-in-out infinite alternate}
+    .mgl-glow08.b{width:130px;height:130px;right:-30px;bottom:-20px;background:rgba(185,28,28,.4);animation:mgl-drift08 11s ease-in-out infinite alternate-reverse}
+    @keyframes mgl-drift08{to{transform:translate(22px,16px) scale(1.12)}}
+    .mgl-leaf08{top:-24px;width:14px;height:14px;animation:mgl-fall08 var(--d,8s) linear infinite;animation-delay:var(--dl,0s)}
+    @keyframes mgl-fall08{0%{transform:translate(0,-10px) rotate(0deg);opacity:0}12%{opacity:.85}50%{transform:translate(16px,150px) rotate(190deg)}100%{transform:translate(-10px,320px) rotate(360deg);opacity:.1}}
+    .mgl-card08{position:relative;z-index:2;width:min(320px,86%);padding:24px;border:1px solid rgba(255,255,255,.6);border-radius:16px;background:rgba(255,251,235,.5);backdrop-filter:blur(14px);box-shadow:0 26px 60px rgba(120,53,15,.35)}
+    .mgl-card08 b{font:800 20px "Manrope",sans-serif;color:#451a03}
+    .mgl-card08 small{display:block;margin:2px 0 8px;color:#92400e}
+    .mgl-field08{margin-top:11px;animation:mgl-in08 5.2s ease infinite;animation-delay:calc(var(--i)*.3s)}
+    @keyframes mgl-in08{0%,6%{opacity:.25;transform:translateY(12px)}20%,88%{opacity:1;transform:none}100%{opacity:.25}}
+    .mgl-field08 input{width:100%;height:43px;padding:0 12px;border:1px solid rgba(180,83,9,.4);border-radius:8px;outline:0;background:rgba(255,255,255,.55);color:#451a03;transition:.25s}
+    .mgl-field08 input:focus{border-color:#d97706;box-shadow:0 0 0 3px rgba(245,158,11,.25),0 0 22px rgba(245,158,11,.5)}
+    .mgl-go08{position:relative;width:100%;height:42px;margin-top:14px;overflow:hidden;border:0;border-radius:8px;background:linear-gradient(90deg,#b45309,#f59e0b,#fbbf24);color:#fff;font-weight:900;cursor:pointer;box-shadow:0 8px 24px rgba(217,119,6,.5);transition:box-shadow .3s}
+    .mgl-go08:hover{box-shadow:0 0 30px rgba(251,191,36,.95)}
+    .mgl-go08::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.75),transparent 65%);transform:translateX(-120%);animation:gate-sweep 2.6s ease infinite}
+
+    .mkf08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeeda,#fdf3df)}
+    .mkf-card08{width:min(430px,92%);padding:22px;border-radius:13px;background:var(--surface);color:var(--ink);box-shadow:0 20px 44px rgba(120,53,15,.16)}
+    .mkf-rail08{position:relative;display:flex;justify-content:space-between;margin-bottom:18px;padding:0 6px}
+    .mkf-rail08::before{content:"";position:absolute;left:14px;right:14px;top:13px;height:3px;border-radius:3px;background:linear-gradient(90deg,#f59e0b,#fde68a);opacity:.55}
+    .mkf-leafmark08{position:absolute;z-index:3;top:-4px;left:0;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#ea580c);font-size:14px;box-shadow:0 0 16px rgba(245,158,11,.6);transition:left .5s cubic-bezier(.2,.9,.3,1.2);animation:mkf-bob08 2.2s ease-in-out infinite}
+    @keyframes mkf-bob08{50%{transform:translateY(-4px) rotate(-10deg)}}
+    .mkf-dot08{position:relative;z-index:2;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:900;transition:.3s}
+    .mkf-dot08.done,.mkf-dot08.active{background:#d97706;color:#fff}
+    .mkf-dot08.active{animation:mkf-pulse08 1.5s ease infinite}
+    @keyframes mkf-pulse08{50%{box-shadow:0 0 0 6px rgba(245,158,11,.2)}}
+    .mkf-window08{overflow:hidden}
+    .mkf-track08{display:flex;width:300%;transition:transform .48s cubic-bezier(.2,.85,.25,1)}
+    .mkf-panel08{width:33.333%;padding:2px}
+    .mkf-panel08 b{display:block;margin-bottom:6px}
+    .mkf-panel08 p{margin:0 0 10px;color:var(--muted);font-size:12px}
+    .mkf-field08{height:40px;margin:8px 0;display:flex;align-items:center;padding:0 11px;border:1px solid var(--line);border-radius:8px;color:var(--muted);font-size:12px}
+    .mkf-keyotp08{display:flex;align-items:center;gap:8px}
+    .mkf-keyshape08{flex:0 0 auto;width:30px;height:42px;display:grid;place-items:center;border-radius:8px;background:linear-gradient(135deg,#f59e0b,#ea580c);color:#fff;font-size:14px;box-shadow:0 0 14px rgba(245,158,11,.5)}
+    .mkf-boxes08{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;flex:1}
+    .mkf-boxes08 i{display:grid;place-items:center;height:42px;border:1px solid var(--line);border-radius:8px;font-style:normal;font-weight:900;color:#b45309;animation:mkf-box08 1.6s ease infinite;animation-delay:calc(var(--i)*.18s)}
+    @keyframes mkf-box08{0%,100%{transform:scale(1)}50%{transform:scale(1.1);border-color:#fbbf24;box-shadow:0 0 12px rgba(245,158,11,.4)}}
+    .mkf-next08{float:right;margin-top:12px;padding:9px 14px;border:0;border-radius:7px;background:linear-gradient(90deg,#d97706,#f59e0b);color:#fff;font-weight:900;cursor:pointer}
+    .mkf-done08{text-align:center}
+    .mkf-bloom08{position:relative;display:grid;place-items:center;width:76px;height:76px;margin:4px auto 10px}
+    .mkf-bloom08::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(245,158,11,.55);animation:mkf-bloom08 1.8s ease-out infinite}
+    @keyframes mkf-bloom08{0%{transform:scale(.55);opacity:0}35%{opacity:1}100%{transform:scale(1.25);opacity:0}}
+    .mkf-check08{width:56px;height:56px}
+    .mkf-check08 path{fill:none;stroke:#d97706;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:60;stroke-dashoffset:60;animation:mkf-draw08 1.8s ease infinite}
+    @keyframes mkf-draw08{35%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:60}}
+
+    .mlb08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9)}
+    .mlb-board08{display:grid;grid-template-columns:1fr 1fr;gap:13px;width:min(430px,92%)}
+    .mlb-btn08{position:relative;overflow:hidden;min-height:62px;border:1px solid #ecc88f;border-radius:10px;background:#fff;color:#7c2d12;font-weight:900;cursor:pointer;animation:mlb-in08 3.8s ease infinite;animation-delay:calc(var(--i)*.22s);transition:transform .2s,box-shadow .25s}
+    .mlb-btn08::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(251,191,36,.45),transparent 65%);transform:translateX(-120%);transition:transform .55s ease}
+    .mlb-btn08:hover::before{transform:translateX(120%)}
+    .mlb-btn08::after{content:"";position:absolute;top:50%;left:-24px;width:16px;height:16px;border-radius:80% 3px 80% 3px;background:linear-gradient(135deg,#f59e0b,#dc2626);transform:translateY(-50%) rotate(-30deg);transition:left .55s ease,transform .55s ease}
+    .mlb-btn08:hover::after{left:calc(100% + 8px);transform:translateY(-50%) rotate(150deg)}
+    .mlb-btn08:nth-child(2){background:linear-gradient(90deg,#d97706,#f59e0b);border-color:transparent;color:#fff}
+    .mlb-btn08:nth-child(3){background:#fef3c7}
+    .mlb-btn08:nth-child(4){background:transparent;border-style:dashed}
+    .mlb-btn08:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(217,119,6,.35),0 0 18px rgba(251,191,36,.45)}
+    .mlb-btn08:active{transform:translateY(1px) scale(.98)}
+    .mlb-rip08{position:absolute;width:14px;height:14px;border-radius:50%;background:rgba(245,158,11,.45);transform:translate(-50%,-50%) scale(0);animation:mlb-rip08 .6s ease-out forwards;pointer-events:none}
+    @keyframes mlb-rip08{to{transform:translate(-50%,-50%) scale(9);opacity:0}}
+    @keyframes mlb-in08{0%,8%{opacity:.35}20%,88%{opacity:1}100%{opacity:.35}}
+
+    .mst08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeeda,#fdf3df)}
+    .mst-panel08{width:min(410px,92%);display:grid;gap:15px;padding:20px;border-radius:13px;background:var(--surface);color:var(--ink);box-shadow:0 20px 44px rgba(120,53,15,.14)}
+    .mst-row08{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:800}
+    .mst-row08 small{display:block;color:var(--muted);font-weight:600;font-size:11px}
+    .mst-state08{color:#b45309;font-size:10px;font-weight:900}
+    .mst-right08{display:flex;align-items:center;gap:9px}
+    .mst-dot08{width:12px;height:12px;border-radius:50%;background:#e7cf9f;opacity:.45;transition:.35s}
+    .mst-row08.on .mst-dot08{opacity:1;background:#f59e0b;box-shadow:0 0 14px 4px rgba(245,158,11,.55)}
+    .mst-tog08{position:relative;flex:0 0 auto;width:64px;height:35px;border:0;border-radius:999px;background:#e0cba3;cursor:pointer;box-shadow:inset 0 2px 5px rgba(69,26,3,.25);transition:background .35s,box-shadow .35s}
+    .mst-tog08::after{content:"";position:absolute;left:5px;top:5px;width:25px;height:25px;border-radius:80% 3px 80% 3px;background:linear-gradient(135deg,#ffffff,#fde9c8);box-shadow:0 3px 8px rgba(69,26,3,.3);transform:rotate(-45deg);transition:transform .45s cubic-bezier(.3,1.6,.4,1),background .35s}
+    .mst-tog08[aria-checked="true"]{background:linear-gradient(90deg,#d97706,#fbbf24);box-shadow:0 0 18px rgba(245,158,11,.55)}
+    .mst-tog08[aria-checked="true"]::after{transform:translateX(29px) rotate(45deg);background:linear-gradient(135deg,#fde68a,#ea580c)}
+
+    .fll08{display:grid;place-items:center;background:linear-gradient(180deg,#fde9c8,#fdf3df)}
+    .fll-wrap08{position:relative;width:min(360px,90%);height:210px;text-align:center}
+    .fll-leaf08{top:0;width:14px;height:14px;animation:fll-fall08 var(--d,2.4s) ease-in infinite;animation-delay:var(--dl,0s)}
+    .fll-leaf08::before{content:"";position:absolute;left:50%;bottom:100%;width:3px;height:28px;transform:translateX(-50%);background:linear-gradient(180deg,transparent,rgba(245,158,11,.55));border-radius:3px}
+    @keyframes fll-fall08{0%{transform:translate(0,0) rotate(0deg);opacity:0}16%{opacity:.95}50%{transform:translate(14px,74px) rotate(200deg)}72%{transform:translate(-8px,140px) rotate(310deg);opacity:.9}88%,100%{transform:translate(0,158px) rotate(390deg) scale(.4);opacity:0}}
+    .fll-ring08{position:absolute;left:50%;bottom:6px;width:72px;height:72px;transform:translateX(-50%);border-radius:50%;background:conic-gradient(#d97706 72%,#f3ddae 0);-webkit-mask:radial-gradient(circle,transparent 56%,#000 57%);mask:radial-gradient(circle,transparent 56%,#000 57%);animation:fll-spin08 3.2s linear infinite}
+    @keyframes fll-spin08{to{transform:translateX(-50%) rotate(360deg)}}
+    .fll-dot08{position:absolute;left:50%;bottom:36px;width:12px;height:12px;border-radius:50%;background:#f59e0b;transform:translateX(-50%);animation:fll-pulse08 1.6s ease-in-out infinite}
+    @keyframes fll-pulse08{50%{transform:translateX(-50%) scale(1.55);box-shadow:0 0 18px rgba(245,158,11,.85)}}
+    .fll-wrap08 small{position:absolute;left:0;right:0;bottom:-22px;color:#b45309;font-size:9px;font-weight:800;letter-spacing:.18em}
+
+    .mli08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9)}
+    .mli-form08{width:min(400px,92%);padding:22px;border-radius:13px;background:var(--surface);color:var(--ink);box-shadow:0 20px 44px rgba(120,53,15,.14)}
+    .mli-form08 b{font:800 17px "Manrope",sans-serif}
+    .mli-field08{position:relative;margin:13px 0 19px}
+    .mli-field08 input{width:100%;height:48px;padding:17px 2px 8px;border:0;border-bottom:1px solid var(--line);outline:0;background:transparent;color:var(--ink)}
+    .mli-field08 label{position:absolute;left:2px;top:16px;color:var(--muted);font-size:13px;pointer-events:none;transition:.22s}
+    .mli-field08:focus-within label,.mli-field08 input:not(:placeholder-shown)+label{top:0;font-size:10px;color:#b45309;font-weight:800}
+    .mli-line08{position:absolute;left:0;bottom:0;height:2.5px;width:100%;border-radius:3px;background:linear-gradient(90deg,#b45309,#f59e0b,#fbbf24);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.85,.25,1),box-shadow .3s}
+    .mli-field08:focus-within .mli-line08{transform:none;box-shadow:0 2px 14px rgba(245,158,11,.65)}
+    .mli-field08.err08{animation:mli-shake08 .36s ease}
+    .mli-field08.err08 .mli-line08{transform:none;background:#dc2626;box-shadow:none}
+    @keyframes mli-shake08{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+
+    .hpm08{display:grid;place-items:center;background:linear-gradient(145deg,#f7d9a8,#fdeed3);color:var(--ink)}
+    .hpm-open08{padding:11px 16px;border:0;border-radius:8px;background:linear-gradient(90deg,#d97706,#f59e0b);color:#fff;font-weight:900;cursor:pointer;box-shadow:0 10px 24px rgba(217,119,6,.45)}
+    .hpm-layer08{position:absolute;inset:0;display:grid;place-items:center;padding:22px;background:rgba(120,53,15,.25);opacity:0;pointer-events:none;transition:.45s}
+    .hpm08.open .hpm-layer08{opacity:1;pointer-events:auto;backdrop-filter:blur(7px)}
+    .hpm-card08{width:min(300px,90%);padding:22px;border:1px solid rgba(217,119,6,.3);border-radius:16px;background:var(--surface);box-shadow:0 26px 60px rgba(120,53,15,.35);transform:scale(.8);opacity:0;transition:.5s cubic-bezier(.2,1.45,.3,1)}
+    .hpm08.open .hpm-card08{transform:scale(1);opacity:1}
+    .hpm-head08{position:relative;margin-bottom:4px}
+    .hpm-leaf08{position:relative;display:inline-block;width:15px;height:15px;animation:hpm-sway08 2.6s ease-in-out infinite alternate}
+    @keyframes hpm-sway08{from{transform:rotate(-24deg) translateY(0)}to{transform:rotate(30deg) translateY(5px)}}
+    .hpm-card08 b{font:800 19px "Manrope",sans-serif}
+    .hpm-card08 p{margin:8px 0 16px;color:var(--muted);font-size:13px}
+    .hpm-close08{float:right;width:30px;height:30px;border:0;border-radius:50%;background:var(--surface-2);color:var(--ink);cursor:pointer;transition:transform .35s}
+    .hpm-close08:hover{transform:rotate(90deg) scale(.92)}
+    .hpm-ok08{padding:9px 13px;border:0;border-radius:7px;background:linear-gradient(90deg,#d97706,#f59e0b);color:#fff;font-weight:900;cursor:pointer}
+
+    .ats08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeeda,#fdf3df)}
+    .ats-stack08{width:min(410px,92%);display:grid;gap:9px}
+    .ats-toast08{position:relative;overflow:hidden;display:flex;gap:11px;align-items:center;padding:14px 14px 16px;border:1px solid rgba(217,119,6,.35);border-radius:10px;background:#fff;box-shadow:0 12px 28px rgba(120,53,15,.16);animation:ats-in08 5.6s cubic-bezier(.2,.9,.25,1) infinite;animation-delay:calc(var(--i)*.18s)}
+    .ats-toast08::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#b45309,#fbbf24)}
+    .ats-toast08::after{content:"";position:absolute;left:0;bottom:0;height:3px;background:linear-gradient(90deg,#d97706,#fbbf24);animation:ats-prog08 5.6s linear infinite;animation-delay:calc(var(--i)*.18s)}
+    .ats-ic08{flex:0 0 auto;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#fcd34d,#f59e0b);font-size:13px}
+    .ats-toast08 small{display:block;color:#a16207}
+    @keyframes ats-in08{0%,8%{opacity:0;transform:translateX(70px)}15%,86%{opacity:1;transform:none}94%,100%{opacity:0;transform:translateX(24px)}}
+    @keyframes ats-prog08{0%,15%{width:100%;opacity:.9}86%,100%{width:0;opacity:.4}}
+
+    .msc08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9);perspective:900px}
+    .msc-grid08{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(460px,94%)}
+    .msc-card08{position:relative;overflow:hidden;padding:16px;border:1px solid #f0d9a8;border-radius:12px;background:#fff;box-shadow:0 10px 24px rgba(217,119,6,.2),0 24px 40px rgba(185,28,28,.1);transition:box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+    .msc-card08::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,236,190,.75),transparent 62%);transform:translateX(-130%);transition:transform .8s ease;pointer-events:none}
+    .msc-card08:hover{box-shadow:0 18px 34px rgba(217,119,6,.3),0 34px 54px rgba(185,28,28,.16)}
+    .msc-card08:hover::after{transform:translateX(130%)}
+    .msc-leaf08{width:16px;height:16px;right:12px;top:12px;animation:msc-drift08 5s ease-in-out infinite alternate}
+    @keyframes msc-drift08{to{transform:translate(-8px,10px) rotate(50deg)}}
+    .msc-ava08{width:46px;height:46px;margin-bottom:10px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#dc2626);color:#fff;font-weight:900;box-shadow:0 0 0 3px rgba(245,158,11,.3)}
+    .msc-card08 b{display:block;font-size:13px;color:#451a03}
+    .msc-card08 small{color:#a16207}
+    .msc-card08 b,.msc-card08 small,.msc-num08{animation:msc-in08 5.5s ease infinite;animation-delay:calc(var(--i)*.15s)}
+    .msc-num08{display:block;margin-top:8px;font:800 22px "Manrope",sans-serif;color:#b45309}
+    @keyframes msc-in08{0%,8%{opacity:.2;transform:translateY(8px)}22%,90%{opacity:1;transform:none}100%{opacity:.2}}
+
+    .ath08{display:grid;place-items:center;background:linear-gradient(160deg,#fdf0d5,#fdf8ec)}
+    .ath-box08{position:relative;padding:28px 22px;text-align:center}
+    .ath-leaf08{position:relative;display:block;width:18px;height:18px;margin:0 auto 8px;animation:ath-drift08 4.6s ease-in-out infinite}
+    @keyframes ath-drift08{0%,12%{transform:translateX(-16px) rotate(-40deg);opacity:.45}32%,84%{transform:translateX(10px) rotate(24deg);opacity:.95}100%{transform:translateX(-16px) rotate(-40deg);opacity:.45}}
+    .ath-kick08{color:#d97706;font-size:10px;font-weight:800;letter-spacing:.22em}
+    .ath-title08{display:flex;flex-wrap:wrap;justify-content:center;gap:0 .26em;margin:12px 0 15px;font:800 clamp(30px,6vw,48px)/.95 "Manrope",sans-serif;letter-spacing:-.03em;color:#92400e}
+    .ath-title08 span{display:inline-block;animation:ath-in08 4.6s cubic-bezier(.2,.8,.2,1) infinite;animation-delay:calc(var(--i)*.055s)}
+    .ath-title08 span.alt{color:#ea580c}
+    @keyframes ath-in08{0%,10%{opacity:0;transform:translateY(20px)}26%,86%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-8px)}}
+    .ath-rule08{width:72%;height:4px;margin:0 auto;border-radius:4px;background:linear-gradient(90deg,#b45309,#f59e0b,#fbbf24);transform-origin:left;animation:ath-rule08 4.6s ease infinite;box-shadow:0 0 12px rgba(245,158,11,.55)}
+    @keyframes ath-rule08{0%,14%{transform:scaleX(0)}38%,86%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+
+    .mbn08{background:linear-gradient(160deg,#fdeed3,#fdf6e9)}
+    .mbn-scroll08{position:absolute;inset:0;overflow:hidden}
+    .mbn-nav08{position:relative;margin:14px 12px 0;display:flex;align-items:center;gap:2px;padding:10px 12px;border:1px solid rgba(255,255,255,.7);border-radius:11px;background:rgba(255,255,255,.6);backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(120,53,15,.15)}
+    .mbn-brand08{margin-right:auto;font-weight:900;font-size:12px;color:#7c2d12;white-space:nowrap}
+    .mbn-brand08 i{color:#dc2626;font-style:normal}
+    .mbn-link08{position:relative;padding:7px 9px;border:0;background:transparent;color:#b45309;font-size:10.5px;font-weight:800;cursor:pointer;white-space:nowrap;transition:color .25s,text-shadow .25s,transform .25s}
+    .mbn-link08:hover{color:#7c2d12;text-shadow:0 0 12px rgba(251,191,36,.8);transform:translateY(-1px)}
+    .mbn-link08.on{color:#451a03}
+    .mbn-marker08{position:absolute;left:0;bottom:1px;height:3px;border-radius:3px;background:linear-gradient(90deg,#92400e,#f59e0b);box-shadow:0 0 10px rgba(245,158,11,.7);transition:left .35s cubic-bezier(.2,1.2,.3,1),width .35s}
+    .mbn-marker08::after{content:"";position:absolute;right:-3px;top:-4px;width:10px;height:10px;border-radius:80% 3px 80% 3px;background:linear-gradient(135deg,#f59e0b,#dc2626);transform:rotate(24deg)}
+    .mbn-menu08{display:grid;gap:6px;margin:10px 12px 0;padding:10px;border:1px solid rgba(217,119,6,.28);border-radius:11px;background:rgba(255,255,255,.82);transform-origin:top;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.4s cubic-bezier(.2,.9,.25,1)}
+    .mbn08.menu-open .mbn-menu08{transform:none;opacity:1;pointer-events:auto}
+    .mbn-menu08 span{padding:8px 10px;border-radius:6px;font-size:11px;color:#7c2d12;background:rgba(245,158,11,.14)}
+    .mbn-body08{display:grid;gap:10px;padding:14px 12px}
+    .mbn-body08 i{display:block;height:74px;border-radius:9px;background:rgba(245,158,11,.14)}
+
+    .ahh08{background:linear-gradient(180deg,#7c2d12,#c2410c 46%,#f59e0b 82%,#fcd34d)}
+    .ahh-sun08{position:absolute;width:190px;height:190px;right:-50px;top:-70px;border-radius:50%;background:radial-gradient(circle,rgba(254,243,199,.95),rgba(251,191,36,.35) 62%,transparent 72%);animation:ahh-pulse08 6s ease-in-out infinite}
+    @keyframes ahh-pulse08{50%{transform:scale(1.09)}}
+    .ahh-leaf08{width:13px;height:13px;animation:ahh-float08 var(--d,8s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+    @keyframes ahh-float08{from{transform:translateY(-6px) rotate(0deg)}to{transform:translateY(22px) rotate(80deg)}}
+    .ahh-copy08{position:relative;z-index:3;padding:34px 20px;text-align:center;color:#fff}
+    .ahh-copy08 h4{margin:0;font:800 clamp(32px,6vw,50px)/.98 "Manrope",sans-serif;letter-spacing:-.03em}
+    .ahh-copy08 h4 span{display:inline-block;animation:ahh-word08 5.5s ease infinite;animation-delay:calc(var(--i)*.14s)}
+    .ahh-copy08 h4 .hl{color:#fde68a;text-shadow:0 0 22px rgba(253,230,138,.8)}
+    .ahh-copy08 p{margin:12px auto 16px;max-width:300px;color:#ffedd5;font-size:12px;animation:ahh-word08 5.5s .4s ease infinite}
+    .ahh-cta08{display:inline-block;padding:10px 18px;border-radius:999px;background:linear-gradient(90deg,#b45309,#f59e0b);color:#fff;font-weight:900;font-size:12px;box-shadow:0 0 28px rgba(251,191,36,.75);animation:ahh-word08 5.5s .55s ease infinite}
+    @keyframes ahh-word08{0%,10%{opacity:0;transform:translateY(24px)}26%,88%{opacity:1;transform:none}100%{opacity:0}}
+
+    .mft08{display:grid;align-content:end;background:linear-gradient(180deg,#fdf3df,#fdeed3);color:#7c2d12}
+    .mft08::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#b91c1c,#ea580c,#f59e0b,#fbbf24)}
+    .mft-cols08{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;padding:22px 22px 6px}
+    .mft-cols08>div{display:grid;gap:7px;align-content:start;font-size:10px;color:#b45309;animation:mft-in08 5.4s ease infinite;animation-delay:calc(var(--i)*.2s)}
+    .mft-cols08 b{color:#451a03;font-size:12px}
+    .mft-cols08 span{transition:transform .25s,color .25s;cursor:pointer}
+    .mft-cols08 span:hover{transform:translateY(-2px);color:#d97706}
+    @keyframes mft-in08{0%,12%{opacity:.3;transform:translateY(10px)}30%,88%{opacity:1;transform:none}100%{opacity:.3}}
+    .mft-leaves08{display:flex;justify-content:center;gap:9px;padding:10px 0 2px}
+    .mft-leaves08 i{width:11px;height:11px;border-radius:80% 3px 80% 3px;background:linear-gradient(135deg,#f59e0b,#dc2626);animation:mft-sway08 3.4s ease-in-out infinite alternate;animation-delay:calc(var(--i)*.25s)}
+    @keyframes mft-sway08{to{transform:rotate(38deg) translateY(-3px)}}
+    .mft-base08{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 22px 13px;color:#c08a3e;font-size:9px}
+
+    .mdp08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9);overflow:hidden}
+    .mdp-view08{position:relative;width:min(430px,92%);height:236px;overflow:hidden;border:1px solid #f0d9a8;border-radius:11px;background:rgba(255,255,255,.65);padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:start}
+    .mdp-head08{grid-column:span 2;height:34px;border-radius:8px;background:linear-gradient(90deg,#f59e0b,#ea580c,#f59e0b);background-size:200% 100%;animation:mdp-head08 5.6s ease infinite;display:flex;align-items:center;padding:0 12px}
+    .mdp-head08::after{content:"";width:44%;height:7px;border-radius:6px;background:rgba(255,255,255,.75)}
+    @keyframes mdp-head08{0%,100%{background-position:0% 0;transform:translateY(0)}50%{background-position:100% 0;transform:translateY(3px)}}
+    .mdp-item08{min-height:58px;border-radius:9px;background:linear-gradient(135deg,#fde9c8,#fbe3bb);display:grid;place-items:center;animation:mdp-in08 5.6s cubic-bezier(.25,.9,.3,1) infinite;animation-delay:calc(var(--i)*.18s)}
+    .mdp-item08::after{content:"";width:52%;height:7px;border-radius:6px;background:#e8a33d}
+    .mdp-item08.tall{grid-row:span 2;min-height:126px}
+    .mdp-item08.rust::after{background:#dc2626}
+    .mdp-item08.wide{grid-column:span 2}
+    .mdp-item08.wide::after{width:80%;background:linear-gradient(90deg,#d97706,#fbbf24)}
+    @keyframes mdp-in08{0%,8%{opacity:0;transform:translateY(30px)}26%,86%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-12px)}}
+    .mdp-leaf08{width:12px;height:12px;z-index:2;animation:mdp-par08 7s ease-in-out infinite alternate}
+    @keyframes mdp-par08{to{transform:translateY(46px) rotate(80deg)}}
+
+    .alb08{background:linear-gradient(170deg,#f7b733,#f59e0b 55%,#ea580c)}
+    .alb-light08{position:absolute;border-radius:50%;filter:blur(28px);background:rgba(255,246,200,.65);pointer-events:none;animation:alb-drift08 14s ease-in-out infinite alternate}
+    .alb-light08.a{width:260px;height:120px;left:-60px;top:20px}
+    .alb-light08.b{width:220px;height:100px;right:-50px;bottom:26px;animation-duration:18s;animation-direction:alternate-reverse}
+    @keyframes alb-drift08{to{transform:translateX(64px)}}
+    .alb-leaf08{top:-22px;width:13px;height:13px;animation:alb-fall08 var(--d,9s) linear infinite;animation-delay:var(--dl,0s)}
+    @keyframes alb-fall08{0%{transform:translate(0,-8px) rotate(0deg);opacity:0}12%{opacity:.9}50%{transform:translate(20px,150px) rotate(200deg)}100%{transform:translate(-14px,320px) rotate(380deg);opacity:.15}}
+    .alb-cap08{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:7px 12px;border:1px solid rgba(255,255,255,.55);border-radius:999px;background:rgba(255,251,235,.5);backdrop-filter:blur(6px);color:#7c2d12;font-size:10px;font-weight:800;letter-spacing:.14em;white-space:nowrap}
+
+    .hsw08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9)}
+    .hsw-grid08{display:grid;grid-template-columns:1fr 1fr;gap:11px;width:min(460px,94%)}
+    .hsw-card08{position:relative;padding:15px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);transition:transform .3s,box-shadow .3s}
+    .hsw-card08:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(120,53,15,.16)}
+    .hsw-card08 small{color:var(--muted);font-weight:700}
+    .hsw-num08{display:block;margin:4px 0 9px;font:800 25px "Manrope",sans-serif}
+    .hsw-gauge08{position:absolute;right:12px;top:12px;width:50px;height:50px}
+    .hsw-gauge08 svg{display:block;transform:rotate(-90deg)}
+    .hsw-gauge08 circle{fill:none;stroke-width:5;stroke-linecap:round}
+    .hsw-track08{stroke:var(--surface-2)}
+    .hsw-prog08{stroke:#d97706;stroke-dasharray:151;stroke-dashoffset:151;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.8,.2,1)}
+    .hsw-card08.two .hsw-prog08{stroke:#dc2626}
+    .hsw-card08.in .hsw-prog08{stroke-dashoffset:var(--off,40)}
+    .hsw-bars08{display:flex;align-items:flex-end;gap:5px;height:32px;margin-top:4px}
+    .hsw-bars08 i{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,#fbbf24,#d97706);transform-origin:bottom;animation:hsw-grow08 3.4s ease-in-out infinite;animation-delay:calc(var(--i)*.14s);height:var(--h,50%)}
+    @keyframes hsw-grow08{0%,12%{transform:scaleY(.15)}38%,88%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+    .hsw-delta08{display:block;margin-top:7px;color:#b45309;font-size:10px;font-weight:800}
+
+    .ock08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9)}
+    .ock-wrap08{position:relative;width:min(450px,94%)}
+    .ock-top08{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px}
+    .ock-brand08{font:800 15px "Manrope",sans-serif;color:#7c2d12}
+    .ock-cartbtn08{position:relative;padding:8px 13px;border:1px solid #ecc88f;border-radius:999px;background:#fff;color:#7c2d12;font-weight:900;cursor:pointer}
+    .ock-count08{display:inline-grid;place-items:center;min-width:19px;height:19px;margin-left:5px;padding:0 4px;border-radius:999px;background:linear-gradient(135deg,#d97706,#ea580c);color:#fff;font-size:10px}
+    .ock-count08.bump{animation:ock-bump08 .45s cubic-bezier(.2,1.6,.4,1)}
+    @keyframes ock-bump08{40%{transform:scale(1.45)}}
+    .ock-card08{padding:14px;border:1px solid #f0d9a8;border-radius:11px;background:#fff;box-shadow:0 14px 30px rgba(120,53,15,.13)}
+    .ock-thumb08{height:66px;margin-bottom:10px;border-radius:8px;background:linear-gradient(135deg,#fcd34d,#dc2626)}
+    .ock-card08 b{display:block;font-size:12px;color:#451a03}
+    .ock-card08 small{color:#a16207}
+    .ock-row08{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
+    .ock-price08{font-weight:900;color:#7c2d12}
+    .ock-step08{display:inline-flex;align-items:center;gap:8px}
+    .ock-step08 button{width:26px;height:26px;border:1px solid #ecc88f;border-radius:50%;background:#fef6e0;color:#92400e;font-weight:900;cursor:pointer;transition:transform .15s}
+    .ock-step08 button:active{transform:scale(1.25)}
+    .ock-qty08{min-width:16px;text-align:center;font-weight:900;color:#7c2d12}
+    .ock-qty08.pop{animation:ock-bump08 .35s ease}
+    .ock-add08{padding:9px 13px;border:0;border-radius:7px;background:linear-gradient(90deg,#d97706,#f59e0b);color:#fff;font-weight:900;cursor:pointer}
+    .ock-add08.added{background:#b91c1c}
+    .ock-fly08{position:absolute;z-index:6;width:14px;height:14px;border-radius:80% 3px 80% 3px;background:linear-gradient(135deg,#f59e0b,#dc2626);pointer-events:none}
+    .ock-drawer08{position:absolute;top:-6px;right:0;width:min(230px,74%);height:calc(100% + 12px);padding:14px;border:1px solid #f0d9a8;border-radius:11px;background:#fff;box-shadow:-18px 20px 44px rgba(120,53,15,.25);transform:translateX(112%);transition:transform .5s cubic-bezier(.2,.9,.25,1);z-index:5;display:flex;flex-direction:column}
+    .ock-wrap08.open .ock-drawer08{transform:none}
+    .ock-dhead08{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;color:#451a03}
+    .ock-close08{width:26px;height:26px;border:0;border-radius:50%;background:#fef6e0;color:#92400e;cursor:pointer}
+    .ock-ditem08{display:flex;justify-content:space-between;gap:8px;padding:9px;border-radius:8px;background:#fdf6e3;font-size:11px;color:#7c2d12}
+    .ock-check08{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:10px;border-top:1px solid #f7e8c3;font-size:11px;color:#7c2d12}
+    .ock-check08 button{padding:8px 11px;border:0;border-radius:7px;background:linear-gradient(90deg,#d97706,#fbbf24);color:#fff;font-weight:900;cursor:pointer}
+
+    .hvk08{display:grid;place-items:center;background:linear-gradient(160deg,#431407,#7c2d12)}
+    .hvk-box08{width:min(430px,92%)}
+    .hvk-avatars08{display:flex;align-items:center;margin-bottom:12px;padding-left:10px}
+    .hvk-ava08{width:38px;height:38px;margin-left:-10px;display:grid;place-items:center;border:2px solid #572a10;border-radius:50%;background:var(--tone);color:#431407;font-size:10px;font-weight:900;box-shadow:0 0 12px var(--tone);transition:transform .25s}
+    .hvk-ava08:hover{transform:translateY(-4px)}
+    .hvk-count08{margin-left:12px;color:#fed7aa;font-size:10px;font-weight:800}
+    .hvk-view08{display:grid}
+    .hvk-card08{grid-area:1/1;padding:19px;border:1px solid rgba(253,230,138,.35);border-radius:12px;background:rgba(255,255,255,.06);opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease;pointer-events:none}
+    .hvk-card08.on{opacity:1;transform:none;pointer-events:auto}
+    .hvk-stars08{display:inline-block;color:#fbbf24;letter-spacing:.12em}
+    .hvk-card08.on .hvk-stars08{animation:hvk-pop08 .6s cubic-bezier(.2,1.6,.4,1)}
+    @keyframes hvk-pop08{0%{transform:scale(.6);opacity:.3}100%{transform:scale(1);opacity:1}}
+    .hvk-card08 p{margin:10px 0 12px;color:#fff7ed;font-size:13px}
+    .hvk-who08{display:flex;align-items:center;gap:9px;font-size:11px;color:#fff}
+    .hvk-who08 small{display:block;color:#fdba74}
+    .hvk-dot08{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--tone);color:#431407;font-size:9px;font-weight:900}
+    .hvk-dots08{display:flex;justify-content:center;gap:7px;margin-top:12px}
+    .hvk-dotbtn08{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:#9a4a12;cursor:pointer;transition:.25s}
+    .hvk-dotbtn08.on{width:22px;border-radius:8px;background:#fbbf24}
+
+    .htp08{display:grid;place-items:center;background:linear-gradient(160deg,#fdeed3,#fdf6e9)}
+    .htp-wrap08{width:min(480px,95%)}
+    .htp-toggle08{display:flex;justify-content:center;align-items:center;gap:9px;margin-bottom:14px;font-size:11px;font-weight:800;color:#7c2d12}
+    .htp-sw08{position:relative;width:52px;height:29px;padding:0;border:0;border-radius:999px;background:#ecd3a0;cursor:pointer;box-shadow:inset 0 2px 5px rgba(69,26,3,.18)}
+    .htp-sw08::after{content:"";position:absolute;left:4px;top:4px;width:21px;height:21px;border-radius:50%;background:linear-gradient(135deg,#d97706,#fbbf24);transition:transform .38s cubic-bezier(.2,.9,.3,1.3)}
+    .htp-wrap08.yearly .htp-sw08::after{transform:translateX(23px)}
+    .htp-save08{padding:4px 8px;border-radius:999px;background:#f59e0b;color:#fff;font-size:9px;font-weight:900;opacity:0;transform:scale(.5);transition:.3s}
+    .htp-wrap08.yearly .htp-save08{opacity:1;transform:none}
+    .htp-grid08{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;align-items:center}
+    .htp-card08{padding:16px 9px;border:1px solid #f0d9a8;border-radius:10px;background:#fff;text-align:center;transition:transform .3s,box-shadow .3s;color:#7c2d12}
+    .htp-card08:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(120,53,15,.18)}
+    .htp-card08.pop{padding-block:25px;border-color:#d97706;box-shadow:0 0 26px rgba(245,158,11,.45)}
+    .htp-mark08{display:block;font-size:15px}
+    .htp-card08 b{display:block;font-size:11px}
+    .htp-amt08{display:block;margin:7px 0 2px;font:800 clamp(19px,4vw,27px) "Manrope",sans-serif;color:#451a03}
+    .htp-amt08.flip{animation:number-roll14 .35s ease}
+    .htp-card08 small{color:#c08a3e;font-size:9px}
+    .htp-feat08{display:grid;gap:5px;margin-top:10px;color:#92580f;font-size:9px;text-align:left}
+    .htp-feat08 span{animation:feature-in 4s ease infinite;animation-delay:calc(var(--i)*.11s)}
+    .htp-feat08 span::before{content:"✓ ";color:#d97706;font-weight:900}
+
+    .cct08{display:grid;place-items:center;background:linear-gradient(150deg,#cffafe,#ffe4d6)}
+    .cct-frame08{width:min(470px,94%);border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 22px 48px rgba(8,80,100,.25);color:#164e63}
+    .cct-bar08{display:flex;align-items:center;gap:5px;padding:8px 11px;background:#f0fdfa;border-bottom:1px solid #ccfbf1}
+    .cct-bar08 i{width:9px;height:9px;border-radius:50%;background:#5eead4}
+    .cct-bar08 i:nth-child(2){background:#fda4af}
+    .cct-bar08 i:nth-child(3){background:#fcd34d}
+    .cct-url08{margin-left:7px;padding:3px 10px;border-radius:999px;background:#fff;border:1px solid #ccfbf1;font-size:9px;color:#0e7490;font-weight:700}
+    .cct-hero08{position:relative;padding:20px 18px 16px;background:linear-gradient(120deg,#0e7490,#14b8a6 45%,#fb923c 130%);background-size:220% 220%;animation:cct-sea08 9s ease-in-out infinite;color:#fff;overflow:hidden}
+    @keyframes cct-sea08{0%,100%{background-position:0% 40%}50%{background-position:100% 60%}}
+    .cct-nav08{display:flex;justify-content:space-between;align-items:center;font-size:9px;font-weight:800;letter-spacing:.08em}
+    .cct-nav08 span{opacity:.85;font-weight:600;letter-spacing:0}
+    .cct-hero08 h5{margin:13px 0 5px;font:800 clamp(19px,4.4vw,26px)/1.05 "Manrope",sans-serif;letter-spacing:-.02em}
+    .cct-hero08 h5 span{color:#fde68a}
+    .cct-hero08 p{margin:0 0 11px;font-size:10.5px;color:#ecfeff;max-width:300px}
+    .cct-cta08{display:inline-block;padding:7px 13px;border-radius:999px;background:#ff6b4a;color:#fff;font-size:10px;font-weight:900;box-shadow:0 8px 20px rgba(255,107,74,.5);animation:cct-bob08 2.8s ease-in-out infinite}
+    @keyframes cct-bob08{50%{transform:translateY(-3px)}}
+    .cct-sec08{padding:9px 14px 2px;font-size:8.5px;font-weight:900;letter-spacing:.16em;color:#0e7490}
+    .cct-scroll08{overflow:hidden;padding:6px 0 2px}
+    .cct-cards08{display:flex;gap:8px;width:max-content;padding:0 14px;animation:cct-slide08 13s linear infinite}
+    @keyframes cct-slide08{to{transform:translateX(-50%)}}
+    .cct-card08{flex:0 0 auto;width:104px;padding:8px;border-radius:9px;color:#fff;font-size:9px;font-weight:800}
+    .cct-card08 small{display:block;margin-top:14px;font-weight:600;opacity:.85}
+    .cct-book08{display:flex;gap:6px;margin:10px 14px 4px;padding:9px;border:1px solid #ccfbf1;border-radius:9px;background:#f0fdfa}
+    .cct-book08 i{flex:1;height:20px;border-radius:5px;background:#fff;border:1px solid #99f6e4}
+    .cct-book08 b{display:grid;place-items:center;padding:0 10px;border-radius:5px;background:#ff6b4a;color:#fff;font-size:9px}
+    .cct-foot08{display:flex;justify-content:space-between;margin-top:8px;padding:8px 14px 11px;border-top:1px solid #f0fdfa;font-size:8.5px;color:#67a7b5}
+
+    @media(max-width:600px){.drop08 .preview{min-height:310px}.msc-grid08,.hsw-grid08{gap:8px}.htp-grid08{gap:6px}.htp-card08{padding-inline:5px}.mft-cols08{grid-template-columns:1fr 1fr;padding-inline:16px}.mft-base08{padding-inline:16px}.mdp-view08{gap:6px}.mbn-link08{padding-inline:5px;font-size:9.5px}.cct-book08 i:nth-child(2){display:none}}
+
+
   </style>
 </head>
 <body>
   <header class="shell utility">
-    <div class="drop-label">Daily drop · 611 products · 07 Nov 2026</div>
+    <div class="drop-label">Daily drop · 631 products · 08 Nov 2026</div>
     <div class="utility-right">
       <nav aria-label="Page navigation">
         <a href="#components">Catalog</a>
@@ -8205,13 +8551,14 @@
               <div class="mini-login dunemirage-mini"><b>Dune Mirage</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login thunderstorm-mini"><b>Thunderstorm</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
               <div class="mini-login lavenderhaze-mini"><b>Lavender Haze</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
+              <div class="mini-login mapleglow-mini"><b>Maple Glow</b><div class="mini-field"></div><div class="mini-field"></div><div class="mini-go"></div></div>
             </div>
           </div>
           <div class="product-info">
             <div class="meta"><span class="tag new">Login bundle</span><span class="tag">Authentication</span><span class="tag motion-level">Motion Lv 2</span></div>
             <h3>Auth Motion Bundle</h3>
-            <p>A thirty-four-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login, Saffron Dusk Login, Midnight Bloom Login, Amber Horizon Login, Seaside Dawn Login, Willow Grove Login, Alpine Frost Login, Dune Mirage Login, Thunderstorm Login and Lavender Haze Login.</p>
-            <div class="details"><span>34 screen concepts</span><span>Now includes Lavender Haze Login</span><span>Animated preview</span></div>
+            <p>A thirty-five-screen login collection spanning orbital, minimal and midnight styles through Nebula, Eclipse, Cascade, Aurora Gate, Prism Glass, Vapor Frame, Ember Drift, Halo Ring, Solstice Glow, Monsoon Mist, Aurora Bloom, Twilight Ember, Crystal Shard, Neon Veil, Velvet Haze, Ember Tide, Neon Harbor Login, Solar Flare Login, Crimson Dusk Login, Ivory Mist Login, Opal Cascade Login, Velvet Dawn Login, Saffron Dusk Login, Midnight Bloom Login, Amber Horizon Login, Seaside Dawn Login, Willow Grove Login, Alpine Frost Login, Dune Mirage Login, Thunderstorm Login, Lavender Haze Login and Maple Glow Login.</p>
+            <div class="details"><span>35 screen concepts</span><span>Now includes Maple Glow Login</span><span>Animated preview</span></div>
             <div class="price-row"><span class="price">₹449</span><span class="price-note">Level 2 bundle</span></div>
             <div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy bundle · link pending</button></div>
           </div>
@@ -9812,6 +10159,46 @@
         <article class="product drop07" data-category="social"><div class="preview"><div class="drop07-stage lvk07" aria-label="Lavender Voices Kit animated preview"><div class="lvk-box07"><div class="lvk-avatars07"><span class="lvk-ava07" style="--tone:#c9a5f5">AR</span><span class="lvk-ava07" style="--tone:#edaef7">JM</span><span class="lvk-ava07" style="--tone:#9d7bea">KP</span><span class="lvk-count07">2,400+ lavender lovers</span></div><div class="lvk-view07"><div class="lvk-track07"><div class="lvk-card07"><span class="lvk-stars07">★★★★★</span><p>"The haze theme made our whole app feel calmer overnight. Users noticed immediately."</p><div class="lvk-who07"><span class="lvk-dot07" style="--tone:#c9a5f5">AR</span><span>Asha Rao<small>Wellness founder</small></span></div></div><div class="lvk-card07"><span class="lvk-stars07">★★★★★</span><p>"Soft, premium motion without a hint of heaviness. The petal details are lovely."</p><div class="lvk-who07"><span class="lvk-dot07" style="--tone:#edaef7">JM</span><span>Jonah Miles<small>Product lead</small></span></div></div><div class="lvk-card07"><span class="lvk-stars07">★★★★★</span><p>"Dropped the kit into our shop in an afternoon. Checkout comments doubled."</p><div class="lvk-who07"><span class="lvk-dot07" style="--tone:#9d7bea">KP</span><span>Kavya Pillai<small>Indie maker</small></span></div></div></div></div><div class="lvk-dots07"><button class="lvk-dotbtn07 on" type="button" aria-label="Show testimonial 1"></button><button class="lvk-dotbtn07" type="button" aria-label="Show testimonial 2"></button><button class="lvk-dotbtn07" type="button" aria-label="Show testimonial 3"></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Voices Kit</h3><p>Testimonial kit with lavender quote cards, avatar stacks, star ratings with pop-in animation and a gentle carousel slide.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
 
         <article class="product wide drop07" data-category="pricing"><div class="preview"><div class="drop07-stage ltp07" aria-label="Lavender Tier Pricing animated preview"><div class="ltp-wrap07"><div class="ltp-toggle07"><span>Monthly</span><button class="ltp-sw07" type="button" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button><span>Yearly</span><span class="ltp-save07">Save 20%</span></div><div class="ltp-grid07"><div class="ltp-card07"><span class="ltp-mark07">✿</span><b>Bud</b><span class="ltp-amt07" data-m="₹299" data-y="₹239">₹299</span><small>per month</small><div class="ltp-feat07"><span style="--i:0">Petal basics</span><span style="--i:1">Mist themes</span><span style="--i:2">1 garden</span></div></div><div class="ltp-card07 pop"><span class="ltp-mark07">✿</span><b>Bloom</b><span class="ltp-amt07" data-m="₹599" data-y="₹479">₹599</span><small>per month</small><div class="ltp-feat07"><span style="--i:0">Full haze kit</span><span style="--i:1">Dusk heroes</span><span style="--i:2">10 gardens</span></div></div><div class="ltp-card07"><span class="ltp-mark07">✿</span><b>Meadow</b><span class="ltp-amt07" data-m="₹1,199" data-y="₹959">₹1,199</span><small>per month</small><div class="ltp-feat07"><span style="--i:0">All lavender drops</span><span style="--i:1">Team greenhouse</span><span style="--i:2">Unlimited</span></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">07 Nov drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Lavender Tier Pricing</h3><p>Pricing table with lavender highlight on the popular tier, toggle between monthly/yearly with a sliding pill, and hover lifts on each tier card.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop08" data-category="login-screens"><div class="preview"><div class="drop08-stage mgl08" aria-label="Maple Glow Login animated preview"><span class="mgl-glow08 a"></span><span class="mgl-glow08 b"></span><span class="leaf08 mgl-leaf08" style="left:14%;--d:8s;--dl:-2s"></span><span class="leaf08 mgl-leaf08" style="left:38%;--d:10s;--dl:-6s"></span><span class="leaf08 mgl-leaf08" style="left:63%;--d:7.5s;--dl:-1s"></span><span class="leaf08 mgl-leaf08" style="left:84%;--d:9s;--dl:-4s"></span><form class="mgl-card08"><b>Maple Glow</b><small>Sign in under the maples</small><div class="mgl-field08" style="--i:0"><input type="email" placeholder="Email address" aria-label="Preview email"></div><div class="mgl-field08" style="--i:1"><input type="password" placeholder="Password" aria-label="Preview password"></div><button class="mgl-go08" type="submit">Sign in</button></form></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Animated login screens</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Maple Glow Login</h3><p>A warm amber-and-maple login screen with drifting falling-leaf particles, a soft glowing gradient panel, staggered field entrances and a button that glows on hover.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 3 login screen</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="auth"><div class="preview"><div class="drop08-stage mkf08" aria-label="Maple Key Flow animated preview"><div class="mkf-card08"><div class="mkf-rail08"><span class="mkf-leafmark08">🍁</span><span class="mkf-dot08 active">1</span><span class="mkf-dot08">2</span><span class="mkf-dot08">3</span></div><div class="mkf-window08"><div class="mkf-track08"><div class="mkf-panel08"><b>Create your account</b><p>Enter the email you want to sign up with.</p><div class="mkf-field08">you@maple.design</div><button class="mkf-next08" type="button">Send key →</button></div><div class="mkf-panel08"><b>Enter maple key</b><p>We sent a six-digit key code to your inbox.</p><div class="mkf-keyotp08"><span class="mkf-keyshape08">🗝</span><div class="mkf-boxes08"><i style="--i:0">5</i><i style="--i:1">1</i><i style="--i:2">9</i><i style="--i:3">3</i><i style="--i:4">7</i><i style="--i:5">2</i></div></div><button class="mkf-next08" type="button">Verify key →</button></div><div class="mkf-panel08 mkf-done08"><span class="mkf-bloom08"><svg class="mkf-check08" viewBox="0 0 52 52" aria-hidden="true"><path d="M8 28 L20 40 L44 12"/></svg></span><b>Password reset</b><p>Your new password is set. Welcome back.</p><button class="mkf-next08" type="button">Start again →</button></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Auth flows</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Maple Key Flow</h3><p>A signup/OTP/password-reset flow with a maple-leaf progress rail, sliding step transitions and a key-shaped OTP entry that pulses as digits fill.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹49</span><span class="price-note">Level 2 auth flow</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="buttons"><div class="preview"><div class="drop08-stage mlb08" aria-label="Maple Leaf Buttons animated preview"><div class="mlb-board08"><button class="mlb-btn08" type="button" style="--i:0">Gather now</button><button class="mlb-btn08" type="button" style="--i:1">Amber press</button><button class="mlb-btn08" type="button" style="--i:2">Harvest soft</button><button class="mlb-btn08" type="button" style="--i:3">Ghost leaf</button></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Buttons &amp; CTAs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Maple Leaf Buttons</h3><p>Buttons with a leaf that sweeps across on hover, gentle lift, ripple press and a soft amber glow.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="toggles"><div class="preview"><div class="drop08-stage mst08" aria-label="Maple Slide Toggles animated preview"><div class="mst-panel08"><div class="mst-row08"><div>Leaf alerts<small>Harvest notifications</small></div><div class="mst-right08"><span class="mst-dot08"></span><span class="mst-state08">OFF</span><button class="mst-tog08" type="button" role="switch" aria-checked="false" aria-label="Leaf alerts toggle"></button></div></div><div class="mst-row08"><div>Amber glow<small>Warm accent lighting</small></div><div class="mst-right08"><span class="mst-dot08"></span><span class="mst-state08">OFF</span><button class="mst-tog08" type="button" role="switch" aria-checked="false" aria-label="Amber glow toggle"></button></div></div><div class="mst-row08"><div>Orchard mode<small>Group by harvest season</small></div><div class="mst-right08"><span class="mst-dot08"></span><span class="mst-state08">OFF</span><button class="mst-tog08" type="button" role="switch" aria-checked="false" aria-label="Orchard mode toggle"></button></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Toggles &amp; switches</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Maple Slide Toggles</h3><p>Pill toggles with a sliding leaf knob, smooth spring slide and warm colour shift between states.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="loaders"><div class="preview"><div class="drop08-stage fll08" aria-label="Falling Leaf Loader animated preview"><div class="fll-wrap08"><span class="leaf08 fll-leaf08" style="left:24%;--d:2.2s;--dl:0s"></span><span class="leaf08 fll-leaf08" style="left:42%;--d:2.6s;--dl:-.8s"></span><span class="leaf08 fll-leaf08" style="left:58%;--d:2s;--dl:-1.4s"></span><span class="leaf08 fll-leaf08" style="left:74%;--d:2.9s;--dl:-.4s"></span><span class="fll-ring08"></span><span class="fll-dot08"></span><small>LEAVES GATHERING</small></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Loaders &amp; spinners</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Falling Leaf Loader</h3><p>A loader of maple leaves tumbling down in a loop with a soft fade trail and a pulsing progress dot.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="inputs"><div class="preview"><div class="drop08-stage mli08" aria-label="Maple Line Inputs animated preview"><form class="mli-form08"><b>Join the harvest list</b><div class="mli-field08"><input type="email" placeholder=" " required aria-label="Preview email"><label>Email address</label><span class="mli-line08"></span></div><div class="mli-field08"><input type="text" placeholder=" " required minlength="3" aria-label="Preview orchard name"><label>Orchard name</label><span class="mli-line08"></span></div></form></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Form inputs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Maple Line Inputs</h3><p>Underline inputs with a maple-amber focus line that draws across, floating labels and a soft glow on focus.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="modals"><div class="preview"><div class="drop08-stage hpm08" aria-label="Harvest Pop Modal animated preview"><button class="hpm-open08" type="button">Open the harvest</button><div class="hpm-layer08"><div class="hpm-card08"><button class="hpm-close08" type="button" aria-label="Close dialog">×</button><div class="hpm-head08"><span class="leaf08 hpm-leaf08"></span></div><b>Harvest is in</b><p>The dialog pops in with a spring settle while a leaf drifts over the header, and closes just as gently.</p><button class="hpm-ok08" type="button">Got it</button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Modals &amp; dialogs</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Harvest Pop Modal</h3><p>A modal that pops in with a spring scale, backdrop blur fade, and a gentle falling-leaf accent in the header.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="feedback"><div class="preview"><div class="drop08-stage ats08" aria-label="Autumn Toast Stack animated preview"><div class="ats-stack08"><div class="ats-toast08" style="--i:0"><span class="ats-ic08">🍁</span><span><strong>Harvest delivered</strong><small>Your maple order is on its way.</small></span></div><div class="ats-toast08" style="--i:1"><span class="ats-ic08">🍁</span><span><strong>Amber glow on</strong><small>Warm accents applied across the app.</small></span></div><div class="ats-toast08" style="--i:2"><span class="ats-ic08">🍁</span><span><strong>Leaf saved</strong><small>Added to your favourites.</small></span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Toasts &amp; notifications</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Autumn Toast Stack</h3><p>Toast notifications that slide in from the corner with a staggered stack, warm amber accent bar and auto-dismiss progress line.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="cards"><div class="preview"><div class="drop08-stage msc08" aria-label="Maple Shade Cards animated preview"><div class="msc-grid08"><div class="msc-card08"><span class="leaf08 msc-leaf08"></span><div class="msc-ava08">MG</div><b style="--i:0">Maple Grower</b><small style="--i:1">Orchard lead · North grove</small><span class="msc-num08" style="--i:2">128 crates</span></div><div class="msc-card08"><span class="leaf08 msc-leaf08"></span><div class="msc-ava08">AS</div><b style="--i:0">Amber Sapper</b><small style="--i:1">Syrup maker · Valley farm</small><span class="msc-num08" style="--i:2">42 batches</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Cards</span><span class="tag motion-level">Motion Lv 3 · Rich</span></div><h3>Maple Shade Cards</h3><p>Dashboard/product/profile cards with layered maple-gradient shadows, hover lift and a soft sheen sweep.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹39</span><span class="price-note">Level 3 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="titles"><div class="preview"><div class="drop08-stage ath08" aria-label="Autumn Type Headers animated preview"><div class="ath-box08"><span class="leaf08 ath-leaf08"></span><div class="ath-kick08">MAPLE SEASON</div><div class="ath-title08"><span style="--i:0">A</span><span style="--i:1">u</span><span style="--i:2">t</span><span style="--i:3">u</span><span style="--i:4">m</span><span style="--i:5">n</span><span style="--i:6">&nbsp;</span><span class="alt" style="--i:7">g</span><span class="alt" style="--i:8">l</span><span class="alt" style="--i:9">o</span><span class="alt" style="--i:10">w</span></div><div class="ath-rule08"></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Title cards &amp; section headers</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Autumn Type Headers</h3><p>Section headers with letters that fade up one by one, an amber underline that draws itself, and a drifting leaf accent.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="navbars"><div class="preview"><div class="drop08-stage mbn08" aria-label="Maple Branch Nav animated preview"><div class="mbn-scroll08"><nav class="mbn-nav08"><span class="mbn-brand08"><i>🍁</i> MAPLEBAR</span><button class="mbn-link08 on" type="button">Grove</button><button class="mbn-link08" type="button">Syrup</button><button class="mbn-link08" type="button">Trails</button><button class="mbn-link08" type="button" data-mbn-menu>Menu ☰</button><span class="mbn-marker08"></span></nav><div class="mbn-menu08"><span>Grove tracker</span><span>Leaf guide</span><span>Orchard map</span></div><div class="mbn-body08"><i></i><i></i></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Navbars &amp; menus</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Maple Branch Nav</h3><p>A navbar with a branch-like underline that grows under the active link, smooth hover slides and a collapsing mobile menu.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="heroes"><div class="preview"><div class="drop08-stage ahh08" aria-label="Autumn Harvest Hero animated preview"><span class="ahh-sun08"></span><span class="leaf08 ahh-leaf08" style="left:16%;top:18%;--d:8s;--dl:-2s"></span><span class="leaf08 ahh-leaf08" style="left:78%;top:14%;--d:10s;--dl:-5s"></span><span class="leaf08 ahh-leaf08" style="left:64%;top:64%;--d:7s;--dl:-1s"></span><span class="leaf08 ahh-leaf08" style="left:26%;top:72%;--d:9s;--dl:-3.5s"></span><div class="ahh-copy08"><h4><span style="--i:0">Gather</span> <span style="--i:1">the</span> <span class="hl" style="--i:2">golden harvest</span></h4><p>Warm interfaces, drifting leaves and motion that feels like late-afternoon light.</p><span class="ahh-cta08">Start gathering</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Hero sections</span><span class="tag motion-level">Motion Lv 3 · Rich kit</span></div><h3>Autumn Harvest Hero</h3><p>A hero with a warm gradient sky, floating harvest leaves, staggered headline reveal and a glowing CTA.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹89</span><span class="price-note">Level 3 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="footers"><div class="preview"><div class="drop08-stage mft08" aria-label="Maple Footer animated preview"><div class="mft-cols08"><div style="--i:0"><b>MAPLE</b><span>Components gathered</span><span>for warm products.</span></div><div style="--i:1"><b>Explore</b><span>Components</span><span>Bundles</span><span>Templates</span></div><div style="--i:2"><b>Company</b><span>About</span><span>Journal</span><span>Support</span></div></div><div class="mft-leaves08"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></div><div class="mft-base08"><span>© 2026 Maple</span><span>Gathered in the grove</span></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Footers</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Maple Footer</h3><p>A footer with a maple-gradient top border, links that lift on hover and a subtle drifting-leaf strip.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="effects"><div class="preview"><div class="drop08-stage mdp08" aria-label="Maple Drift Scroll Pack animated preview"><div class="mdp-view08"><span class="leaf08 mdp-leaf08" style="left:12%;top:44px"></span><span class="leaf08 mdp-leaf08" style="left:84%;top:60px;animation-delay:-3s"></span><div class="mdp-head08"></div><div class="mdp-item08 tall" style="--i:0"></div><div class="mdp-item08 rust" style="--i:1"></div><div class="mdp-item08" style="--i:2"></div><div class="mdp-item08 wide" style="--i:3"></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Scroll-animation packs</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Maple Drift Scroll Pack</h3><p>Scroll-driven leaf drift, fade-and-rise reveals and a parallax header that shifts as you scroll.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="backgrounds"><div class="preview"><div class="drop08-stage alb08" aria-label="Autumn Leaves Background animated preview"><span class="alb-light08 a"></span><span class="alb-light08 b"></span><span class="leaf08 alb-leaf08" style="left:10%;--d:9s;--dl:-2s"></span><span class="leaf08 alb-leaf08" style="left:26%;--d:11s;--dl:-6s"></span><span class="leaf08 alb-leaf08" style="left:44%;--d:8s;--dl:-1s"></span><span class="leaf08 alb-leaf08" style="left:60%;--d:10s;--dl:-4s"></span><span class="leaf08 alb-leaf08" style="left:76%;--d:9.5s;--dl:-3s"></span><span class="leaf08 alb-leaf08" style="left:90%;--d:8.5s;--dl:-5s"></span><span class="alb-cap08">AUTUMN LEAVES · LIVE</span></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Background effects</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Autumn Leaves Background</h3><p>A full-page background of gently falling maple leaves over a warm gradient with soft drifting light.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="dashboard"><div class="preview"><div class="drop08-stage hsw08" aria-label="Harvest Stats Widgets animated preview"><div class="hsw-grid08"><div class="hsw-card08"><small>Crates gathered</small><span class="hsw-num08" data-count="2418" data-suffix="">0</span><span class="hsw-gauge08"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="hsw-track08" cx="25" cy="25" r="24"></circle><circle class="hsw-prog08" cx="25" cy="25" r="24" style="--off:44"></circle></svg></span><div class="hsw-bars08"><i style="--i:0;--h:40%"></i><i style="--i:1;--h:65%"></i><i style="--i:2;--h:50%"></i><i style="--i:3;--h:85%"></i><i style="--i:4;--h:70%"></i><i style="--i:5;--h:95%"></i></div></div><div class="hsw-card08 two"><small>Orchard yield</small><span class="hsw-num08" data-count="96" data-suffix="%">0</span><span class="hsw-gauge08"><svg width="50" height="50" viewBox="0 0 50 50"><circle class="hsw-track08" cx="25" cy="25" r="24"></circle><circle class="hsw-prog08" cx="25" cy="25" r="24" style="--off:66"></circle></svg></span><span class="hsw-delta08">▲ Best harvest yet</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Dashboard widgets</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Harvest Stats Widgets</h3><p>Stat widgets with animated count-ups, harvest-toned progress rings and a subtle bar-chart grow-in.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="ecommerce"><div class="preview"><div class="drop08-stage ock08" aria-label="Orchard Cart Kit animated preview"><div class="ock-wrap08"><div class="ock-top08"><span class="ock-brand08">Orchard Lane</span><button class="ock-cartbtn08" type="button">Cart<span class="ock-count08">0</span></button></div><div class="ock-card08"><div class="ock-thumb08"></div><b>Heirloom apple crate</b><small>Orchard-picked · Amber grade</small><div class="ock-row08"><span class="ock-price08">₹899</span><span class="ock-step08"><button type="button" class="ock-minus08" aria-label="Decrease quantity">−</button><span class="ock-qty08">1</span><button type="button" class="ock-plus08" aria-label="Increase quantity">+</button></span><button class="ock-add08" type="button">Add to cart</button></div></div><aside class="ock-drawer08"><div class="ock-dhead08"><b>Your cart</b><button class="ock-close08" type="button" aria-label="Close cart">×</button></div><div class="ock-ditem08"><span>Heirloom apple crate</span><span class="ock-dqty08">× 0</span></div><div class="ock-check08"><span>Total <b class="ock-total08">₹0</b></span><button type="button">Checkout</button></div></aside></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">E-commerce kits</span><span class="tag motion-level">Motion Lv 2 · Fluid kit</span></div><h3>Orchard Cart Kit</h3><p>Product cards with a slide-in cart drawer, quantity stepper animation and a fly-to-cart dot.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹69</span><span class="price-note">Level 2 section kit</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product drop08" data-category="social"><div class="preview"><div class="drop08-stage hvk08" aria-label="Harvest Voices Kit animated preview"><div class="hvk-box08"><div class="hvk-avatars08"><span class="hvk-ava08" style="--tone:#fbbf24">AR</span><span class="hvk-ava08" style="--tone:#fb923c">JM</span><span class="hvk-ava08" style="--tone:#f87171">KP</span><span class="hvk-count08">2,400+ harvest fans</span></div><div class="hvk-view08"><div class="hvk-card08 on"><span class="hvk-stars08">★★★★★</span><p>&ldquo;The maple theme warmed up our whole storefront overnight. Customers keep mentioning it.&rdquo;</p><div class="hvk-who08"><span class="hvk-dot08" style="--tone:#fbbf24">AR</span><span>Asha Rao<small>Orchard founder</small></span></div></div><div class="hvk-card08"><span class="hvk-stars08">★★★★★</span><p>&ldquo;Warm, premium motion that never feels heavy. The falling leaves are a lovely touch.&rdquo;</p><div class="hvk-who08"><span class="hvk-dot08" style="--tone:#fb923c">JM</span><span>Jonah Miles<small>Product lead</small></span></div></div><div class="hvk-card08"><span class="hvk-stars08">★★★★★</span><p>&ldquo;Dropped the kit into our shop in an afternoon. Checkout comments doubled.&rdquo;</p><div class="hvk-who08"><span class="hvk-dot08" style="--tone:#f87171">KP</span><span>Kavya Pillai<small>Indie maker</small></span></div></div></div><div class="hvk-dots08"><button class="hvk-dotbtn08 on" type="button" aria-label="Show testimonial 1"></button><button class="hvk-dotbtn08" type="button" aria-label="Show testimonial 2"></button><button class="hvk-dotbtn08" type="button" aria-label="Show testimonial 3"></button></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Social proof kits</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Harvest Voices Kit</h3><p>Testimonial cards that cross-fade in a loop with star ratings that pop in and avatar hover lift.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop08" data-category="pricing"><div class="preview"><div class="drop08-stage htp08" aria-label="Harvest Tier Pricing animated preview"><div class="htp-wrap08"><div class="htp-toggle08"><span>Monthly</span><button class="htp-sw08" type="button" role="switch" aria-checked="false" aria-label="Toggle yearly billing"></button><span>Yearly</span><span class="htp-save08">Save 20%</span></div><div class="htp-grid08"><div class="htp-card08"><span class="htp-mark08">🍁</span><b>Sapling</b><span class="htp-amt08" data-m="₹299" data-y="₹239">₹299</span><small>per month</small><div class="htp-feat08"><span style="--i:0">Maple basics</span><span style="--i:1">Amber themes</span><span style="--i:2">1 grove</span></div></div><div class="htp-card08 pop"><span class="htp-mark08">🍁</span><b>Grove</b><span class="htp-amt08" data-m="₹599" data-y="₹479">₹599</span><small>per month</small><div class="htp-feat08"><span style="--i:0">Full harvest kit</span><span style="--i:1">Sunset heroes</span><span style="--i:2">10 groves</span></div></div><div class="htp-card08"><span class="htp-mark08">🍁</span><b>Orchard</b><span class="htp-amt08" data-m="₹1,199" data-y="₹959">₹1,199</span><small>per month</small><div class="htp-feat08"><span style="--i:0">All maple drops</span><span style="--i:1">Team orchard</span><span style="--i:2">Unlimited</span></div></div></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Pricing tables</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Harvest Tier Pricing</h3><p>Pricing tiers with a highlighted popular plan, hover lift, animated feature checkmarks and a billing toggle.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹29</span><span class="price-note">Level 2 component</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy · link pending</button></div></div></article>
+
+        <article class="product wide drop08" data-category="templates"><div class="preview"><div class="drop08-stage cct08" aria-label="Coral Coast Template animated preview"><div class="cct-frame08"><div class="cct-bar08"><i></i><i></i><i></i><span class="cct-url08">coralcoast.travel</span></div><section class="cct-hero08"><nav class="cct-nav08"><b>CORAL COAST</b><span>Stays · Trips · Guide</span></nav><h5>Chase the tide, <span>keep the sunset.</span></h5><p>Beach stays, boat days and slow coastal evenings — planned in one calm template.</p><span class="cct-cta08">Plan my trip</span></section><div class="cct-sec08">TOP DESTINATIONS</div><div class="cct-scroll08"><div class="cct-cards08"><div class="cct-card08" style="background:linear-gradient(150deg,#0ea5e9,#0369a1)">Goa<small>From ₹4,999</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#fb923c,#ea580c)">Gokarna<small>From ₹3,499</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#2dd4bf,#0f766e)">Alibaug<small>From ₹2,999</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#f472b6,#be185d)">Varkala<small>From ₹5,499</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#0ea5e9,#0369a1)">Goa<small>From ₹4,999</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#fb923c,#ea580c)">Gokarna<small>From ₹3,499</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#2dd4bf,#0f766e)">Alibaug<small>From ₹2,999</small></div><div class="cct-card08" style="background:linear-gradient(150deg,#f472b6,#be185d)">Varkala<small>From ₹5,499</small></div></div></div><form class="cct-book08"><i></i><i></i><b>Search stays</b></form><div class="cct-foot08"><span>© 2026 Coral Coast</span><span>Made for slow tides</span></div></div></div></div><div class="product-info"><div class="meta"><span class="tag drop-date">08 Nov drop</span><span class="tag">Website templates</span><span class="tag motion-level">Motion Lv 2 · Fluid</span></div><h3>Coral Coast Template</h3><p>A complete pre-ready coastal travel website template: hero with drifting sea gradient, scrolling destination cards, booking form and footer, all animated.</p><div class="details"><span>Complete organized source files</span><span>All variants + documentation</span><span>Lifetime updates + commercial license</span></div><div class="price-row"><span class="price">₹399</span><span class="price-note">Level 2 website template</span></div><div class="card-actions"><button class="btn small" type="button" disabled title="Add a Stripe Payment Link to activate checkout">Buy template · link pending</button></div></div></article>
 
         <div class="catalog-empty" id="catalog-empty" role="status" aria-live="polite" hidden>
           <h3>No components here yet</h3>
@@ -15010,6 +15397,235 @@
           sw.setAttribute('aria-checked', String(annual));
           wrap.classList.toggle('yearly', annual);
           wrap.querySelectorAll('.ltp-amt07').forEach(function (amt) {
+            amt.classList.remove('flip');
+            void amt.offsetWidth;
+            amt.classList.add('flip');
+            window.setTimeout(function () { amt.textContent = annual ? amt.dataset.y : amt.dataset.m; }, reduceMotion ? 0 : 170);
+          });
+        });
+      });
+
+      /* 08 November daily drop interactions */
+      document.querySelectorAll('.mgl-card08').forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var go = form.querySelector('.mgl-go08');
+          if (!go) return;
+          var original = go.textContent;
+          go.textContent = 'Welcome to the grove ✓';
+          window.setTimeout(function () { go.textContent = original; }, 1600);
+        });
+      });
+
+      document.querySelectorAll('.mkf-card08').forEach(function (card) {
+        var dots = Array.prototype.slice.call(card.querySelectorAll('.mkf-dot08'));
+        var leaf = card.querySelector('.mkf-leafmark08');
+        var track = card.querySelector('.mkf-track08');
+        var step = 0;
+        function render() {
+          if (track) track.style.transform = 'translateX(' + (-step * 33.333) + '%)';
+          if (leaf) leaf.style.left = (step * 45) + '%';
+          dots.forEach(function (d, i) {
+            d.classList.toggle('done', i < step);
+            d.classList.toggle('active', i === step);
+          });
+        }
+        card.querySelectorAll('.mkf-next08').forEach(function (btn) {
+          btn.addEventListener('click', function () { step = (step + 1) % 3; render(); });
+        });
+        render();
+      });
+
+      document.querySelectorAll('.mlb-btn08').forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+          var rect = btn.getBoundingClientRect();
+          var ripple = document.createElement('span');
+          ripple.className = 'mlb-rip08';
+          ripple.style.left = (event.clientX - rect.left) + 'px';
+          ripple.style.top = (event.clientY - rect.top) + 'px';
+          btn.appendChild(ripple);
+          window.setTimeout(function () { ripple.remove(); }, 650);
+        });
+      });
+
+      document.querySelectorAll('.mst-tog08').forEach(function (tog) {
+        tog.addEventListener('click', function () {
+          var on = tog.getAttribute('aria-checked') !== 'true';
+          tog.setAttribute('aria-checked', String(on));
+          var row = tog.closest('.mst-row08');
+          if (row) {
+            row.classList.toggle('on', on);
+            var state = row.querySelector('.mst-state08');
+            if (state) state.textContent = on ? 'ON' : 'OFF';
+          }
+        });
+      });
+
+      document.querySelectorAll('.hpm08').forEach(function (stage) {
+        var open = stage.querySelector('.hpm-open08');
+        var close = stage.querySelector('.hpm-close08');
+        var ok = stage.querySelector('.hpm-ok08');
+        if (!open) return;
+        open.addEventListener('click', function () { stage.classList.add('open'); });
+        function shut() { stage.classList.remove('open'); }
+        if (close) close.addEventListener('click', shut);
+        if (ok) ok.addEventListener('click', shut);
+      });
+
+      document.querySelectorAll('.mli-form08').forEach(function (form) {
+        form.addEventListener('submit', function (event) { event.preventDefault(); });
+        form.querySelectorAll('.mli-field08 input').forEach(function (input) {
+          input.addEventListener('blur', function () {
+            var field = input.closest('.mli-field08');
+            if (!field) return;
+            var bad = input.required && !input.value.trim();
+            field.classList.remove('err08');
+            if (bad) { void field.offsetWidth; field.classList.add('err08'); }
+          });
+        });
+      });
+
+      document.querySelectorAll('.mbn08').forEach(function (stage) {
+        var marker = stage.querySelector('.mbn-marker08');
+        var links = Array.prototype.slice.call(stage.querySelectorAll('.mbn-link08'));
+        function mark(link) {
+          if (!marker || !link) return;
+          marker.style.left = link.offsetLeft + 'px';
+          marker.style.width = link.offsetWidth + 'px';
+        }
+        links.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (link.hasAttribute('data-mbn-menu')) { stage.classList.toggle('menu-open'); return; }
+            links.forEach(function (l) { l.classList.remove('on'); });
+            link.classList.add('on');
+            stage.classList.remove('menu-open');
+            mark(link);
+          });
+        });
+        mark(stage.querySelector('.mbn-link08.on') || links[0]);
+      });
+
+      if (window.matchMedia('(pointer:fine)').matches) {
+        document.querySelectorAll('.msc-card08').forEach(function (card) {
+          card.addEventListener('pointermove', function (event) {
+            var rect = card.getBoundingClientRect();
+            var rx = ((event.clientY - rect.top) / rect.height - .5) * -8;
+            var ry = ((event.clientX - rect.left) / rect.width - .5) * 10;
+            card.style.transform = 'rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+          });
+          card.addEventListener('pointerleave', function () { card.style.transform = ''; });
+        });
+      }
+
+      document.querySelectorAll('.hsw-card08').forEach(function (card) {
+        var num = card.querySelector('.hsw-num08');
+        function run() {
+          card.classList.add('in');
+          if (!num) return;
+          var target = parseInt(num.getAttribute('data-count'), 10) || 0;
+          var suffix = num.getAttribute('data-suffix') || '';
+          if (reduceMotion) { num.textContent = target.toLocaleString('en-IN') + suffix; return; }
+          var start = null;
+          function tick(ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / 1300, 1);
+            num.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString('en-IN') + suffix;
+            if (p < 1) window.requestAnimationFrame(tick);
+          }
+          window.requestAnimationFrame(tick);
+        }
+        if ('IntersectionObserver' in window) {
+          var hswio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) { run(); hswio.unobserve(en.target); } });
+          }, { threshold: .4 });
+          hswio.observe(card);
+        } else { run(); }
+      });
+
+      document.querySelectorAll('.ock-wrap08').forEach(function (wrap) {
+        var qtyEl = wrap.querySelector('.ock-qty08');
+        var countEl = wrap.querySelector('.ock-count08');
+        var dqty = wrap.querySelector('.ock-dqty08');
+        var total = wrap.querySelector('.ock-total08');
+        var cartBtn = wrap.querySelector('.ock-cartbtn08');
+        var qty = 1, inCart = 0;
+        function renderQty() {
+          if (!qtyEl) return;
+          qtyEl.textContent = qty;
+          qtyEl.classList.remove('pop');
+          void qtyEl.offsetWidth;
+          qtyEl.classList.add('pop');
+        }
+        var minus = wrap.querySelector('.ock-minus08');
+        var plus = wrap.querySelector('.ock-plus08');
+        if (minus) minus.addEventListener('click', function () { qty = Math.max(1, qty - 1); renderQty(); });
+        if (plus) plus.addEventListener('click', function () { qty = Math.min(9, qty + 1); renderQty(); });
+        var add = wrap.querySelector('.ock-add08');
+        if (add) add.addEventListener('click', function () {
+          inCart += qty;
+          if (countEl) {
+            countEl.textContent = inCart;
+            countEl.classList.remove('bump');
+            void countEl.offsetWidth;
+            countEl.classList.add('bump');
+          }
+          if (dqty) dqty.textContent = '× ' + inCart;
+          if (total) total.textContent = '₹' + (899 * inCart).toLocaleString('en-IN');
+          if (cartBtn && !reduceMotion) {
+            var fly = document.createElement('span');
+            fly.className = 'ock-fly08';
+            var wr = wrap.getBoundingClientRect();
+            var ar = add.getBoundingClientRect();
+            var cr = cartBtn.getBoundingClientRect();
+            fly.style.left = (ar.left - wr.left + ar.width / 2) + 'px';
+            fly.style.top = (ar.top - wr.top) + 'px';
+            wrap.appendChild(fly);
+            if (fly.animate) {
+              fly.animate([
+                { transform: 'translate(0,0) scale(1) rotate(0deg)', opacity: 1 },
+                { transform: 'translate(' + (cr.left + cr.width / 2 - ar.left - ar.width / 2) + 'px,' + (cr.top - ar.top) + 'px) scale(.4) rotate(160deg)', opacity: .5 }
+              ], { duration: 650, easing: 'cubic-bezier(.2,.8,.3,1)' }).onfinish = function () { fly.remove(); };
+            } else {
+              window.setTimeout(function () { fly.remove(); }, 650);
+            }
+          }
+          add.classList.add('added');
+          var original = 'Add to cart';
+          add.textContent = 'Added ✓';
+          window.setTimeout(function () { add.classList.remove('added'); add.textContent = original; }, 1300);
+        });
+        if (cartBtn) cartBtn.addEventListener('click', function () { wrap.classList.toggle('open'); });
+        var closeBtn = wrap.querySelector('.ock-close08');
+        if (closeBtn) closeBtn.addEventListener('click', function () { wrap.classList.remove('open'); });
+      });
+
+      document.querySelectorAll('.hvk-box08').forEach(function (box) {
+        var cards = Array.prototype.slice.call(box.querySelectorAll('.hvk-card08'));
+        var dots = Array.prototype.slice.call(box.querySelectorAll('.hvk-dotbtn08'));
+        if (!cards.length) return;
+        var idx = 0, timer = null;
+        function go(i) {
+          idx = (i + cards.length) % cards.length;
+          cards.forEach(function (c, j) { c.classList.toggle('on', j === idx); });
+          dots.forEach(function (d, j) { d.classList.toggle('on', j === idx); });
+        }
+        function startAuto() { if (reduceMotion) return; stopAuto(); timer = window.setInterval(function () { go(idx + 1); }, 3600); }
+        function stopAuto() { if (timer) { window.clearInterval(timer); timer = null; } }
+        dots.forEach(function (d, i) { d.addEventListener('click', function () { go(i); startAuto(); }); });
+        box.addEventListener('mouseenter', stopAuto);
+        box.addEventListener('mouseleave', startAuto);
+        go(0);
+        startAuto();
+      });
+
+      document.querySelectorAll('.htp-wrap08').forEach(function (wrap) {
+        var sw = wrap.querySelector('.htp-sw08');
+        if (!sw) return;
+        sw.addEventListener('click', function () {
+          var annual = sw.getAttribute('aria-checked') !== 'true';
+          sw.setAttribute('aria-checked', String(annual));
+          wrap.classList.toggle('yearly', annual);
+          wrap.querySelectorAll('.htp-amt08').forEach(function (amt) {
             amt.classList.remove('flip');
             void amt.offsetWidth;
             amt.classList.add('flip');
